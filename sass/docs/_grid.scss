@@ -1,0 +1,32 @@
+.row {
+	display: grid;
+	grid-gap: 1.5em;
+}
+
+.columns_2 {
+	grid-template-columns: 1fr 1fr;
+	
+}
+
+.columns_3 {
+ 	grid-template-columns: repeat(3, 1fr);
+}
+
+.columns_4 {
+ 	grid-template-columns: repeat(4, 1fr);
+}
+
+.columns_1-3 {
+ 	grid-template-columns: 300px 1fr;
+}
+
+@include breakpoint (mobile) {
+	.row {
+		display: block;
+	}
+	.columns_2, .columns_3, .columns_4, .columns_1-3 {
+		grid-template-columns: 1fr;
+	}
+
+}
+

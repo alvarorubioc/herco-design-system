@@ -1,0 +1,22 @@
+.sh-space__sm {padding: calc(0.5 * #{$text-base-size});}
+.sh-space {padding: calc(1 * #{$text-base-size});}
+.sh-space__md {padding: calc(1.5 * #{$text-base-size});}
+.sh-space__lg {padding: calc(2 * #{$text-base-size});}
+.sh-space__xl {padding: calc(3 * #{$text-base-size});}
+.sh-space__xxl {padding: calc(4 * #{$text-base-size});}
+
+.sh-no__margin {margin: 0;}
+​
+.sh-m-bottom__sm { margin-bottom: calc(0.5 * #{$text-base-size});}
+.sh-m-bottom { margin-bottom: calc(1 * #{$text-base-size});}
+.sh-m-bottom__md { margin-bottom: calc(1.5 * #{$text-base-size});}
+.sh-m-bottom__lg { margin-bottom: calc(2 * #{$text-base-size});}
+.sh-m-bottom__xl { margin-bottom: calc(3 * #{$text-base-size});}
+.sh-m-bottom__xxl { margin-bottom: calc(4 * #{$text-base-size});}
+
+.sh-m-top__sm { margin-top: calc(0.5 * #{$text-base-size});}
+.sh-m-top { margin-top: calc(1 * #{$text-base-size});}
+.sh-m-top__md { margin-top: calc(1.5 * #{$text-base-size});}
+.sh-m-top__lg { margin-top: calc(2 * #{$text-base-size});}
+.sh-m-top__xl { margin-top: calc(3 * #{$text-base-size});}
+.sh-m-top__xxl { margin-top: calc(4 * #{$text-base-size});}

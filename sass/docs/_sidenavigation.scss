@@ -1,0 +1,151 @@
+/*--------------------------------------------------------------
+# Responsible sidebar navigation
+--------------------------------------------------------------*/
+#wrap {
+    height: 100%;
+}
+
+#wrap  > #sidenav {
+    width: 300px;
+    background-color: #fcfcfc;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15);
+    border-right: 1px solid #e1e1e1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    transition: all 0.3s ease;
+    z-index: 1;
+    overflow: auto;
+    height: 100vh;
+}
+
+#wrap > #sidenav.open {
+        margin-left: -300px;
+    }    
+
+#wrap  > #main {
+    padding-left: 300px;
+    transition: all 0.3s ease;   
+}
+
+#wrap  > #main.open {
+    padding-left: 0px;    
+}
+
+.container section{
+    margin: 0 auto;
+    max-width: 960px;
+    margin-bottom: 6em;
+}
+
+
+@media(max-width: 640px) {
+    #wrap > #sidenav {
+        width: 300px;
+        left: -300px;
+    }
+
+    #wrap > #sidenav.open {
+        margin-left: 300px;
+    }  
+
+    #main.open  #btn_nav {
+        margin-left: 290px;
+        transition: all 0.3s ease;
+    }  
+
+     #main.open .main-header small {
+        display: none;
+    }
+
+    #wrap > #main {
+        padding-left: 0;
+    }
+
+}
+
+@media(max-width: 320px) {
+    #wrap > #sidenav {
+        width: 260px;
+        left: -260px;
+    }
+
+    #wrap > #sidenav.open {
+        margin-left: 260px;
+    }  
+
+    #main.open  #btn_nav {
+        margin-left: 240px;
+        transition: all 0.3s ease;
+    }  
+
+    #wrap > #main {
+        padding-left: 0;
+    }
+
+}
+
+/*--------------------------------------------------------------
+# Menu
+--------------------------------------------------------------*/
+
+.vertical_nav {
+    list-style: none;
+    margin: 2em 0 0 0;
+    padding: 0;
+
+}
+
+.vertical_nav li {
+    padding: .5em 0;
+}
+
+.vertical_nav li a{
+    text-decoration: none;
+    color: $color-grey;
+}
+
+.vertical_nav li.disable {color: $color-grey-50;}
+
+.vertical_nav li a:hover{
+    color: $color-blue;
+}
+
+.vertical_nav li.active a{
+    color: $color-blue;
+}
+
+.vertical_nav li.active {
+    color: $color-blue;
+
+}
+
+.nav_header{
+    font-family: $font-heading;
+    margin-top: .5em;
+}
+
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
+
+#btn_nav {
+    font-size: 2em;
+    color: $color-grey;
+    padding: 0;
+    border: none;
+    background: none;
+
+    &:hover {
+        cursor: pointer;
+        color: $color-blue;
+    }
+
+}
+
+

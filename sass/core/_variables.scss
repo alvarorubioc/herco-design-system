@@ -1,0 +1,31 @@
+/* set family fonts */
+$font-primary: 'Roboto', sans-serif;
+$font-heading: 'Roboto Mono', monospace;
+
+/* set base value. You can change this value */
+$text-base-size: 1em;
+
+/* line-height */
+$heading-line-height: 1;
+$body-line-height: 1.5;
+
+/* type scale */
+$text__sm: calc(0.75 * #{$text-base-size});
+$text__h6: calc(1 * #{$text-base-size});
+$text__h5: calc(1.25 * #{$text-base-size});
+$text__h4: calc(1.5 * #{$text-base-size});
+$text__h3: calc(2 * #{$text-base-size});
+$text__h2: calc(2.5 * #{$text-base-size});
+$text__h1: calc(3 * #{$text-base-size});
+$text__hero: calc(4.5 * #{$text-base-size} / 1;
+
+/* set colors */
+$color-blue: #003e90;
+$color-red-cherry: #e20029;
+$color-navy-blue: #001442;
+$color-dark-navy-blue: #03001b;
+$color-grey: #606060;
+$color-grey-50: rgba(196, 196, 196, 0.5);
+$color-yellow: #dcd20c;
+$color-grass: #569e29;
+
