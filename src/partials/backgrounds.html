@@ -1,30 +1,53 @@
-<section id="backgrounds">     
+<section id="backgrounds">
   <header>
     <h3>Fondos</h3>
     <p class="sh-m-bottom__xl">Fondos o backgrounds que podemos usar para ayudar a la legibilidad de contenidos o dar coherencia a la línea gráfica.</p>
   </header>
 
   <h5>Overlays</h5>
-  <div class="row columns_2 sh-m-bottom__xxl">
-     <div>
-      <div class="box-copy sh-space sh-overlay__blue" onclick="copyToClipboard('3,27,100,0.6')">
-        <span><small>PRIMARIO<br>
-        RBGA (3,27,100,0.6)</small></span>
-        <span>COPY</span>
+  <div class="row columns_2 sh-m-bottom__xl">
+    <div class="sh-box sh-overlay__blue">
+      <img src="img/low/overlay-example.jpg" alt="x">
+      <div class="sh-overlay-content">
+        <h3>Overlay blue</h3>
+        <p>Para fondos que requieran una imagen y texto sobre ella usaremos un overlay.</p>
       </div>
-      <p>Nuestro color principal, lo usaremos para fondos, botones, textos destacados, etc</p> 
-     </div> 
+    </div>
 
-     <div>
-      <div class="sh-box sh-overlay__blue sh-space sh-text__white">
-        <p class="sh-text__h3">Lorem ipsum dolor</p>
-        <p>Nuestro color principal, lo usaremos para fondos, botones, textos destacados, etc</p> 
+    <div class="sh-box sh-overlay__red">
+      <img src="img/low/overlay-example-3.jpg" alt="x">
+      <div class="sh-overlay-content">
+        <h3>Overlay red</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
       </div>
-     </div> 
-     
+    </div>
+  </div> <!--End row-->
+
+  <div class="sh-m-bottom__xxl">
+      <partial src="code-examples/bg-overlay.html"></partial>
   </div>
 
-</section>  
+  <h5>Degradados</h5>
+  <div class="row columns_2 sh-m-bottom__xl">
+    <div class="sh-box sh-space__lg sh-bg-gradient__blue">
+      <h3>Blue gradient</h3>
+      <p>Para fondos en general, destacados, llamadas a la acción, etc.</p>
+      <span class="sh-m-top__md">
+        <small>BLUE<br> #001442 <i class="icon icon-right-open-mini"></i> #003E90 </small>
+      </span>
+    </div>
 
-/* Sketch doesnt export pattern fills at this point */
-background: rgba(0,62,144,0.60);
+    <div class="sh-box sh-space__lg sh-bg-gradient__blue-red">
+      <h3>Blue Red gradient</h3>
+      <p>Para fondos en general, destacados, llamadas a la acción, etc.</p>
+      <span class="sh-m-top__md">
+        <small>BLUE RED<br> #003E90 <i class="icon icon-right-open-mini"></i> #E20029 </small>
+      </span>
+    </div>
+  </div> <!--End row-->
+
+  <div class="sh-m-bottom__xxl">
+    <partial src="code-examples/bg-gradient.html"></partial>
+  </div>
+
+</section>

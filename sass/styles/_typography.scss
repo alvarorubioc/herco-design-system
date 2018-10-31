@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 Typography
 -------------------------------- */
 
@@ -8,7 +8,7 @@ Typography
 
 /* Responsive typography */
 
-body {	
+body {
     font-family: $font-primary;
     font-size: $text-base-size;
     color: $color-grey;
@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2, h3, h4, h5 {
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 h1, h2 {
@@ -38,10 +38,10 @@ h1, h2 {
 
 h1, .sh-text__h1 {
     font-size: $text__h1;
-    margin: .5rem 0; 
+    margin: .5rem 0;
      @include breakpoint(tablet) {
         font-size: $text__h2;
-    }  
+    }
 }
 
 h2, .sh-text__h2 {
@@ -115,5 +115,3 @@ b, strong {
 
 ​
 .uppercase { text-transform: uppercase; }
-
-

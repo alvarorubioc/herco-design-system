@@ -29,3 +29,6 @@ $color-grey-50: rgba(196, 196, 196, 0.5);
 $color-yellow: #dcd20c;
 $color-grass: #569e29;
 
+/* set gradients */
+$color-gradient-blue: (linear-gradient(left bottom, #{$color-navy-blue} 0%,#{$color-blue} 100%));
+$color-gradient-blue-red: (linear-gradient(left top, #{$color-blue} 0%,#{$color-red-cherry} 100%));

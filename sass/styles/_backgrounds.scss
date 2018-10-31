@@ -1,0 +1,42 @@
+@mixin bg-overlay {
+  img {
+    object-fit: contain;
+    border-radius: 2px;
+    z-index: -1;
+    mix-blend-mode: multiply;
+    filter: grayscale(100%);
+  }
+
+  .sh-overlay-content {
+    position: absolute;
+    padding: 2em;
+  }
+}
+
+.sh-overlay__blue {
+  background-color: rgba(3,27,100,0.8);
+  position: relative;
+  mix-blend-mode: multiply;
+  @include text-white;
+  @include bg-overlay;
+}
+
+.sh-overlay__red {
+  background-color: rgba(266,0,41,0.8);
+  position: relative;
+  mix-blend-mode: multiply;
+  @include text-white;
+  @include bg-overlay;
+}
+
+/* set color-gradients */
+.sh-bg-gradient__blue {
+  @include text-white;
+  opacity: 0.8;
+  background-image: $color-gradient-blue;
+}
+
+.sh-bg-gradient__blue-red {
+  @include text-white;
+  background-image: $color-gradient-blue-red;
+}

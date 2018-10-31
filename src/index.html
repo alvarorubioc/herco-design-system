@@ -9,8 +9,8 @@
     <title>Herco Sistema de diseño</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
-  </head>  
-  
+  </head>
+
 <body>
   <div id="wrap">
     <partial src="sidenav.html" title="Some title"></partial>
@@ -19,13 +19,14 @@
         <button class="btn btn--primary" id="btn_nav" onclick="myFunction()"><i class="icon icon-menu"></i></button>
         <small>Suministros HERCO</small>
       </div>
-      
-      <div id="app" class="container sh-space__lg">  
+
+      <div id="app" class="container sh-space__lg">
         <partial src="logos.html" title="Marca"></partial>
         <partial src="colors.html" title="Estilos"></partial>
         <partial src="typography.html" title="Tipografía"></partial>
         <partial src="icons.html" title="Iconos"></partial>
-        
+        <partial src="backgrounds.html" title="Fondos"></partial>
+
       </div> <!-- end #container -->
 
     </main>
@@ -36,9 +37,9 @@
 <script>
 
 function scrollNav() {
-  $('.vertical_nav a').click(function(){  
+  $('.vertical_nav a').click(function(){
     //Toggle Class
-    $(".active").removeClass("active");      
+    $(".active").removeClass("active");
     $(this).closest('li').addClass("active");
     var theClass = $(this).attr("class");
     $('.'+theClass).parent('li').addClass('active');
@@ -54,4 +55,4 @@ scrollNav();
 
 </script>
 </body>
-</html> 
+</html>
