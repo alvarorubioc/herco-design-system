@@ -3,9 +3,13 @@
 	grid-gap: 1.5em;
 }
 
+.column_1-half {
+	
+}
+
 .columns_2 {
 	grid-template-columns: 1fr 1fr;
-	
+
 }
 
 .columns_3 {
@@ -29,4 +33,3 @@
 	}
 
 }
-

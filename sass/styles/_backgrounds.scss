@@ -19,6 +19,7 @@
   mix-blend-mode: multiply;
   @include text-white;
   @include bg-overlay;
+  display: flex;
 }
 
 .sh-overlay__red {
@@ -27,6 +28,7 @@
   mix-blend-mode: multiply;
   @include text-white;
   @include bg-overlay;
+  display: flex;
 }
 
 /* set color-gradients */
@@ -39,4 +41,46 @@
 .sh-bg-gradient__blue-red {
   @include text-white;
   background-image: $color-gradient-blue-red;
+}
+
+/* set duotone */
+.sh-bg__duotone {
+  @include text-white;
+  background-color:    $color-red-cherry;
+  display:             flex;
+  flex-direction:      column;
+  height:              100%;
+  overflow:            hidden;
+  position:            relative;
+  border-radius:       2px;
+
+  &::before {
+    background-color:    $color-blue;
+    bottom:              0;
+    content:             '';
+    height:              100%;
+    left:                0;
+    mix-blend-mode:      lighten;
+    position:            absolute;
+    right:               0;
+    top:                 0;
+    width:               100%;
+    z-index:             1;
+  }
+
+  & img {
+    filter:              grayscale(100%) contrast(2);
+    flex:                none;
+    max-width:           100%;
+    mix-blend-mode:      multiply;
+    object-fit:          cover;
+    opacity:             1;
+    position:            relative;
+    width:               100%;
+  }
+}
+
+.sh-duotone-content {
+  position: absolute;
+  padding: 2em;
 }
