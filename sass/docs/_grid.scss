@@ -33,11 +33,14 @@
 
 .dflex {
 	display: flex;
-	gap: 1.5em;
-	align-items: end;
+	align-items: flex-end;
+
+	button {
+		margin-right: 2em;
+	}
 
 	@include breakpoint (mobile) {
-		align-items: start;
+		align-items: flex-start;
 		flex-direction: column;
 		}
 }
