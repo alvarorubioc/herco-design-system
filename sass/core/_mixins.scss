@@ -23,4 +23,16 @@
 	}
 }
 
-/* set dutone */
+/* set general style btn */
+@mixin btn {
+  position: relative;
+  border-radius: $border-radius;
+  transition: .2s;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bolder;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

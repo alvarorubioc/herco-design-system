@@ -43,12 +43,13 @@
                         <li class="disable">Espacios</li>
                         <li class="disable">Grid</li>
                         <li class="nav_header sh-text__h5">Componentes</li>
-                        <li>Botones & links</li>
+                        <li><a href="#buttons">Botones & links</a>
+
+                        </li>
                         <li>Formularios</li>
                         <li>Elementos</li>
                         <li>Navegación</li>
-                        <li class="disable">Dropdowns</a>
-                        </li>
+                        <li class="disable">Dropdowns</li>
                         <li class="disable">Menús</li>
                         <li class="disable">Card</li>
                         <li class="nav_header sh-text__h5">Assets</li>
@@ -882,8 +883,7 @@
                                 <img src="img/low/overlay-example-3.jpg" alt="x">
                                 <div class="sh-overlay-content">
                                      <h3>Overlay red</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor.</p>
+                                    <p>Para fondos que requieran una imagen y texto sobre ella usaremos un overlay.</p>
                                 </div>
                             </div>
                         </div>
@@ -896,9 +896,9 @@
 
     &ltdiv class="sh-overlay-content"&gt
 
-      &lth3&gtLorem ipsum dolor&lt/h3&gt
+      &lth3&gtOverlay azul&lt/h3&gt
 
-      &ltp&gtLorem ipsum dolor sit amet, consectetur adipisicing elit.&lt/p&gt
+      &ltp&gtPara fondos que requieran una imagen y texto sobre ella usaremos un overlay.&lt/p&gt
 
     &lt/div&gt
 
@@ -911,9 +911,9 @@
 
     &ltdiv class="sh-overlay-content"&gt
 
-      &lth3&gtLorem ipsum dolor&lt/h3&gt
+      &lth3&gtOverlay rojo&lt/h3&gt
 
-      &ltp&gtLorem ipsum dolor sit amet, consectetur adipisicing elit.&lt/p&gt
+      &ltp&gtPara fondos que requieran una imagen y texto sobre ella usaremos un overlay.&lt/p&gt
 
     &lt/div&gt
 
@@ -941,18 +941,18 @@
                             <p class="caption">Ejemplo de fondo con degradado azul</p>
 <pre><code class="language-html">&ltdiv class="sh-bg-gradient__blue"&gt
 
-  &lth3&gtLorem ipsum dolor&lt/h3&gt
+  &lth3&gtBlue gradient&lt/h3&gt
 
-  &ltp&gtLorem ipsum dolor sit amet, consectetur adipisicing elit.&lt/p&gt
+  &ltp&gtPara fondos en general, destacados, llamadas a la acción, etc.&lt/p&gt
 
 &lt/div&gt</code></pre>
                             <br>
                             <p class="caption">Ejemplo de fondo con degradado azul-rojo</p>
 <pre><code class="language-html">&ltdiv class="sh-bg-gradient__blue-red"&gt
 
-  &lth3&gtLorem ipsum dolor&lt/h3&gt
+  &lth3&gtBlue Red gradient&lt/h3&gt
 
-  &ltp&gtLorem ipsum dolor sit amet, consectetur adipisicing elit.&lt/p&gt
+  &ltp&gtPara fondos en general, destacados, llamadas a la acción, etc.&lt/p&gt
 
 &lt/div&gt</code></pre>
                         </div>
@@ -981,6 +981,225 @@
     &lt/div&gt
 
   &lt/div&gt</code></pre>
+                        </div>
+                    </section>
+                    <section id="buttons">
+                        <header>
+                             <h1>Componentes</h1>
+                            <div class="sh-divider__header"></div>
+                             <h3>Botones/links</h3>
+                            <p class="sh-m-bottom__xl"></p>
+                        </header>
+                         <h5>Estándar</h5>
+                        <div class="row columns_3 sh-m-bottom__lg">
+                            <button class="sh-btn" type="button">Standard</button>
+                            <button class="sh-btn sh-btn_dark" type="button">Dark</button>
+                            <button class="sh-btn" disabled type="button">Disabled</button>
+                            <button class="sh-btn sh-btn_sucess" type="button">Sucess</button>
+                            <button class="sh-btn sh-btn_warning" type="button">Warning</button>
+                            <button class="sh-btn sh-btn_danger" type="button">Danger</button>
+                        </div>
+                        <div class="sh-m-bottom__xl">
+                            <p class="caption">Ejemplo de botón estándar</p>
+<pre><code class="language-html">&ltbutton class="sh-btn" type="button"&gtStandard&lt/button&gt
+
+&ltbutton class="sh-btn sh-btn_active" type="button"&gtActive&lt/button&gt
+
+&ltbutton class="sh-btn" type="button" disabled&gtDisabled&lt/button&gt
+
+&ltbutton class="sh-btn sh-btn_sucess" type="button"&gtSucces&lt/button&gt
+
+&ltbutton class="sh-btn sh-btn_warning" type="button"&gtWarning&lt/button&gt
+
+&ltbutton class="sh-btn sh-btn_danger" type="button"&gtDanger&lt/button&gt
+
+<br>
+
+Botón con etiqueta "&lta&gt"
+
+&lta class="sh-btn" href="#" role="button"&gtStandard&lt/a&gt</code></pre>
+                        </div>
+                        <!-- End row -->
+                         <h5>Outline</h5>
+                        <div class="row columns_3 sh-m-bottom__lg">
+                            <button class="sh-btn-outline" type="button">Standard</button>
+                            <button class="sh-btn-outline sh-btn-outline_active"
+                            type="button">Active</button>
+                            <button class="sh-btn-outline" type="button" disabled>Disabled</button>
+                            <button class="sh-btn-outline sh-btn-outline_sucess"
+                            type="button">Sucess</button>
+                            <button class="sh-btn-outline sh-btn-outline_warning" type="button">Warning</button>
+                            <button class="sh-btn-outline sh-btn-outline_danger" type="button">Danger</button>
+                        </div>
+                        <div class="sh-m-bottom__xl">
+                            <p class="caption">Ejemplo de botón outline</p>
+<pre><code class="language-html">&ltbutton class="sh-btn-outline" type="button"&gtStandard&lt/button&gt
+
+&ltbutton class="sh-btn-outline sh-btn-outline_active" type="button"&gtActive&lt/button&gt
+
+&ltbutton class="sh-btn-outline" type="button" disabled&gtDisabled&lt/button&gt
+
+&ltbutton class="sh-btn-outline sh-btn-outline_sucess" type="button"&gtSucces&lt/button&gt
+
+&ltbutton class="sh-btn-outline sh-btn-outline_warning" type="button"&gtWarning&lt/button&gt
+
+&ltbutton class="sh-btn-outline sh-btn-outline_danger" type="button"&gtDanger&lt/button&gt
+
+<br>
+
+Botón con etiqueta "&lta&gt"
+
+&lta class="sh-btn-outline" href="#" role="button"&gtStandard&lt/a&gt</code></pre>
+                        </div>
+                        <!-- End row -->
+                         <h5>Botones sobre fondo</h5>
+                        <div class="btn-box-example">
+                            <button class="sh-btn sh-btn_white" type="button">Button</button>
+                            <button class="sh-btn sh-btn-outline_white" type="button">Button</button>
+                            <button class="sh-btn sh-btn_white" type="button"><i class="icon icon-user"></i> Button</button>
+                            <button class="sh-btn sh-btn-outline_white"
+                            type="button">Button <i class="icon icon-right-open"></i>
+
+                            </button>
+                        </div>
+                        <div class="sh-m-bottom__xl">
+                            <p class="caption">Ejemplo de grupo de botones</p>
+<pre><code class="language-html">&ltbutton class="sh-btn sh-btn_white" type="button"&gtButton&lt/button&gt
+
+&ltbutton class="sh-btn sh-btn-outline_white" type="button"&gtButton&lt/button&gt
+
+&ltbutton class="sh-btn sh-btn_white" type="button"&gt&lti class="icon icon-user"&gt&lt/i&gt Button&lt/button&gt
+
+&ltbutton class="sh-btn sh-btn-outline_white" type="button"&gtButton &lti class="icon icon-right-open"&gt&lt/i&gt&lt/button&gt
+
+<br>
+
+Botón con etiqueta "&lta&gt"
+
+&lta class="sh-btn sh-btn_white" role="button"&gtButton&lt/a&gt</code></pre>
+                        </div>
+                        <!-- End row -->
+                         <h5>Tamaños</h5>
+                        <div class="dflex sh-m-bottom__xl">
+                            <button class="sh-btn sh-btn__sm" type="button">Button sm</button>
+                            <button class="sh-btn" type="button">Button md</button>
+                            <button class="sh-btn sh-btn__lg" type="button">Button lg</button>
+                            <button class="sh-btn sh-btn__xl" type="button">Button xl</button>
+                        </div>
+                        <div class="sh-m-bottom__lg">
+                            <button class="sh-btn sh-btn__full">Full width</button>
+                        </div>
+                        <div class="sh-m-bottom__xl">
+                            <p class="caption">Ejemplo de botón por tamaño</p>
+<pre><code class="language-html">&ltbutton class="sh-btn sh-btn__sm" type="button"&gtButton sm&lt/button&gt
+
+&ltbutton class="sh-btn" type="button"&gtButton md&lt/button&gt
+
+&ltbutton class="sh-btn sh-btn__lg" type="button"&gtButton lg&lt/button&gt
+
+&ltbutton class="sh-btn sh-btn__xl" type="button"&gtButton xl&lt/button&gt
+
+&ltbutton  class="sh-btn sh-btn__full"&gt Full width&lt/button&gt
+
+<br>
+
+Botón por tamaño con etiqueta "&lta&gt"
+
+&lta class="sh-btn sh-btn__sm" role="button"&gtButton sm&lt/a&gt</code></pre>
+                        </div>
+                        <!-- End row -->
+                         <h5>Botones con icono</h5>
+                        <div class="dflex sh-m-bottom__lg">
+                            <button class="sh-btn sh-btn-icon__sm" type="button"><i class="icon icon-menu"></i>
+
+                            </button>
+                            <button class="sh-btn sh-btn-icon__md" type="button"><i class="icon icon-menu"></i>
+
+                            </button>
+                            <button class="sh-btn sh-btn-icon__lg" type="button"><i class="icon icon-menu"></i>
+
+                            </button>
+                            <button class="sh-btn sh-btn-icon__xl" type="button"><i class="icon icon-menu"></i>
+
+                            </button>
+                        </div>
+                        <div class="sh-m-bottom__xl">
+                            <p class="caption">Ejemplo de botón con icono por tamaño</p>
+<pre><code class="language-html">&ltbutton class="sh-btn sh-btn-icon__sm" type="button"&gt&lti class="icon icon-menu"&gt&lt/i&gt&lt/button&gt
+
+&ltbutton class="sh-btn sh-btn-icon__md" type="button"&gt&lti class="icon icon-menu"&gt&lt/i&gt&lt/button&gt
+
+&ltbutton class="sh-btn sh-btn-icon__lg" type="button"&gt&lti class="icon icon-menu"&gt&lt/i&gt&lt/button&gt
+
+&ltbutton class="sh-btn sh-btn-icon__xl" type="button"&gt&lti class="icon icon-menu"&gt&lt/i&gt&lt/button&gt
+
+<br>
+
+Botón con etiqueta "&lta&gt"
+
+&lta class="sh-btn sh-btn-icon__sm" role="button"&gt&lti class="icon icon-list"&gt&lt/i&gt&lt/a&gt</code></pre>
+                        </div>
+                        <!-- End row -->
+                         <h5>Botones con texto e icono</h5>
+                        <div class="dflex sh-m-bottom__lg">
+                            <button class="sh-btn sh-btn__sm" type="button"><i class="icon icon-user"></i> Button sm</button>
+                            <button class="sh-btn"
+                            type="button">Button md <i class="icon icon-right-open"></i>
+
+                            </button>
+                            <button class="sh-btn sh-btn__lg" type="button"><i class="icon icon-user"></i> Button lg</button>
+                            <button class="sh-btn sh-btn__xl"
+                            type="button">Button xl <i class="icon icon-right-open"></i>
+
+                            </button>
+                        </div>
+                        <div class="sh-m-bottom__xl">
+                            <p class="caption">Ejemplo de botón con texto e icono</p>
+<pre><code class="language-html">&ltbutton class="sh-btn sh-btn__sm" type="button"&gt&lti class="icon icon-user"&gt&lt/i&gt Button sm&lt/button&gt
+
+&ltbutton class="sh-btn" type="button"&gtButton md &lti class="icon icon-right-open"&gt&lt/i&gt&lt/button&gt
+
+&ltbutton class="sh-btn sh-btn__lg" type="button"&gt&lti class="icon icon-user"&gt&lt/i&gt Button lg&lt/button&gt
+
+&ltbutton class="sh-btn sh-btn__xl" type="button"&gtButton xl &lti class="icon icon-right-open"&gt&lt/i&gt&lt/button&gt
+
+<br>
+
+Botón con etiqueta "&lta&gt"
+
+&lta class="sh-btn sh-btn__sm" role="button"&gt&lti class="icon icon-user"&gt&lt/i&gt Button sm&lt/a&gt</code></pre>
+                        </div>
+                        <!-- End row -->
+                         <h5>Grupo de botones</h5>
+                        <div class="sh-btn-group sh-m-bottom__lg">
+                            <button class="sh-btn" type="button">Button1</button>
+                            <button class="sh-btn" type="button">Button2</button>
+                            <button class="sh-btn" type="button">Button3</button>
+                            <button class="sh-btn" type="button">Button4</button>
+                        </div>
+                        <div class="sh-m-bottom__xl">
+                            <p class="caption">Ejemplo de grupo de botones</p>
+<pre><code class="language-html">&ltdiv class="sh-btn-group"&gt
+
+  &ltbutton class="sh-btn" type="button"&gtButton1&lt/button&gt
+
+  &ltbutton class="sh-btn" type="button"&gtButton2&lt/button&gt
+
+  &ltbutton class="sh-btn" type="button"&gtButton3&lt/button&gt
+
+  &ltbutton class="sh-btn" type="button"&gtButton4&lt/button&gt
+
+&lt/div&gt</code></pre>
+                        </div>
+                        <!-- End row -->
+                        <div class="">
+                             <h5>Links</h5>
+                            <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                ad minim veniam, quis nostrud <a href="#">hover state</a> exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur.</p>
                         </div>
                     </section>
                 </div>

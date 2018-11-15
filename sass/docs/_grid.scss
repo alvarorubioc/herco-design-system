@@ -4,7 +4,7 @@
 }
 
 .column_1-half {
-	
+
 }
 
 .columns_2 {
@@ -25,11 +25,34 @@
 }
 
 @include breakpoint (mobile) {
-	.row {
-		display: block;
-	}
 	.columns_2, .columns_3, .columns_4, .columns_1-3 {
 		grid-template-columns: 1fr;
 	}
 
+}
+
+.dflex {
+	display: flex;
+	gap: 1.5em;
+	align-items: end;
+
+	@include breakpoint (mobile) {
+		align-items: start;
+		flex-direction: column;
+		}
+}
+
+.btn-box-example {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: $color-blue;
+	border-radius: 2px;
+	width: 100%;
+	height: 6em;
+
+	@include breakpoint (mobile) {
+		flex-direction: column;
+		height: 20em;
+		}
 }
