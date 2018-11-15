@@ -88,9 +88,9 @@ p {
 a {
     color: $color-blue;
 
-    &:visited {
-        color: var(--color-link-visited);
-    }
+    &:hover {
+      color: $color-navy-blue;
+  }
 }
 
 b, strong {
