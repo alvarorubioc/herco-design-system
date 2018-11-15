@@ -34,5 +34,13 @@
 }
 
 #backgrounds .sh-bg__duotone {
-	height: 180px;
+	height: 280px;
+
+	@include breakpoint (mobile) {
+		height: 100%;
+	}
+}
+
+section .sh-divider__header {
+	margin-bottom: 4em;
 }

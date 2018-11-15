@@ -1,147 +1,287 @@
-/* -------------------------------- 
-Buttons
--------------------------------- */
-
-$text-base-size: 1em;
-
-:root {
-    
-    --btn-sm: calc($text-base-size - 0.2em);
-    --btn-md: calc($text-base-size + 0.2em);
-    --btn-lg: calc($text-base-size + 0.4em);
-    --btn-radius: var(--radius);
-}
-
-
-
-// edit font rendering -> tip: use for light text on dark backgrounds
-@mixin fontSmooth {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.btn {
-    display: inline-flex;
-    position: relative;
-    white-space: nowrap;
-    text-decoration: none;
-    line-height: 1;
-
-    padding: var(--space-xs) var(--space-sm);
-    border-radius: var(--btn-radius);
-    font-size: $text-base-size;
-    color: var(--color-link);
-
-    transition: .2s;
-
-    &:active {
-        transition: none;
-    }
-
-    .icon {
-        /* icon inherits color of button label */
-        color: inherit;
-        flex-shrink: 0;
-    }
-}
-
-/* themes */
-.btn--primary {
-    // main button
-    background-color: var(--btn-primary-bg);
-    color: var(--btn-primary-label);
-    @include fontSmooth;
-
-    &:visited {
-        color: var(--btn-primary-label);
-    }
+/* set Standard buttons */
+.sh-btn {
+  @include btn;
+  background-color: $color-blue;
+  color: white;
+  border: 1px solid $color-blue;
+  font-size: $text__md;
+  padding: .75em 1em;
 
     &:hover {
-        background-color: var(--btn-primary-hover);
+        background-color: $color-navy-blue;
+        border-color: $color-navy-blue;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     &:active {
-        background-color: var(--btn-primary-active);
+        opacity: .8;
     }
 }
 
-.btn--secondary {
-    // subtle version, used for secondary actions or in combo with primary/accent button
-    background-color: var(--btn-secondary-bg);
-    color: var(--btn-secondary-label);
-
-    &:visited {
-        color: var(--btn-secondary-label);
-    }
-
-    &:active {
-        background-color: var(--btn-secondary-active);
-    }
-}
-
-.btn--accent {
-    // used to draw special attention to the button (e.g. destructive actions)
-    background-color: var(--btn-accent-bg);
-    color: var(--btn-accent-label);
-    @include fontSmooth;
-
-    &:visited {
-        color: var(--btn-accent-label);
-    }
+/* for disabled button */
+.sh-btn[disabled] {
+  background-color: $color-grey-50;
+  border: none;
+  cursor: not-allowed;
 
     &:hover {
-        background-color: var(--btn-accent-hover);
-    }
-
-    &:active {
-        background-color: var(--btn-accent-active);
+      box-shadow: none;
     }
 }
 
-/* feedback */
-.btn[disabled] {
-    cursor: not-allowed;
-    background-color: var(--btn-disabled-bg);
-    color: var(--btn-disabled-label);
-    box-shadow: none;
-    opacity: 0.6;
+.sh-btn_dark {
+  background-color: $color-dark-navy-blue;
+  border-color: $color-dark-navy-blue;
+}
 
-    &:visited {
-        color: var(--btn-disabled-label);
+.sh-btn_sucess {
+  background-color: $color-grass;
+  border-color: $color-grass;
+
+    &:hover {
+      background-color: #447e20;
+      border-color: #447e20;
     }
+}
+
+.sh-btn_warning {
+  background-color: $color-yellow;
+  border-color: $color-yellow;
+
+    &:hover {
+      background-color: #b0a809;
+      border-color: #b0a809;
+    }
+}
+
+.sh-btn_danger {
+  background-color: $color-red-cherry;
+  border: 1px solid $color-red-cherry;
+
+    &:hover {
+      background-color: #b40020;
+      border-color: #b40020;
+    }
+}
+
+.sh-btn_white{
+  background-color: white;
+  color: $color-blue;
+  border-color: white;
+
+    &:hover {
+      background-color: transparent;
+      color: white;
+      border-color: white;
+    }
+
+    &:active {
+        opacity: .5;
+    }
+
+}
+
+/* set outline buttons */
+.sh-btn-outline {
+  @include btn;
+  background-color: transparent;
+  color: $color-blue;
+  border: 1px solid $color-blue;
+  border-radius: none;
+  font-size: $text__md;
+  padding: .75em 1em;
+
+    &:hover {
+        background-color: $color-blue;
+        color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+        opacity: .8;
+    }
+}
+
+.sh-btn-outline[disabled] {
+  background-color: transparent;
+  border-color: $color-grey-50;
+  color: $color-grey-50;
+  cursor: not-allowed;
+
+    &:hover {
+      box-shadow: none;
+    }
+}
+
+.sh-btn-outline_active {
+  &:focus {
+    background-color: $color-blue;
+    color: white;
+  }
+}
+
+.sh-btn-outline_sucess {
+  background-color: transparent;
+  color: $color-grass;
+  border-color: $color-grass;
+
+    &:hover {
+      background-color: $color-grass;
+      color: white;
+      border-color: $color-grass;
+    }
+}
+
+.sh-btn-outline_warning {
+  background-color: transparent;
+  color: $color-yellow;
+  border-color: $color-yellow;
+
+    &:hover {
+      background-color: $color-yellow;
+      color: white;
+      border-color: $color-yellow;
+    }
+}
+
+.sh-btn-outline_danger {
+  background-color: transparent;
+  color: $color-red-cherry;
+  border-color: $color-red-cherry;
+
+    &:hover {
+      background-color: $color-red-cherry;
+      color: white;
+      border-color: $color-red-cherry;
+    }
+}
+
+.sh-btn-outline_white{
+  background-color: transparent;
+  color: white;
+  border-color: white;
+
+    &:hover {
+      background-color: white;
+      color: $color-blue;
+      border-color: transparent;
+    }
+
+    &:active {
+        opacity: .5;
+    }
+}
+
+/* set button group */
+.sh-btn-group {
+  display: inline-flex;
+  align-items: center;
+
+  .sh-btn {
+    border-right-color: $color-navy-blue;
+    border-left: none;
+    border-radius: 0;
+
+    &:hover {
+      background-color: $color-navy-blue;
+      border-color: $color-navy-blue;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    &:focus {
+      background-color: $color-navy-blue;
+    }
+
+    &:first-child {
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+    }
+
+    &:last-child {
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+      border-right: none;
+    }
+  }
+
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
 
 /* button size */
-.btn--sm {
-    font-size: var(--btn-sm);
+.sh-btn__sm {
+  font-size: $text__sm;
+  padding: .5em 0.75em;
 }
 
-.btn--md {
-    font-size: var(--btn-md);
+.sh-btn__lg {
+  font-size: $text__h6;
+  padding: 1em 1.25em;
 }
 
-.btn--lg {
-    font-size: var(--btn-lg);
+.sh-btn__xl {
+  font-size: $text__h5;
+  padding: 1em 1.5em;
 }
 
-.btn--full-width {
-    display: flex;
-    width: 100%;
-    justify-content: center;
+.sh-btn__full {
+  width: 100%;
+  padding: 1em 1em;
 }
 
-/* buttons group */
-.btns {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: calc(-1 * var(--space-xs));
-
-    > * {
-        margin-right: var(--space-xs);
-        margin-bottom: var(--space-xs);
-
-        &:last-of-type {
-            margin-right: 0;
-        }
-    }
+/* button-icon size*/
+.sh-btn-icon__sm {
+  font-size: $text__sm;
+  padding: .5em .5em;
 }
+
+.sh-btn-icon__md {
+  font-size: $text__md;
+  padding: .75em .75em;
+}
+
+.sh-btn-icon__lg {
+  font-size: $text__h6;
+  padding: 1em 1em;
+}
+
+.sh-btn-icon__xl {
+  font-size: $text__h5;
+  padding: 1em 1em;
+}
+
+/*
+.sh-btn-icon__sm {
+  padding: .5em .5em;
+
+  i {
+    font-size: $text__sm;
+  }
+}
+
+.sh-btn-icon__md {
+  padding: .75em .75em;
+
+  i {
+    font-size: $text__md;
+  }
+}
+
+.sh-btn-icon__lg {
+  padding: 1em 1em;
+
+  i {
+    font-size: $text__h6;
+  }
+}
+
+.sh-btn-icon__xl {
+  padding: 1em 1em;
+
+  i {
+    font-size: $text__h5;
+  }
+}*/

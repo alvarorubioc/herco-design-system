@@ -16,16 +16,15 @@
     src: url('../font/herco.svg?27167176#herco') format('svg');
   }
 }
- 
+
 .icon {
   font-family: "herco";
   font-style: normal;
   font-weight: normal;
-  speak: none; 
+  speak: none;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
   text-align: center;
   font-variant: normal;
   text-transform: none;
@@ -39,7 +38,7 @@
 
 }
 
- 
+
 .icon-search:before { content: '\e800'; } /* '' */
 .icon-mail:before { content: '\e801'; } /* '' */
 .icon-heart:before { content: '\e802'; } /* '' */

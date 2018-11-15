@@ -9,8 +9,12 @@ $text-base-size: 1em;
 $heading-line-height: 1;
 $body-line-height: 1.5;
 
+/* border-radius */
+$border-radius: 2px;
+
 /* type scale */
 $text__sm: calc(0.75 * #{$text-base-size});
+$text__md: calc(0.9 * #{$text-base-size});
 $text__h6: calc(1 * #{$text-base-size});
 $text__h5: calc(1.25 * #{$text-base-size});
 $text__h4: calc(1.5 * #{$text-base-size});
