@@ -23,7 +23,7 @@
 	}
 }
 
-/* set general style btn */
+/* set general styles btn */
 @mixin btn {
   position: relative;
   border-radius: $border-radius;
@@ -39,4 +39,14 @@
   &:focus {
     outline: none;
   }
+}
+
+/* set general styles input */
+@mixin input {
+  display: inline;
+  width: 100%;
+  padding: .75em 1em;
+  outline: none;
+  border-radius: $border-radius;
+  transition: 0.2s;
 }

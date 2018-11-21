@@ -78,5 +78,5 @@ gulp.task("watch", function(){
 });
 
 gulp.task("default", ["sass", "lint", "javascript", "imagemin", "html", "watch"], function(){
-	
-});	
+
+});

@@ -1,0 +1,127 @@
+input {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+}
+
+/*set styles for input */
+.sh-input, .sh-text-area {
+  @include input;
+  border: 1px solid $color-grey-70;
+
+  &:hover:not(.sh-input__sucess):not(.sh-input__warning):not(.sh-input__error):not(.sh-input__disabled):not(:focus) {
+    border-color: $color-grey;
+  }
+
+  &:focus:not(.sh-input__sucess):not(.sh-input__warning):not(.sh-input__error) {
+    border-color: $color-blue;
+    box-shadow: 0 4px 6px rgba(0,108,188,.2);
+  }
+}
+
+.sh-input_ {
+  &_sucess {
+    border-color: $color-grass;
+
+    &:focus {
+      border-color: $color-grass;
+      outline: 4px solid rgba(86, 158, 41, 0.2);
+    }
+  }
+
+  &_warning {
+    border-color: $color-yellow;
+
+    &:focus {
+      border-color: $color-yellow;
+      box-shadow: 0 4px 6px rgba(221, 211, 12, 0.2);
+    }
+  }
+
+  &_error {
+    border-color: $color-red-cherry;
+
+    &:focus {
+      border-color: $color-red-cherry;
+      box-shadow: 0 4px 6px rgba(226, 0, 41, 0.2);
+    }
+  }
+
+  &_disabled {cursor: not-allowed;}
+}
+
+/*set error message */
+.sh-error-message {
+  position: absolute;
+  font-size: 12px;
+  margin: 0;
+  bottom: -20px;
+  color: $color-red-cherry;
+}
+
+/* set icon for input */
+.sh-input-container-icon {
+  display: flex;
+  position: relative;
+  width: 100%;
+
+  & input {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+}
+
+.sh-input-icon-left {
+  padding: .75em 1em;
+  border: 1px solid $color-blue;
+  border-right: none;
+  border-radius: $border-radius;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: $color-blue;
+  color: white;
+}
+
+.sh-input-icon-right {
+  position: absolute;
+  top: 14.2px;
+  right: 16px;
+  color: $color-blue;
+  text-align: center;
+
+  &__display {
+    position: absolute;
+    top: 14.2px;
+    right: 16px;
+    color: $color-grey;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__sucess {
+    position: absolute;
+    top: 14.2px;
+    right: 16px;
+    color: $color-grass;
+  }
+
+  &__warning {
+    position: absolute;
+    top: 14.2px;
+    right: 16px;
+    color: $color-yellow;
+
+   &:hover {
+     cursor: help;
+   }
+  }
+
+  &__error {
+    position: absolute;
+    top: 14.2px;
+    right: 16px;
+    color: $color-red-cherry;
+  }
+}
