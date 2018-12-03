@@ -1213,12 +1213,14 @@ Botón con etiqueta "&lta&gt"
                             <div class="row columns_2">
                                 <div>
                                      <h6>Input</h6>
-                                    <input class="sh-input" type="text" name="firstname" placeholder="Nombre">
+                                    <input class="sh-input margin-help" type="text" name="firstname" placeholder="Nombre">
                                 </div>
                                 <div>
-                                     <h6>Input + label </h6>
-                                    <label for="fname">Nombre</label>
-                                    <input class="sh-input" id="fname" type="text" name="firstname">
+                                     <h6>Input + label</h6>
+                                    <div class="sh-form-group">
+                                        <label class="sh-label" for="fname">Nombre</label>
+                                        <input class="sh-input" id="fname" type="text" name="firstname">
+                                    </div>
                                 </div>
                             </div>
                             <!-- End row -->
@@ -1227,41 +1229,58 @@ Botón con etiqueta "&lta&gt"
 <pre><code class="language-html">&ltinput class="sh-input" type="text" name="firstname" placeholder="Nombre"&gt</code></pre>
                                 <p
                                 class="caption">Ejemplo de input +label</p>
-<pre><code class="language-html">&ltlabel for="fname"&gtNombre&lt/label&gt
+<pre><code class="language-html">&ltlabel class="sh-label" for="fname"&gtNombre&lt/label&gt
 
 &ltinput class="sh-input" id="fname" type="text" name="firstname"&gt</code></pre>
                             </div>
-                            <div class="row columns_2 sh-m-bottom__lg">
+                            <div class="row columns_2">
                                 <div>
                                      <h6>Input + icon left</h6>
-                                    <div class="sh-input-container-icon"> <i class="icon icon-user sh-input-icon-left"></i>
+                                    <div class="sh-form-group sh-form-container-icon"> <i class="icon icon-user sh-form-icon-left"></i>
                                         <input class="sh-input"
                                         type="text" name="firstname" placeholder="Nombre">
                                     </div>
                                 </div>
                                 <div>
                                      <h6>Input + icon right</h6>
-                                    <div class="sh-input-container-icon">
-                                        <input class="sh-input" type="text" name="firstname" placeholder="Nombre"> <i class="icon icon-user sh-input-icon-right"></i>
+                                    <div class="sh-form-group sh-form-container-icon">
+                                        <input class="sh-input" type="text" name="firstname" placeholder="Nombre"> <i class="icon icon-user sh-form-icon-right"></i>
                                     </div>
                                 </div>
                             </div>
                             <!-- End row -->
+                            <div class="row">
+                                 <h6>Double Icon</h6>
+                                <div class="sh-form-group sh-form-container-icon"> <i class="icon icon-user sh-form-icon-left"></i>
+                                    <input class="sh-input"
+                                    type="text" name="firstname" placeholder="Nombre"> <i class="icon icon-user sh-form-icon-right"></i>
+                                </div>
+                            </div>
                             <div class="sh-m-bottom__xl">
                                 <p class="caption">Ejemplo de input + icono izquierda</p>
-<pre><code class="language-html">&ltdiv class="sh-input-container-icon"&gt
+<pre><code class="language-html">&ltdiv class="sh-form-group sh-form-container-icon"&gt
 
-  &lti class="icon icon-user sh-input-icon-left"&gt&lt/i&gt
+  &lti class="icon icon-user sh-form-icon-left"&gt&lt/i&gt
 
   &ltinput class="sh-input" type="text" name="firstname" placeholder="Nombre"&gt
 
 &lt/div&gt</code></pre>
                                 <p class="caption">Ejemplo de input + icono derecha</p>
-<pre><code class="language-html">&ltdiv class="sh-input-container-icon"&gt
+<pre><code class="language-html">&ltdiv class="sh-form-group sh-form-container-icon"&gt
+
+  &lti class="icon icon-user sh-form-icon-right"&gt&lt/i&gt
 
   &ltinput class="sh-input" type="text" name="firstname" placeholder="Nombre"&gt
 
-  &lti class="icon icon-user sh-input-icon-right"&gt&lt/i&gt
+&lt/div&gt</code></pre>
+                                <p class="caption">Ejemplo de input con doble icono</p>
+<pre><code class="language-html">&ltdiv class="sh-form-group sh-form-container-icon"&gt
+
+  &lti class="icon icon-user sh-form-icon-left"&gt&lt/i&gt
+
+  &ltinput class="sh-input" type="text" name="firstname" placeholder="Nombre"&gt
+
+  &lti class="icon icon-user sh-form-icon-right"&gt&lt/i&gt
 
 &lt/div&gt</code></pre>
                             </div>
@@ -1272,33 +1291,33 @@ Botón con etiqueta "&lta&gt"
                             <div class="row columns_2 sh-m-bottom__lg">
                                 <div>
                                      <h6>Icon show password</h6>
-                                    <div class="sh-input-container-icon">
-                                        <input class="sh-input" type="password" name="password" placeholder="Contraseña"> <i class="icon icon-eye sh-input-icon-right__display"></i>
+                                    <div class="sh-form-group sh-form-container-icon">
+                                        <input class="sh-input" type="password" name="password" placeholder="Contraseña"> <i class="icon icon-eye sh-form-icon-right__display"></i>
                                     </div>
                                 </div>
                                 <div>
                                      <h6>Icon hide password</h6>
-                                    <div class="sh-input-container-icon">
-                                        <input class="sh-input" type="text" name="password" placeholder="Contraseña"> <i class="icon icon-eye sh-input-icon-right__display"></i>
+                                    <div class="sh-form-group sh-form-container-icon">
+                                        <input class="sh-input" type="text" name="password" placeholder="Contraseña"> <i class="icon icon-eye sh-form-icon-right__display"></i>
                                     </div>
                                 </div>
                             </div>
                             <!-- End row -->
                             <div class="sh-m-bottom__xl">
                                 <p class="caption">Ejemplo de input para mostrar contraseña</p>
-<pre><code class="language-html">&ltdiv class="sh-input-container-icon"&gt
+<pre><code class="language-html">&ltdiv class="sh-form-group sh-input-container-icon"&gt
 
   &ltinput class="sh-input" type="password" name="password" placeholder="Contraseña"&gt
 
-  &lti class="icon icon-eye sh-input-icon-right__display"&gt&lt/i&gt
+  &lti class="icon icon-eye sh-form-icon-right__display"&gt&lt/i&gt
 
 &lt/div&gt</code></pre>
-                                <p class="caption">Ejemplo de input para mostrar contraseña</p>
-<pre><code class="language-html">&ltdiv class="sh-input-container-icon"&gt
+                                <p class="caption">Ejemplo de input para ocultar contraseña</p>
+<pre><code class="language-html">&ltdiv class="sh-form-group sh-input-container-icon"&gt
 
   &ltinput class="sh-input" type="text" name="password" placeholder="Contraseña"&gt
 
-  &lti class="icon icon-eye sh-input-icon-right__display"&gt&lt/i&gt
+  &lti class="icon icon-eye sh-form-icon-right__display"&gt&lt/i&gt
 
 &lt/div&gt</code></pre>
                             </div>
@@ -1309,16 +1328,16 @@ Botón con etiqueta "&lta&gt"
                             <div class="row columns_2">
                                 <div>
                                      <h6>Succes</h6>
-                                    <div class="sh-input-container-icon">
+                                    <div class="sh-form-group sh-form-container-icon">
                                         <input class="sh-input sh-input__sucess" type="text" name="firstname"
-                                        placeholder="Nombre"> <i class="icon icon-check sh-input-icon-right__sucess"></i>
+                                        placeholder="Nombre"> <i class="icon icon-check sh-form-icon-right__sucess"></i> <span>Este es un mensaje cualquiera</span>
                                     </div>
                                 </div>
                                 <div>
                                      <h6>Warning</h6>
-                                    <div class="sh-input-container-icon">
+                                    <div class="sh-form-group sh-form-container-icon">
                                         <input class="sh-input sh-input__warning" type="text" name="firstname"
-                                        placeholder="Nombre"> <i class="icon icon-attention sh-input-icon-right__warning"></i>
+                                        placeholder="Nombre"> <i class="icon icon-attention sh-form-icon-right__warning"></i> <span>Este es un mensaje cualquiera</span>
                                     </div>
                                 </div>
                             </div>
@@ -1326,9 +1345,8 @@ Botón con etiqueta "&lta&gt"
                             <div class="row columns_2 sh-m-bottom__lg">
                                 <div>
                                      <h6>Error</h6>
-                                    <div class="sh-input-container-icon">
-                                        <input class="sh-input sh-input__error" type="text" name="firstname" placeholder="Nombre"> <i class="icon icon-cancel sh-input-icon-right__error"></i>
-                                        <p class="sh-error-message">Este es un mensaje de error</p>
+                                    <div class="sh-form-group sh-form-container-icon">
+                                        <input class="sh-input sh-input__error" type="text" name="firstname" placeholder="Nombre"> <i class="icon icon-cancel sh-form-icon-right__error"></i> <span>Este es un mensaje cualquiera</span>
                                     </div>
                                 </div>
                                 <div>
@@ -1341,11 +1359,13 @@ Botón con etiqueta "&lta&gt"
                                 <p class="caption">Ejemplo de input con estados</p>
 <pre><code class="language-html">Completado
 
-&ltdiv class="sh-input-container-icon"&gt
+&ltdiv class="sh-form-group sh-form-container-icon"&gt
 
   &ltinput class="sh-input sh-input__sucess" type="text" name="firstname" placeholder="Nombre"&gt
 
-  &lti class="icon icon-check sh-input-icon-right__sucess"&gt&lt/i&gt
+  &lti class="icon icon-check sh-form-icon-right__sucess"&gt&lt/i&gt
+
+  &ltspan&gtEste es un mensaje cualquiera&lt/span&gt
 
 &lt/div&gt
 
@@ -1353,11 +1373,13 @@ Botón con etiqueta "&lta&gt"
 
 Advertencia
 
-&ltdiv class="sh-input-container-icon"&gt
+&ltdiv class="sh-form-group sh-form-container-icon"&gt
 
   &ltinput class="sh-input sh-input__warning" type="text" name="firstname" placeholder="Nombre"&gt
 
-  &lti class="icon icon-attention sh-input-icon-right__warning"&gt&lt/i&gt
+  &lti class="icon icon-check sh-form-icon-right__warning"&gt&lt/i&gt
+
+  &ltspan&gtEste es un mensaje cualquiera&lt/span&gt
 
 &lt/div&gt
 
@@ -1365,13 +1387,13 @@ Advertencia
 
 Error
 
-&ltdiv class="sh-input-container-icon"&gt
+&ltdiv class="sh-form-group sh-form-container-icon"&gt
 
   &ltinput class="sh-input sh-input__error" type="text" name="firstname" placeholder="Nombre"&gt
 
-  &lti class="icon icon-cancel sh-input-icon-right__error"&gt&lt/i&gt
+  &lti class="icon icon-check sh-form-icon-right__error"&gt&lt/i&gt
 
-  &ltp class="sh-error-message"&gtEste es un mensaje de error&lt/p&gt
+  &ltspan&gtEste es un mensaje cualquiera&lt/span&gt
 
 &lt/div&gt
 
@@ -1391,10 +1413,96 @@ Deshabilitado
                             placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></textarea>
                         </div>
                         <div class="sh-m-bottom__xl">
-                            <p class="caption">Ejemplo de input +label</p>
+                            <p class="caption">Ejemplo de caja de texto</p>
 <pre><code class="language-html">&lttextarea class="sh-text-area" name="comments" rows="8" cols="50" style="width:100%;"&gt&lt/textarea&gt</code></pre>
                         </div>
-                        <!-- End row -->
+                        <!-- End block -->
+                        <div>
+                             <h5>Ejemplo de formulario</h5>
+                            <form action="/signup" method="get">
+                                <fieldset class="row columns_2 sh-m-bottom__lg">
+                                    <div class="sh-form-group">
+                                        <label class="sh-label" for="fname">Nombre *</label>
+                                        <input class="sh-input" id="fname" type="text" name="firstname"
+                                        required>
+                                    </div>
+                                    <div class="sh-form-group">
+                                        <label class="sh-label" for="lname">Apellidos *</label>
+                                        <input class="sh-input" id="lname" type="text" name="lastname"
+                                        required>
+                                    </div>
+                                    <div class="sh-form-group">
+                                        <label class="sh-label" for="pnumber">Teléfono</label>
+                                        <input class="sh-input" id="pnumber" type="text" name="phonenumber">
+                                    </div>
+                                    <div class="sh-form-group">
+                                        <label class="sh-label" for="email">E-mail *</label>
+                                        <input class="sh-input" id="email" type="email" name="email"
+                                        required>
+                                    </div>
+                                </fieldset>
+                                <textarea class="sh-text-area" name="comments" rows="8" cols="50" style="width:100%;"
+                                placeholder="Escriba aquí su consulta"></textarea>
+                                <input class="sh-btn sh-m-top__lg" type="submit" value="submit">
+                            </form>
+                        </div>
+                        <!-- End block -->
+                        <div class="sh-m-bottom__xl">
+                            <p class="caption">Ejemplo de formulario de contacto</p>
+<pre><code class="language-html">&ltform action="/signup" method="get"&gt
+
+  &ltfieldset class="row columns_2 sh-m-bottom__lg"&gt
+
+    &ltdiv class="sh-form-group"&gt
+
+      &ltlabel class="sh-label" for="fname"&gtNombre *&lt/label&gt
+
+      &ltinput class="sh-input" id="fname" type="text" name="firstname" required&gt
+
+    &lt/div&gt
+
+
+
+    &ltdiv class="sh-form-group"&gt
+
+      &ltlabel class="sh-label" for="lname"&gtApellidos *&lt/label&gt
+
+      &ltinput class="sh-input" id="lname" type="text" name="lastname" required&gt
+
+    &lt/div&gt
+
+
+
+    &ltdiv class="sh-form-group"&gt
+
+      &ltlabel class="sh-label" for="pnumber"&gtTeléfono&lt/label&gt
+
+      &ltinput class="sh-input" id="pnumber" type="text" name="phonenumber"&gt
+
+    &lt/div&gt
+
+
+
+    &ltdiv class="sh-form-group"&gt
+
+      &ltlabel class="sh-label" for="email"&gtE-mail *&lt/label&gt
+
+      &ltinput class="sh-input" id="email" type="email" name="email" required&gt
+
+    &lt/div&gt
+
+  &lt/fieldset&gt
+
+
+
+  &lttextarea class="sh-text-area" name="comments" rows="8" cols="50" style="width:100%;" placeholder="Escriba aquí su consulta"&gt&lt/textarea&gt
+
+
+
+  &ltinput class="sh-btn sh-m-top__lg" type="submit" value="submit"&gt
+
+&lt/form&gt</code></pre>
+                        </div>
                 </div>
                 <!-- end #container -->
             </main>

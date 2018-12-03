@@ -1,0 +1,28 @@
+<p class="caption">Ejemplo de formulario de contacto</p>
+<pre><code class="language-html">&ltform action="/signup" method="get"&gt
+  &ltfieldset class="row columns_2 sh-m-bottom__lg"&gt
+    &ltdiv class="sh-form-group"&gt
+      &ltlabel class="sh-label" for="fname"&gtNombre *&lt/label&gt
+      &ltinput class="sh-input" id="fname" type="text" name="firstname" required&gt
+    &lt/div&gt
+
+    &ltdiv class="sh-form-group"&gt
+      &ltlabel class="sh-label" for="lname"&gtApellidos *&lt/label&gt
+      &ltinput class="sh-input" id="lname" type="text" name="lastname" required&gt
+    &lt/div&gt
+
+    &ltdiv class="sh-form-group"&gt
+      &ltlabel class="sh-label" for="pnumber"&gtTeléfono&lt/label&gt
+      &ltinput class="sh-input" id="pnumber" type="text" name="phonenumber"&gt
+    &lt/div&gt
+
+    &ltdiv class="sh-form-group"&gt
+      &ltlabel class="sh-label" for="email"&gtE-mail *&lt/label&gt
+      &ltinput class="sh-input" id="email" type="email" name="email" required&gt
+    &lt/div&gt
+  &lt/fieldset&gt
+
+  &lttextarea class="sh-text-area" name="comments" rows="8" cols="50" style="width:100%;" placeholder="Escriba aquí su consulta"&gt&lt/textarea&gt
+
+  &ltinput class="sh-btn sh-m-top__lg" type="submit" value="submit"&gt
+&lt/form&gt</code></pre>
