@@ -3,11 +3,44 @@ input {
   -moz-appearance:    none;
   appearance:         none;
 }
+/* form control */
+#forms form {
+  padding: 2em;
+  border: none;
+}
 
-/*set styles for input */
-.sh-input, .sh-text-area {
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+#fname::placeholder {
+  font-size: 12px;
+}
+
+#lname::placeholder {
+  font-size: 12px;
+}
+
+#pnumber::placeholder {
+  font-size: 12px;
+}
+
+#email::placeholder {
+  font-size: 12px;
+}
+
+/* group form control */
+.sh-form-group {
+  position: relative;
+}
+
+/* set styles for input */
+.sh-input, textarea {
   @include input;
   border: 1px solid $color-grey-70;
+  background: transparent;
 
   &:hover:not(.sh-input__sucess):not(.sh-input__warning):not(.sh-input__error):not(.sh-input__disabled):not(:focus) {
     border-color: $color-grey;
@@ -25,7 +58,7 @@ input {
 
     &:focus {
       border-color: $color-grass;
-      outline: 4px solid rgba(86, 158, 41, 0.2);
+      box-shadow: 0 4px 6px  rgba(86, 158, 41, 0.2);
     }
   }
 
@@ -47,52 +80,69 @@ input {
     }
   }
 
-  &_disabled {cursor: not-allowed;}
+  &_disabled {
+    cursor: not-allowed;
+    background-color: $color-grey-50;
+  }
 }
 
-/*set error message */
-.sh-error-message {
-  position: absolute;
-  font-size: 12px;
-  margin: 0;
-  bottom: -20px;
-  color: $color-red-cherry;
+/* **estilos para animar el label del formulario**
+.sh-input:focus + .sh-label {
+  font-size: $text__md;
+  top: -1.25em;
+  left: 0;
 }
+
+.sh-label {
+  position: absolute;
+  left: 1em;
+  top: .8em;
+  z-index: -10;
+  transition: 0.2s;
+}
+
+ **clase para bloquear el label cuando input tiene un valor con JS**
+.label-lock {
+  font-size: $text__md;
+  top: -1.25em;
+  left: 0;
+}
+*/
 
 /* set icon for input */
-.sh-input-container-icon {
+.sh-form-contain-icon {
   display: flex;
-  position: relative;
-  width: 100%;
+}
 
-  & input {
+.sh-form-icon-left {
+    display: block;
+    padding: .75em 1em;
+    border: 1px solid $color-blue;
+    border-right: none;
+    border-radius: $border-radius;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: $color-blue;
+    color: white;
+
+  + input {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
   }
 }
 
-.sh-input-icon-left {
-  padding: .75em 1em;
-  border: 1px solid $color-blue;
-  border-right: none;
-  border-radius: $border-radius;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  background-color: $color-blue;
-  color: white;
-}
-
-.sh-input-icon-right {
+.sh-form-icon-right {
   position: absolute;
-  top: 14.2px;
-  right: 16px;
+  top: .9em;
+  right: 1em;
   color: $color-blue;
   text-align: center;
+  z-index: 99;
 
   &__display {
     position: absolute;
-    top: 14.2px;
-    right: 16px;
+    top: .9em;
+    right: 1em;
     color: $color-grey;
 
     &:hover {
@@ -102,16 +152,32 @@ input {
 
   &__sucess {
     position: absolute;
-    top: 14.2px;
-    right: 16px;
+    top: .9em;
+    right: 1em;
     color: $color-grass;
+
+    + span {
+      position: absolute;
+      font-size: .75em;
+      margin: 0;
+      bottom: -20px;
+      color: $color-grass;
+    }
   }
 
   &__warning {
     position: absolute;
-    top: 14.2px;
-    right: 16px;
+    top: .9em;
+    right: 1em;
     color: $color-yellow;
+
+    + span {
+      position: absolute;
+      font-size: .75em;
+      margin: 0;
+      bottom: -20px;
+      color: $color-yellow;
+    }
 
    &:hover {
      cursor: help;
@@ -120,8 +186,16 @@ input {
 
   &__error {
     position: absolute;
-    top: 14.2px;
-    right: 16px;
+    top: .9em;
+    right: 1em;
     color: $color-red-cherry;
+
+    + span {
+      position: absolute;
+      font-size: .75em;
+      margin: 0;
+      bottom: -20px;
+      color: $color-red-cherry;
+    }
   }
 }

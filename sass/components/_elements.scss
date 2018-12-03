@@ -1,0 +1,274 @@
+/* checkbox and radio btn control */
+.sh-check-group {
+    display: block;
+    position: relative;
+    padding-left: 2em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    user-select: none;
+
+    & input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    & input:hover + span {
+      border: 2px solid $color-blue;
+      transition: 0.2s;
+    }
+
+    & input:active + span {
+      opacity: 0.5;
+    }
+
+    & input:checked + span {
+        background-color: white;
+        border: 2px solid $color-blue;
+    }
+
+    & input:checked + span:after {
+        display: block;
+        transition: 0.2s;
+    }
+
+    & input[disabled] + span {
+      background-color: $color-grey-50;
+      cursor: not-allowed;
+      border-color: $color-grey-50;
+    }
+
+    & input[disabled]:hover + span {
+      border-color: $color-grey-50;
+    }
+
+    & input[disabled]:active + span {
+      opacity: 1;
+    }
+}
+
+/* Set checkbox styles */
+.sh-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1em;
+    width: 1em;
+    background-color: white;
+    border: 2px solid $color-grey;
+    border-radius: $border-radius;
+
+    &:after {
+        content: "";
+        display: none;
+        position: absolute;
+        left: 4px;
+        top: 2px;
+        width: .25em;
+        height: .5em;
+        border: solid $color-blue;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+}
+
+/* set radio btn styles */
+.sh-radiomark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1em;
+    width: 1em;
+    background-color: white;
+    border: 2px solid $color-grey;
+    border-radius: 50%;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+     	top: 3px;
+    	left: 3px;
+    	width: 6px;
+    	height: 6px;
+    	border-radius: 50%;
+    	background: $color-blue;
+    }
+}
+
+/* set switch styles */
+.sh-switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+
+  & input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  & span {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $color-grey;
+    border-radius: 17px;
+    transition: .4s;
+  }
+
+  & span:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+
+  & input:active + span {
+    opacity: 0.5;
+  }
+
+  & input:checked + span {
+    background-color: $color-blue;
+  }
+
+  & input:checked + span:before {
+    transform: translateX(13px);
+  }
+
+  & input[disabled] + span{
+    background-color: $color-grey-50;
+  }
+
+  & input[disabled]:active + span{
+    opacity: 1;
+  }
+}
+
+/* set alerts */
+.sh-alert {
+  position: relative;
+  font-size: 14px;
+
+  & i {
+    position: absolute;
+    float: left;
+    top: 17.2px;
+  }
+
+  & div {
+    margin-left: 2em;
+  }
+}
+
+/* set alert type */
+.sh-alert_ {
+  &_info {
+  padding: 1em;
+  border-radius: $border-radius;
+  background-color: $color-blue;
+  color: white;
+  }
+
+  &_sucess {
+  padding: 1em;
+  border-radius: $border-radius;
+  background-color: $color-grass;
+  color: white;
+  }
+
+  &_warning {
+  padding: 1em;
+  border-radius: $border-radius;
+  background-color: $color-yellow;
+  color: black;
+
+   & span {
+     color: black;
+   }
+  }
+
+  &_error {
+  padding: 1em;
+  border-radius: $border-radius;
+  background-color: $color-red-cherry;
+  color: white;
+  }
+}
+
+/* for close button */
+.sh-close-alert {
+  margin-left: 1em;
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+  transition: 0.2s;
+
+    &:hover {
+        transform: scale(2, 2);
+    }
+}
+
+/* set badges */
+.sh-badge{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: .7rem;
+  font-weight: 500;
+  padding: .25rem;
+  line-height: .4rem;
+  max-height: .9rem;
+  color: white;
+  border-radius: 999px;
+  background-color: $color-blue;
+}
+
+.sh-badge-green {
+  background-color: $color-grass;
+}
+.sh-badge-grey {
+  background-color: $color-grey;
+}
+
+/* set chips */
+.sh-chip {
+    display: inline-block;
+    padding-left: 1.5em;
+    padding-right: 1em;
+    height: 2em;
+    line-height: 2em;
+    border-radius: 25px;
+    background-color: $color-blue;
+    color: white;
+
+    & img {
+        float: left;
+        margin: 0 .5em 0 -1.5em;
+        height: 2em;
+        width: 2em;
+        border-radius: 999px;
+    }
+}
+
+.sh-close-chip {
+  margin-left: 1em;
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+  transition: 0.2s;
+
+    &:hover {
+        opacity: .5;
+    }
+}

@@ -49,7 +49,9 @@
                         <li><a href="#forms">Formularios</a>
 
                         </li>
-                        <li>Elementos</li>
+                        <li><a href="#elements">Elementos</a>
+
+                        </li>
                         <li>Navegación</li>
                         <li class="disable">Dropdowns</li>
                         <li class="disable">Menús</li>
@@ -1213,55 +1215,75 @@ Botón con etiqueta "&lta&gt"
                             <div class="row columns_2">
                                 <div>
                                      <h6>Input</h6>
-                                    <input class="sh-input" type="text" name="firstname" placeholder="Nombre">
+                                    <input class="sh-input margin-help" id="fname" type="text" name="firstname"
+                                    placeholder="Tu nombre...">
                                 </div>
                                 <div>
-                                     <h6>Input + label </h6>
-                                    <label for="fname">Nombre</label>
-                                    <input class="sh-input" id="fname" type="text" name="firstname">
+                                     <h6>Input + label</h6>
+                                    <div class="sh-form-group">
+                                        <label class="sh-label" for="fname">Nombre</label>
+                                        <input class="sh-input" id="fname" type="text" name="firstname">
+                                    </div>
                                 </div>
                             </div>
                             <!-- End row -->
                             <div class="sh-m-bottom__xl">
                                 <p class="caption">Ejemplo de input estándar</p>
-<pre><code class="language-html">&ltinput class="sh-input" type="text" name="firstname" placeholder="Nombre"&gt</code></pre>
+<pre><code class="language-html">&ltinput class="sh-input" id="fname" type="text" name="firstname" placeholder="Nombre"&gt</code></pre>
                                 <p
-                                class="caption">Ejemplo de input +label</p>
-<pre><code class="language-html">&ltlabel for="fname"&gtNombre&lt/label&gt
+                                class="caption">Ejemplo de input + label</p>
+<pre><code class="language-html">&ltlabel class="sh-label" for="fname"&gtNombre&lt/label&gt
 
 &ltinput class="sh-input" id="fname" type="text" name="firstname"&gt</code></pre>
                             </div>
-                            <div class="row columns_2 sh-m-bottom__lg">
+                            <div class="row columns_2">
                                 <div>
                                      <h6>Input + icon left</h6>
-                                    <div class="sh-input-container-icon"> <i class="icon icon-user sh-input-icon-left"></i>
+                                    <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-left"></i>
                                         <input class="sh-input"
-                                        type="text" name="firstname" placeholder="Nombre">
+                                        type="text" name="firstname">
                                     </div>
                                 </div>
                                 <div>
                                      <h6>Input + icon right</h6>
-                                    <div class="sh-input-container-icon">
-                                        <input class="sh-input" type="text" name="firstname" placeholder="Nombre"> <i class="icon icon-user sh-input-icon-right"></i>
+                                    <div class="sh-form-group sh-form-contain-icon">
+                                        <input class="sh-input" type="text" name="firstname"> <i class="icon icon-user sh-form-icon-right"></i>
                                     </div>
                                 </div>
                             </div>
                             <!-- End row -->
+                            <div class="row">
+                                 <h6>Double Icon</h6>
+                                <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-left"></i>
+                                    <input class="sh-input"
+                                    type="text" name="firstname"> <i class="icon icon-user sh-form-icon-right"></i>
+                                </div>
+                            </div>
                             <div class="sh-m-bottom__xl">
                                 <p class="caption">Ejemplo de input + icono izquierda</p>
-<pre><code class="language-html">&ltdiv class="sh-input-container-icon"&gt
+<pre><code class="language-html">&ltdiv class="sh-form-group sh-form-contain-icon"&gt
 
-  &lti class="icon icon-user sh-input-icon-left"&gt&lt/i&gt
+  &lti class="icon icon-user sh-form-icon-left"&gt&lt/i&gt
 
-  &ltinput class="sh-input" type="text" name="firstname" placeholder="Nombre"&gt
+  &ltinput class="sh-input" type="text" name="firstname"&gt
 
 &lt/div&gt</code></pre>
                                 <p class="caption">Ejemplo de input + icono derecha</p>
-<pre><code class="language-html">&ltdiv class="sh-input-container-icon"&gt
+<pre><code class="language-html">&ltdiv class="sh-form-group sh-form-contain-icon"&gt
 
-  &ltinput class="sh-input" type="text" name="firstname" placeholder="Nombre"&gt
+  &lti class="icon icon-user sh-form-icon-right"&gt&lt/i&gt
 
-  &lti class="icon icon-user sh-input-icon-right"&gt&lt/i&gt
+  &ltinput class="sh-input" type="text" name="firstname"&gt
+
+&lt/div&gt</code></pre>
+                                <p class="caption">Ejemplo de input con doble icono</p>
+<pre><code class="language-html">&ltdiv class="sh-form-group sh-form-contain-icon"&gt
+
+  &lti class="icon icon-user sh-form-icon-left"&gt&lt/i&gt
+
+  &ltinput class="sh-input" type="text" name="firstname"&gt
+
+  &lti class="icon icon-user sh-form-icon-right"&gt&lt/i&gt
 
 &lt/div&gt</code></pre>
                             </div>
@@ -1272,33 +1294,33 @@ Botón con etiqueta "&lta&gt"
                             <div class="row columns_2 sh-m-bottom__lg">
                                 <div>
                                      <h6>Icon show password</h6>
-                                    <div class="sh-input-container-icon">
-                                        <input class="sh-input" type="password" name="password" placeholder="Contraseña"> <i class="icon icon-eye sh-input-icon-right__display"></i>
+                                    <div class="sh-form-group sh-form-contain-icon">
+                                        <input class="sh-input" type="password" name="password"> <i class="icon icon-lock sh-form-icon-right__display"></i>
                                     </div>
                                 </div>
                                 <div>
                                      <h6>Icon hide password</h6>
-                                    <div class="sh-input-container-icon">
-                                        <input class="sh-input" type="text" name="password" placeholder="Contraseña"> <i class="icon icon-eye sh-input-icon-right__display"></i>
+                                    <div class="sh-form-group sh-form-contain-icon">
+                                        <input class="sh-input" type="text" name="password"> <i class="icon icon-lock-open sh-form-icon-right__display"></i>
                                     </div>
                                 </div>
                             </div>
                             <!-- End row -->
                             <div class="sh-m-bottom__xl">
                                 <p class="caption">Ejemplo de input para mostrar contraseña</p>
-<pre><code class="language-html">&ltdiv class="sh-input-container-icon"&gt
+<pre><code class="language-html">&ltdiv class="sh-form-group sh-input-contain-icon"&gt
 
-  &ltinput class="sh-input" type="password" name="password" placeholder="Contraseña"&gt
+  &ltinput class="sh-input" type="password" name="password"&gt
 
-  &lti class="icon icon-eye sh-input-icon-right__display"&gt&lt/i&gt
+  &lti class="icon icon-eye sh-form-icon-right__display"&gt&lt/i&gt
 
 &lt/div&gt</code></pre>
-                                <p class="caption">Ejemplo de input para mostrar contraseña</p>
-<pre><code class="language-html">&ltdiv class="sh-input-container-icon"&gt
+                                <p class="caption">Ejemplo de input para ocultar contraseña</p>
+<pre><code class="language-html">&ltdiv class="sh-form-group sh-input-contain-icon"&gt
 
-  &ltinput class="sh-input" type="text" name="password" placeholder="Contraseña"&gt
+  &ltinput class="sh-input" type="text" name="password"&gt
 
-  &lti class="icon icon-eye sh-input-icon-right__display"&gt&lt/i&gt
+  &lti class="icon icon-eye sh-form-icon-right__display"&gt&lt/i&gt
 
 &lt/div&gt</code></pre>
                             </div>
@@ -1309,16 +1331,14 @@ Botón con etiqueta "&lta&gt"
                             <div class="row columns_2">
                                 <div>
                                      <h6>Succes</h6>
-                                    <div class="sh-input-container-icon">
-                                        <input class="sh-input sh-input__sucess" type="text" name="firstname"
-                                        placeholder="Nombre"> <i class="icon icon-check sh-input-icon-right__sucess"></i>
+                                    <div class="sh-form-group sh-form-contain-icon">
+                                        <input class="sh-input sh-input__sucess" type="text" name="firstname"> <i class="icon icon-check sh-form-icon-right__sucess"></i> <span>Este es un mensaje cualquiera</span>
                                     </div>
                                 </div>
                                 <div>
                                      <h6>Warning</h6>
-                                    <div class="sh-input-container-icon">
-                                        <input class="sh-input sh-input__warning" type="text" name="firstname"
-                                        placeholder="Nombre"> <i class="icon icon-attention sh-input-icon-right__warning"></i>
+                                    <div class="sh-form-group sh-form-contain-icon">
+                                        <input class="sh-input sh-input__warning" type="text" name="firstname"> <i class="icon icon-attention sh-form-icon-right__warning"></i> <span>Este es un mensaje cualquiera</span>
                                     </div>
                                 </div>
                             </div>
@@ -1326,9 +1346,8 @@ Botón con etiqueta "&lta&gt"
                             <div class="row columns_2 sh-m-bottom__lg">
                                 <div>
                                      <h6>Error</h6>
-                                    <div class="sh-input-container-icon">
-                                        <input class="sh-input sh-input__error" type="text" name="firstname" placeholder="Nombre"> <i class="icon icon-cancel sh-input-icon-right__error"></i>
-                                        <p class="sh-error-message">Este es un mensaje de error</p>
+                                    <div class="sh-form-group sh-form-contain-icon">
+                                        <input class="sh-input sh-input__error" type="text" name="firstname"> <i class="icon icon-cancel sh-form-icon-right__error"></i> <span>Este es un mensaje cualquiera</span>
                                     </div>
                                 </div>
                                 <div>
@@ -1341,11 +1360,13 @@ Botón con etiqueta "&lta&gt"
                                 <p class="caption">Ejemplo de input con estados</p>
 <pre><code class="language-html">Completado
 
-&ltdiv class="sh-input-container-icon"&gt
+&ltdiv class="sh-form-group sh-form-contain-icon"&gt
 
-  &ltinput class="sh-input sh-input__sucess" type="text" name="firstname" placeholder="Nombre"&gt
+  &ltinput class="sh-input sh-input__sucess" type="text" name="firstname"&gt
 
-  &lti class="icon icon-check sh-input-icon-right__sucess"&gt&lt/i&gt
+  &lti class="icon icon-check sh-form-icon-right__sucess"&gt&lt/i&gt
+
+  &ltspan&gtEste es un mensaje cualquiera&lt/span&gt
 
 &lt/div&gt
 
@@ -1353,11 +1374,13 @@ Botón con etiqueta "&lta&gt"
 
 Advertencia
 
-&ltdiv class="sh-input-container-icon"&gt
+&ltdiv class="sh-form-group sh-form-contain-icon"&gt
 
-  &ltinput class="sh-input sh-input__warning" type="text" name="firstname" placeholder="Nombre"&gt
+  &ltinput class="sh-input sh-input__warning" type="text" name="firstname"&gt
 
-  &lti class="icon icon-attention sh-input-icon-right__warning"&gt&lt/i&gt
+  &lti class="icon icon-check sh-form-icon-right__warning"&gt&lt/i&gt
+
+  &ltspan&gtEste es un mensaje cualquiera&lt/span&gt
 
 &lt/div&gt
 
@@ -1365,13 +1388,13 @@ Advertencia
 
 Error
 
-&ltdiv class="sh-input-container-icon"&gt
+&ltdiv class="sh-form-group sh-form-contain-icon"&gt
 
-  &ltinput class="sh-input sh-input__error" type="text" name="firstname" placeholder="Nombre"&gt
+  &ltinput class="sh-input sh-input__error" type="text" name="firstname"&gt
 
-  &lti class="icon icon-cancel sh-input-icon-right__error"&gt&lt/i&gt
+  &lti class="icon icon-check sh-form-icon-right__error"&gt&lt/i&gt
 
-  &ltp class="sh-error-message"&gtEste es un mensaje de error&lt/p&gt
+  &ltspan&gtEste es un mensaje cualquiera&lt/span&gt
 
 &lt/div&gt
 
@@ -1391,10 +1414,338 @@ Deshabilitado
                             placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></textarea>
                         </div>
                         <div class="sh-m-bottom__xl">
-                            <p class="caption">Ejemplo de input +label</p>
+                            <p class="caption">Ejemplo de caja de texto</p>
 <pre><code class="language-html">&lttextarea class="sh-text-area" name="comments" rows="8" cols="50" style="width:100%;"&gt&lt/textarea&gt</code></pre>
                         </div>
-                        <!-- End row -->
+                        <!-- End block -->
+                        <div>
+                             <h5>Ejemplo de formulario</h5>
+                            <form action="/contact" method="get">
+                                <fieldset class="row columns_2 sh-m-bottom__lg">
+                                    <div class="sh-form-group">
+                                        <label class="sh-label" for="fname">Nombre *</label>
+                                        <input class="sh-input" id="fname" type="text" name="firstname"
+                                        placeholder="Tu nombre..." required>
+                                    </div>
+                                    <div class="sh-form-group">
+                                        <label class="sh-label" for="lname">Apellidos *</label>
+                                        <input class="sh-input" id="lname" type="text" name="lastname"
+                                        placeholder="Tus apellidos..." required>
+                                    </div>
+                                    <div class="sh-form-group">
+                                        <label class="sh-label" for="pnumber">Teléfono</label>
+                                        <input class="sh-input" id="pnumber" type="text" name="phonenumber"
+                                        placeholder="Tu teléfono...">
+                                    </div>
+                                    <div class="sh-form-group">
+                                        <label class="sh-label" for="email">E-mail *</label>
+                                        <input class="sh-input" id="email" type="email" name="email"
+                                        placeholder="Tu e-mail..." required>
+                                    </div>
+                                </fieldset>
+                                <textarea class="sh-text-area" name="comments" rows="8" cols="50" style="width:100%;"
+                                placeholder="Escriba aquí su consulta"></textarea>
+                                <input class="sh-btn sh-m-top__lg" type="submit" value="submit">
+                            </form>
+                        </div>
+                        <!-- End block -->
+                        <div class="sh-m-bottom__xl">
+                            <p class="caption">Ejemplo de formulario de contacto</p>
+<pre><code class="language-html">&ltform action="/signup" method="get"&gt
+
+  &ltfieldset class="row columns_2 sh-m-bottom__lg"&gt
+
+    &ltdiv class="sh-form-group"&gt
+
+      &ltlabel class="sh-label" for="fname"&gtNombre *&lt/label&gt
+
+      &ltinput class="sh-input" id="fname" type="text" name="firstname" required&gt
+
+    &lt/div&gt
+
+
+
+    &ltdiv class="sh-form-group"&gt
+
+      &ltlabel class="sh-label" for="lname"&gtApellidos *&lt/label&gt
+
+      &ltinput class="sh-input" id="lname" type="text" name="lastname" required&gt
+
+    &lt/div&gt
+
+
+
+    &ltdiv class="sh-form-group"&gt
+
+      &ltlabel class="sh-label" for="pnumber"&gtTeléfono&lt/label&gt
+
+      &ltinput class="sh-input" id="pnumber" type="text" name="phonenumber"&gt
+
+    &lt/div&gt
+
+
+
+    &ltdiv class="sh-form-group"&gt
+
+      &ltlabel class="sh-label" for="email"&gtE-mail *&lt/label&gt
+
+      &ltinput class="sh-input" id="email" type="email" name="email" required&gt
+
+    &lt/div&gt
+
+  &lt/fieldset&gt
+
+
+
+  &lttextarea class="sh-text-area" name="comments" rows="8" cols="50" style="width:100%;" placeholder="Escriba aquí su consulta"&gt&lt/textarea&gt
+
+
+
+  &ltinput class="sh-btn sh-m-top__lg" type="submit" value="submit"&gt
+
+&lt/form&gt</code></pre>
+                        </div>
+                        <section id="elements">
+                            <header>
+                                 <h3>Elementos</h3>
+                                <p class="sh-m-bottom__xl">Elementos y/o estructura que usaremos para dar estilos a nuestros formularios</p>
+                            </header>
+                            <div class="row columns_3 sh-m-bottom__lg">
+                                <div>
+                                     <h5>Checkboxes</h5>
+                                    <label class="sh-check-group">Item1
+                                        <input type="checkbox" checked="checked"> <span class="sh-checkmark"></span>
+                                    </label>
+                                    <label class="sh-check-group">Item2
+                                        <input type="checkbox"> <span class="sh-checkmark"></span>
+                                    </label>
+                                    <label class="sh-check-group">Item3
+                                        <input type="checkbox"> <span class="sh-checkmark"></span>
+                                    </label>
+                                    <label class="sh-check-group">Disabled
+                                        <input type="checkbox" disabled> <span class="sh-checkmark"></span>
+                                    </label>
+                                </div>
+                                <div>
+                                     <h5>Radio buttons</h5>
+                                    <label class="sh-check-group">Item1
+                                        <input type="radio" checked="checked" name="radio"> <span class="sh-radiomark"></span>
+                                    </label>
+                                    <label class="sh-check-group">Item2
+                                        <input type="radio" name="radio"> <span class="sh-radiomark"></span>
+                                    </label>
+                                    <label class="sh-check-group">Item3
+                                        <input type="radio" name="radio"> <span class="sh-radiomark"></span>
+                                    </label>
+                                    <label class="sh-check-group">Disabled
+                                        <input type="radio" name="radio" disabled> <span class="sh-radiomark"></span>
+                                    </label>
+                                </div>
+                                <div>
+                                     <h5>Toggle Switches</h5>
+                                    <label class="sh-switch sh-m-bottom__lg">
+                                        <input type="checkbox"> <span></span>
+                                        <p class="parrafo">Off</p>
+                                    </label>
+                                    <br>
+                                    <label class="sh-switch sh-m-bottom__lg">
+                                        <input type="checkbox" checked="checked"> <span></span>
+                                        <p class="parrafo">On</p>
+                                    </label>
+                                    <br>
+                                    <label class="sh-switch">
+                                        <input type="checkbox" disabled> <span></span>
+                                        <p class="parrafo">Disabled</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="sh-m-bottom__xl">
+                                <p class="caption">Ejemplo de checkbox</p>
+<pre><code class="language-html">&ltlabel class="sh-check-group"&gtItem1
+
+  &ltinput type="radio" name="radio"&gt
+
+  &ltspan class="sh-radiomark"&gt&lt/span&gt
+
+&lt/label&gt
+
+<br>
+
+Disabled
+
+&ltlabel class="sh-check-group"&gtItem1
+
+  &ltinput type="radio" name="radio" disabled&gt
+
+  &ltspan class="sh-radiomark"&gt&lt/span&gt
+
+&lt/label&gt</code></pre>
+                                <p class="caption">Ejemplo de radio button</p>
+<pre><code class="language-html">&ltlabel class="sh-check-group"&gtItem1
+
+  &ltinput type="radio" checked="checked" name="radio"&gt
+
+  &ltspan class="sh-radiomark"&gt&lt/span&gt
+
+&lt/label&gt
+
+<br>
+
+Disabled
+
+&ltlabel class="sh-check-group"&gtDisabled
+
+  &ltinput type="radio" name="radio" disabled&gt
+
+  &ltspan class="sh-radiomark"&gt&lt/span&gt
+
+&lt/label&gt</code></pre>
+                                <p class="caption">Ejemplo de switch</p>
+<pre><code class="language-html">&ltlabel class="sh-switch"&gt
+
+  &ltinput type="checkbox"&gt
+
+  &ltspan&gt&lt/span&gt
+
+&lt/label&gt
+
+<br>
+
+Disabled
+
+&ltlabel class="sh-switch"&gt
+
+  &ltinput type="checkbox" disabled&gt
+
+  &ltspan&gt&lt/span&gt
+
+&lt/label&gt</code></pre>
+                            </div>
+                            
+<h5>Alertas</h5>
+                            <div class="row columns_2">
+                                <div class="sh-alert sh-alert__info"> <i class="icon icon-info-circled"></i> <span class="sh-close-alert" onclick="this.parentElement.style.display='none';">&times;</span>
+                                    <div>Alerta para indicar algún tipo de información, que no sea muy importante</div>
+                                </div>
+                                <div class="sh-alert sh-alert__sucess"> <i class="icon icon-check"></i> <span class="sh-close-alert" onclick="this.parentElement.style.display='none';">&times;</span>
+                                    <div>Alerta para indicar que hemos hecho el trabajo correctamente</div>
+                                </div>
+                                <div class="sh-alert sh-alert__warning"> <i class="icon icon-attention"></i> <span class="sh-close-alert" onclick="this.parentElement.style.display='none';">&times;</span>
+                                    <div>¡Atención! Esta alerta indica una acción potencialmente peligrosa</div>
+                                </div>
+                                <div class="sh-alert sh-alert__error"> <i class="icon icon-cancel-circled"></i> <span class="sh-close-alert" onclick="this.parentElement.style.display='none';">&times;</span>
+                                    <div>¡Atención! Esta alerta indica una acción peligrosa o un error</div>
+                                </div>
+                            </div>
+                            <div class="sh-m-bottom__xl">
+                                <p class="caption">Ejemplo de alertas</p>
+<pre><code class="language-html">Info
+
+&ltdiv class="sh-alert sh-alert__info"&gt
+
+  &lti class="icon icon-info-circled"&gt&lt/i&gt
+
+  &ltspan class="sh-closebtn" onclick="this.parentElement.style.display='none';"&gt&times;&lt/span&gt
+
+  &ltdiv&gtAlerta para indicar algún tipo de información, que no sea muy importante&lt/div&gt
+
+&lt/div&gt
+
+<br>
+
+Completado
+
+&ltdiv class="sh-alert sh-alert__sucess"&gt
+
+  &lti class="icon icon-check"&gt&lt/i&gt
+
+  &ltspan class="sh-closebtn" onclick="this.parentElement.style.display='none';"&gt&times;&lt/span&gt
+
+  &ltdiv&gtAlerta para indicar que hemos hecho el trabajo correctamente&lt/div&gt
+
+&lt/div&gt
+
+<br>
+
+Advertencia
+
+&ltdiv class="sh-alert sh-alert__warning"&gt
+
+  &lti class="icon icon-attention"&gt&lt/i&gt
+
+  &ltspan class="sh-closebtn" onclick="this.parentElement.style.display='none';"&gt&times;&lt/span&gt
+
+  &ltdiv&gt¡Atención! Esta alerta indica una acción potencialmente peligrosa&lt/div&gt
+
+&lt/div&gt
+
+<br>
+
+Error
+
+&ltdiv class="sh-alert sh-alert__error"&gt
+
+  &lti class="icon icon-cancel-circled"&gt&lt/i&gt
+
+  &ltspan class="sh-closebtn" onclick="this.parentElement.style.display='none';"&gt&times;&lt/span&gt
+
+  &ltdiv&gt¡Atención! Esta alerta indica una acción peligrosa o un error&lt/div&gt
+
+&lt/div&gt</code></pre>
+                            </div>
+                             <h5>Badges</h5>
+                            <div class="sh-m-bottom__lg"> <span class="sh-badge">10</span> <span class="sh-badge sh-badge-green">3</span>
+                                <span
+                                class="sh-badge sh-badge-grey">5 Nuevo!</span>
+                            </div>
+                            <div class="sh-m-bottom__xl">
+                                <p class="caption">Ejemplo de badges</p>
+<pre><code class="language-html">Standard
+
+&ltspan class="sh-badge"&gt10&lt/span&gt
+
+<br>
+
+Green
+
+&ltspan class="sh-badge sh-badge-green"&gt3&lt/span&gt
+
+<br>
+
+Grey
+
+&ltspan class="sh-badge sh-badge-grey"&gt5 Nuevo!&lt/span&gt</code></pre>
+                            </div>
+                             <h5>Chips</h5>
+                            <div class="sh-chip">
+                                <img src="img/low/user.png" alt="Person" width="96" height="96">Pedro Juan</div>
+                            <div class="sh-chip">
+                                <img src="img/low/user.png" alt="Person" width="96" height="96">Pedro Juan <span class="sh-close-chip" onclick="this.parentElement.style.display='none'"><i class="icon icon-cancel-circled"></i></span>
+                            </div>
+                            <div class="sh-m-bottom__xl">
+                                <p class="caption">Ejemplo de chips</p>
+<pre><code class="language-html">&ltdiv class="sh-chip"&gt
+
+  &ltimg src="img/low/user.png" alt="Person" width="96" height="96"&gt
+
+  Pedro Juan
+
+&lt/div&gt
+
+
+
+Con botón para cerrar
+
+&ltdiv class="sh-chip"&gt
+
+  &ltimg src="img/low/user.png" alt="Person" width="96" height="96"&gt
+
+  Pedro Juan
+
+  &ltspan class="sh-close-chip" onclick="this.parentElement.style.display='none'"&gt&lti class="icon icon-cancel-circled"&gt&lt/i&gt&lt/span&gt
+
+&lt/div&gt</code></pre>
+                            </div>
                 </div>
                 <!-- end #container -->
             </main>

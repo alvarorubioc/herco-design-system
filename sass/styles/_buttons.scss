@@ -221,43 +221,47 @@
 }
 
 /* button size */
-.sh-btn__sm {
-  font-size: $text__sm;
-  padding: .5em 0.75em;
-}
+.sh-btn_ {
+  &_sm {
+    font-size: $text__sm;
+    padding: .5em 0.75em;
+  }
 
-.sh-btn__lg {
-  font-size: $text__h6;
-  padding: 1em 1.25em;
-}
+  &_lg {
+    font-size: $text__h6;
+    padding: 1em 1.25em;
+  }
 
-.sh-btn__xl {
-  font-size: $text__h5;
-  padding: 1em 1.5em;
-}
+  &_xl {
+    font-size: $text__h5;
+    padding: 1em 1.5em;
+  }
 
-.sh-btn__full {
-  width: 100%;
-  padding: 1em 1em;
+  &_full {
+    width: 100%;
+    padding: 1em 1em;
+  }
 }
 
 /* button-icon size*/
-.sh-btn-icon__sm {
-  font-size: $text__sm;
-  padding: .5em .5em;
-}
+.sh-btn-icon_ {
+  &_sm {
+    font-size: $text__sm;
+    padding: .5em .5em;
+  }
 
-.sh-btn-icon__md {
-  font-size: $text__md;
-  padding: .75em .75em;
-}
+  &_md {
+    font-size: $text__md;
+    padding: .75em .75em;
+  }
 
-.sh-btn-icon__lg {
-  font-size: $text__h6;
-  padding: 1em 1em;
-}
+  &_lg {
+    font-size: $text__h6;
+    padding: 1em 1em;
+  }
 
-.sh-btn-icon__xl {
-  font-size: $text__h5;
-  padding: 1em 1em;
+  &_xl {
+    font-size: $text__h5;
+    padding: 1em 1em;
+  }
 }
