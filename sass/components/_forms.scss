@@ -4,31 +4,10 @@ input {
   appearance:         none;
 }
 /* form control */
-#forms form {
-  padding: 2em;
-  border: none;
-}
-
 fieldset {
   border: none;
   padding: 0;
   margin: 0;
-}
-
-#fname::placeholder {
-  font-size: 12px;
-}
-
-#lname::placeholder {
-  font-size: 12px;
-}
-
-#pnumber::placeholder {
-  font-size: 12px;
-}
-
-#email::placeholder {
-  font-size: 12px;
 }
 
 /* group form control */
@@ -38,7 +17,7 @@ fieldset {
 
 /* set styles for input */
 .sh-input, textarea {
-  @include input;
+  @include shinput;
   border: 1px solid $color-grey-70;
   background: transparent;
 
@@ -86,14 +65,14 @@ fieldset {
   }
 }
 
-/* **estilos para animar el label del formulario**
-.sh-input:focus + .sh-label {
+// estilos para animar el label del formulario
+/* sh-input:focus + .sh-label {
   font-size: $text__md;
   top: -1.25em;
   left: 0;
 }
 
-.sh-label {
+sh-label {
   position: absolute;
   left: 1em;
   top: .8em;
@@ -101,13 +80,11 @@ fieldset {
   transition: 0.2s;
 }
 
- **clase para bloquear el label cuando input tiene un valor con JS**
-.label-lock {
+sh-label-lock {
   font-size: $text__md;
   top: -1.25em;
   left: 0;
-}
-*/
+} */
 
 /* set icon for input */
 .sh-form-contain-icon {

@@ -3,31 +3,31 @@
 	border-radius: 2px;
 	color: white;
 	display: flex;
-      align-items: flex-end;
-      flex-grow: 1;
-      transition: all 0.1s;
-      cursor: pointer;
+  align-items: flex-end;
+  flex-grow: 1;
+  transition: all 0.1s;
+  cursor: pointer;
 
-      &:hover {
-        // padding: 0.55em;
-        transform: scale(1.05);
-        box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
-      }
+  &:hover {
+    // padding: 0.55em;
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+  }
 
-      span {
-        &:first-of-type {
-          align-self: flex-end;
-          text-align: left;
-          width: 100%;
-        }
-
-        &:nth-of-type(2) {
-          text-align: right;
-          align-self: flex-start;
-          width: 100%;
-        }
-      }
+  span {
+    &:first-of-type {
+      align-self: flex-end;
+      text-align: left;
+      width: 100%;
     }
+
+    &:nth-of-type(2) {
+      text-align: right;
+      align-self: flex-start;
+      width: 100%;
+    }
+  }
+}
 
 #app header p {
     max-width: 75%;
@@ -47,10 +47,6 @@ section .sh-divider__header {
 
 #icons span {
 	margin-left: .5em;
-}
-
-#forms .margin-help {
-	margin-top: 18px;
 }
 
 #elements .parrafo {
