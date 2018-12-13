@@ -54,7 +54,7 @@
   position:            relative;
   border-radius:       2px;
 
-  &::before {
+  &:before {
     background-color:    $color-blue;
     bottom:              0;
     content:             '';
