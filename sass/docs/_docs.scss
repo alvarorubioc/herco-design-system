@@ -54,3 +54,12 @@ section .sh-divider__header {
   top: -20px;
   left: 45px;
 }
+
+#grid .box-row {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  min-height: 1rem;
+  background: $color-blue;
+  border-radius: 2px;
+  color: #fff;
+}
