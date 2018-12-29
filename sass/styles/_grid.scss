@@ -9,7 +9,7 @@
   padding-left: 2rem;
 }
 
-.row {
+.sh-row {
   box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,7 +27,7 @@
   margin-left: -0.5rem;
 }
 
-.row.reverse {
+.sh-row.reverse {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;

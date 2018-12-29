@@ -1,11 +1,11 @@
 <section id="elements">
   <header>
     <h3>Elementos</h3>
-    <p class="sh-m-bottom__xl">Tenemos a nuestra disposición estilos para checkboxes, radio buttons, switches, alertas, etc.</p>
+    <p class="sh-m-bottom__xl">Elementos y/o estructura que usaremos para dar estilos a nuestros formularios</p>
   </header>
 
-  <div class="row sh-m-bottom__lg">
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+  <div class="row columns_3 sh-m-bottom__lg">
+    <div>
       <h5>Checkboxes</h5>
       <label class="sh-check-group">Item1
         <input type="checkbox" checked="checked">
@@ -28,7 +28,7 @@
       </label>
     </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <div>
       <h5>Radio buttons</h5>
       <label class="sh-check-group">Item1
         <input type="radio" checked="checked" name="radio">
@@ -51,7 +51,7 @@
       </label>
     </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <div>
       <h5>Toggle Switches</h5>
       <label class="sh-switch sh-m-bottom__lg">
         <input type="checkbox">
@@ -77,42 +77,30 @@
     <partial src="code-examples/elements/checkboxes.html"></partial>
   </div>
 
-  <h5>Alertas</h5>
-  <p>Las alertas están disponibles de cuatro formas: para info, tareas completadas, advertencias y errores. Las alertas pueden
-  ir con botón de cierre o sin él.</p>
-  <div class="row sh-m-bottom">
-    <div class="sh-m-bottom col-xs-12 col-sm-12 col-md-6 col-lg-6">
-      <div class="sh-alert sh-alert__info">
-        <i class="icon icon-info-circled"></i>
-        <span class="sh-close-alert" onclick="this.parentElement.style.display='none';">&times;</span>
-        <div>Alerta para indicar algún tipo de información que no sea importante</div>
-      </div>
+<h5>Alertas</h5>
+  <div class="row columns_2">
+    <div class="sh-alert sh-alert__info">
+      <i class="icon icon-info-circled"></i>
+      <span class="sh-close-alert" onclick="this.parentElement.style.display='none';">&times;</span>
+      <div>Alerta para indicar algún tipo de información, que no sea muy importante</div>
     </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-      <div class="sh-alert sh-alert__sucess">
-        <i class="icon icon-check"></i>
-        <span class="sh-close-alert" onclick="this.parentElement.style.display='none';">&times;</span>
-        <div>Alerta para indicar que hemos hecho el trabajo correctamente</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="sh-m-bottom col-xs-12 col-sm-12 col-md-6 col-lg-6">
-      <div class="sh-alert sh-alert__warning">
-        <i class="icon icon-attention"></i>
-        <span class="sh-close-alert" onclick="this.parentElement.style.display='none';">&times;</span>
-        <div>¡Atención! Esta alerta indica una acción potencialmente peligrosa</div>
-      </div>
+    <div class="sh-alert sh-alert__sucess">
+      <i class="icon icon-check"></i>
+      <span class="sh-close-alert" onclick="this.parentElement.style.display='none';">&times;</span>
+      <div>Alerta para indicar que hemos hecho el trabajo correctamente</div>
     </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-      <div class="sh-alert sh-alert__error">
-        <i class="icon icon-cancel-circled"></i>
-        <span class="sh-close-alert" onclick="this.parentElement.style.display='none';">&times;</span>
-        <div>¡Atención! Esta alerta indica una acción peligrosa o un error</div>
-      </div>
+    <div class="sh-alert sh-alert__warning">
+      <i class="icon icon-attention"></i>
+      <span class="sh-close-alert" onclick="this.parentElement.style.display='none';">&times;</span>
+      <div>¡Atención! Esta alerta indica una acción potencialmente peligrosa</div>
+    </div>
+
+    <div class="sh-alert sh-alert__error">
+      <i class="icon icon-cancel-circled"></i>
+      <span class="sh-close-alert" onclick="this.parentElement.style.display='none';">&times;</span>
+      <div>¡Atención! Esta alerta indica una acción peligrosa o un error</div>
     </div>
   </div>
 
@@ -121,20 +109,18 @@
   </div>
 
   <h5>Badges</h5>
-  <p>Badges o bubbles en 3 colores diferentes.</p>
-  <div class="sh-m-bottom__lg">
-    <span class="sh-badge">10</span>
-    <span class="sh-badge sh-badge-green">3</span>
-    <span class="sh-badge sh-badge-grey">5 Nuevo!</span>
-  </div>
+    <div class="sh-m-bottom__lg">
+      <span class="sh-badge">10</span>
+      <span class="sh-badge sh-badge-green">3</span>
+      <span class="sh-badge sh-badge-grey">5 Nuevo!</span>
+    </div>
 
-  <div class="sh-m-bottom__xl">
-    <partial src="code-examples/elements/badges.html"></partial>
-  </div>
+    <div class="sh-m-bottom__xl">
+      <partial src="code-examples/elements/badges.html"></partial>
+    </div>
 
   <h5>Chips</h5>
-  <p>Chips para mostrar usuarios, opciones de búsqueda, etc.</p>
-  <div class="sh-chip sh-m-bottom">
+  <div class="sh-chip">
     <img src="img/low/user.png" alt="Person" width="96" height="96">
     Pedro Juan
   </div>

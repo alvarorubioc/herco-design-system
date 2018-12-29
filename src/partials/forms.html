@@ -6,13 +6,13 @@
 
 
   <h5>Inputs</h5>
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+  <div class="row columns_2">
+    <div>
       <h6>Input</h6>
       <input class="sh-input margin-help" type="text" placeholder="Tu nombre...">
     </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div>
       <h6>Input + label</h6>
       <div class="sh-form-group">
         <label class="sh-label" for="finame">Nombre</label>
@@ -25,8 +25,8 @@
     <partial src="code-examples/forms/input-type.html"></partial>
   </div>
 
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+  <div class="row columns_2">
+    <div>
       <h6>Input + icon left</h6>
       <div class="sh-form-group sh-form-contain-icon">
         <i class="icon icon-user sh-form-icon-left"></i>
@@ -34,7 +34,7 @@
       </div>
     </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div>
       <h6>Input + icon right</h6>
       <div class="sh-form-group sh-form-contain-icon">
         <input class="sh-input" type="text">
@@ -44,13 +44,11 @@
   </div> <!-- End row -->
 
   <div class="row">
-    <div class="col-xs-12">
-      <h6>Double Icon</h6>
-      <div class="sh-form-group sh-form-contain-icon">
-        <i class="icon icon-user sh-form-icon-left"></i>
-        <input class="sh-input" type="text">
-        <i class="icon icon-user sh-form-icon-right"></i>
-      </div>
+    <h6>Double Icon</h6>
+    <div class="sh-form-group sh-form-contain-icon">
+      <i class="icon icon-user sh-form-icon-left"></i>
+      <input class="sh-input" type="text">
+      <i class="icon icon-user sh-form-icon-right"></i>
     </div>
   </div> <!-- End row -->
 
@@ -60,8 +58,8 @@
 
 
   <h5>Icono para mostrar/ocultar</h5>
-  <div class="row sh-m-bottom__lg">
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+  <div class="row columns_2 sh-m-bottom__lg">
+    <div>
       <h6>Icon show password</h6>
       <div class="sh-form-group sh-form-contain-icon">
         <input class="sh-input" type="password">
@@ -69,7 +67,7 @@
       </div>
     </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div>
       <h6>Icon hide password</h6>
       <div class="sh-form-group sh-form-contain-icon">
         <input class="sh-input" type="text">
@@ -78,13 +76,13 @@
     </div>
   </div> <!-- End row -->
 
-  <div class="sh-m-bottom__xl">
-    <partial src="code-examples/forms/input-icon-display.html"></partial>
-  </div>
+    <div class="sh-m-bottom__xl">
+      <partial src="code-examples/forms/input-icon-display.html"></partial>
+    </div>
 
   <h5>Estados</h5>
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+  <div class="row columns_2">
+    <div>
       <h6>Succes</h6>
       <div class="sh-form-group sh-form-contain-icon">
         <input class="sh-input sh-input__sucess" type="text">
@@ -93,7 +91,7 @@
       </div>
     </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div>
       <h6>Warning</h6>
       <div class="sh-form-group sh-form-contain-icon">
         <input class="sh-input sh-input__warning" type="text">
@@ -103,8 +101,8 @@
     </div>
   </div> <!-- End row -->
 
-  <div class="row sh-m-bottom__lg">
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+  <div class="row columns_2 sh-m-bottom__lg">
+    <div>
       <h6>Error</h6>
       <div class="sh-form-group sh-form-contain-icon">
         <input class="sh-input sh-input__error" type="text">
@@ -113,7 +111,7 @@
       </div>
     </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div>
       <h6>Disabled</h6>
       <input class="sh-input sh-input__disabled" type="text" placeholder="Deshabilitado" disabled>
     </div>
@@ -124,10 +122,8 @@
   </div>
 
   <div class="row">
-    <div class="col-xs-12">
-      <h5>Área de texto</h5>
-      <textarea class="sh-text-area" rows="8" cols="50" style="width:100%;" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></textarea>
-    </div>
+    <h5>Área de texto</h5>
+    <textarea class="sh-text-area" rows="8" cols="50" style="width:100%;" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></textarea>
   </div>
 
   <div class="sh-m-bottom__xl">
@@ -136,33 +132,31 @@
 
   <h5>Ejemplo de formulario</h5>
   <form action="/contact" method="get">
-    <div class="row sh-m-bottom__lg">
-      <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div class="row columns_2 sh-m-bottom__lg">
+      <div class="sh-form-group">
         <label class="sh-label" for="fname">Nombre *</label>
         <input class="sh-input" id="fname" type="text" name="firstname" placeholder="Tu nombre..." required>
       </div>
 
-      <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <div class="sh-form-group">
         <label class="sh-label" for="lname">Apellidos *</label>
         <input class="sh-input" id="lname" type="text" name="lastname" placeholder="Tus apellidos..." required>
       </div>
 
-      <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <div class="sh-form-group">
         <label class="sh-label" for="pnumber">Teléfono</label>
         <input class="sh-input" id="pnumber" type="text" name="phonenumber" placeholder="Tu teléfono...">
       </div>
 
-      <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <div class="sh-form-group">
         <label class="sh-label" for="email">E-mail *</label>
         <input class="sh-input" id="email" type="email" name="email" placeholder="Tu e-mail..." required>
       </div>
-
-    <div class="col-xs-12">
-      <textarea class="sh-text-area" name="comments" rows="8" cols="50" style="width:100%;" placeholder="Escriba aquí su consulta"></textarea>
     </div>
-  </div>
 
-    <input class="sh-btn" type="submit" value="submit">
+    <textarea class="sh-text-area" name="comments" rows="8" cols="50" style="width:100%;" placeholder="Escriba aquí su consulta"></textarea>
+
+    <input class="sh-btn sh-m-top__lg" type="submit" value="submit">
   </form> <!-- End block -->
 
   <div class="sh-m-bottom__xl">
