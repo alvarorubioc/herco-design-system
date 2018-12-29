@@ -178,7 +178,7 @@
 
 /* set button group */
 .sh-btn-group {
-  display: inline-flex;
+  display: flex;
   align-items: center;
 
   .sh-btn {
@@ -239,7 +239,6 @@
 
   &_full {
     width: 100%;
-    padding: 1em 1em;
   }
 }
 

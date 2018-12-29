@@ -35,10 +35,6 @@
 
 #backgrounds .sh-bg__duotone {
 	height: 280px;
-
-	@include breakpoint (mobile) {
-		height: 100%;
-	}
 }
 
 section .sh-divider__header {
@@ -53,4 +49,14 @@ section .sh-divider__header {
   position: absolute;
   top: -20px;
   left: 45px;
+}
+
+#grid .box-row {
+  padding: 1em;
+  margin-bottom: 1em;
+  min-height: 1em;
+  background: $color-blue;
+  border-radius: 2px;
+  color: #fff;
+	text-align: center;
 }
