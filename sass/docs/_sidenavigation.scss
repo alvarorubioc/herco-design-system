@@ -33,7 +33,7 @@
     padding-left: 0px;    
 }
 
-.container section{
+.sh-container{
     margin: 0 auto;
     max-width: 960px;
     margin-bottom: 6em;
@@ -53,6 +53,7 @@
     #main.open  #btn_nav {
         margin-left: 290px;
         transition: all 0.3s ease;
+        position: fixed;
     }  
 
      #main.open .main-header small {
@@ -124,6 +125,7 @@
 .nav_header{
     font-family: $font-heading;
     margin-top: .5em;
+    font-weight: 600;
 }
 
 
@@ -146,6 +148,19 @@
         color: $color-blue;
     }
 
+    
+}
+
+.open #btn_nav {
+
+    @include breakpoint (mobile) {
+        position: fixed;
+    }
+
+}
+
+main.open #app {
+    overflow: none;
 }
 
 

@@ -31,14 +31,19 @@
 
 #app header p {
     max-width: 75%;
+    margin-bottom: 4em;
 }
 
 #backgrounds .sh-bg__duotone {
 	height: 280px;
 }
 
+section {
+  margin-bottom: 8em;
+}
+
 section .sh-divider__header {
-	margin-bottom: 4em;
+	margin-bottom: 2em;
 }
 
 #icons span {
@@ -59,4 +64,10 @@ section .sh-divider__header {
   border-radius: 2px;
   color: #fff;
 	text-align: center;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }

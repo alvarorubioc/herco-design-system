@@ -1,0 +1,49 @@
+<section id="alerts">
+  <header>
+    <h1>@@title</h1>
+    <div class="sh-divider__header"></div>
+    <p class="sh-m-bottom__xl">Las alertas están disponibles de cuatro formas: para info, tareas completadas, advertencias y errores. Las alertas pueden
+  ir con botón de cierre o sin él.</p>
+  </header>
+
+  <div class="row sh-m-bottom">
+    <div class="sh-m-bottom col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <div class="sh-alert sh-alert__info">
+        <i class="icon icon-info-circled"></i>
+        <span class="sh-close-alert" onclick="this.parentElement.style.display='none';">&times;</span>
+        <div>Alerta para indicar algún tipo de información que no sea importante</div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <div class="sh-alert sh-alert__sucess">
+        <i class="icon icon-check"></i>
+        <span class="sh-close-alert" onclick="this.parentElement.style.display='none';">&times;</span>
+        <div>Alerta para indicar que hemos hecho el trabajo correctamente</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="sh-m-bottom col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <div class="sh-alert sh-alert__warning">
+        <i class="icon icon-attention"></i>
+        <span class="sh-close-alert" onclick="this.parentElement.style.display='none';">&times;</span>
+        <div>¡Atención! Esta alerta indica una acción potencialmente peligrosa</div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <div class="sh-alert sh-alert__error">
+        <i class="icon icon-cancel-circled"></i>
+        <span class="sh-close-alert" onclick="this.parentElement.style.display='none';">&times;</span>
+        <div>¡Atención! Esta alerta indica una acción peligrosa o un error</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sh-m-bottom__xl">
+    <partial src="code-examples/elements/alerts.html"></partial>
+  </div>
+
+ </section> 
