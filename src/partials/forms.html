@@ -8,12 +8,12 @@
 
   <h5>Inputs</h5>
   <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div class="col-xs-12 col-md-6">
       <h6>Input</h6>
       <input class="sh-input margin-help" type="text" placeholder="Tu nombre...">
     </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div class="col-xs-12 col-md-6">
       <h6>Input + label</h6>
       <div class="sh-form-group">
         <label class="sh-label" for="finame">Nombre</label>
@@ -27,33 +27,52 @@
   </div>
 
   <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-      <h6>Input + icon left</h6>
+    <div class="col-xs-12 col-md-6">
+      <h6>Input + primary icon left</h6>
       <div class="sh-form-group sh-form-contain-icon">
-        <i class="icon icon-user sh-form-icon-left"></i>
+        <i class="icon icon-user sh-form-icon-primary__left"></i>
         <input class="sh-input" type="text">
       </div>
     </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-      <h6>Input + icon right</h6>
+    <div class="col-xs-12 col-md-6">
+      <h6>Input + primary icon right</h6>
       <div class="sh-form-group sh-form-contain-icon">
+        <i class="icon icon-user sh-form-icon-primary__right"></i>
         <input class="sh-input" type="text">
-        <i class="icon icon-user sh-form-icon-right"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <h6>Input + secondary icon left</h6>
+      <div class="sh-form-group sh-form-contain-icon">
+        <i class="icon icon-user sh-form-icon-secondary__left"></i>
+        <input class="sh-input" type="text">
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-md-6">
+      <h6>Input + secondary icon right</h6>
+      <div class="sh-form-group sh-form-contain-icon">
+        <i class="icon icon-user sh-form-icon-secondary__right"></i>
+        <input class="sh-input" type="text">
       </div>
     </div>
   </div> <!-- End row -->
 
   <div class="row">
     <div class="col-xs-12">
-      <h6>Double Icon</h6>
+      <h6>Double icon</h6>
       <div class="sh-form-group sh-form-contain-icon">
-        <i class="icon icon-user sh-form-icon-left"></i>
+        <i class="icon icon-user sh-form-icon-primary__left"></i>
         <input class="sh-input" type="text">
-        <i class="icon icon-user sh-form-icon-right"></i>
+        <i class="icon icon-user sh-form-icon-secondary__right"></i>
       </div>
     </div>
   </div> <!-- End row -->
+
 
   <div class="sh-m-bottom__xl">
     <partial src="code-examples/forms/input-icon.html"></partial>
@@ -62,19 +81,19 @@
 
   <h5>Icono para mostrar/ocultar</h5>
   <div class="row sh-m-bottom__lg">
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div class="col-xs-12 col-md-6">
       <h6>Icon show password</h6>
       <div class="sh-form-group sh-form-contain-icon">
         <input class="sh-input" type="password">
-        <i class="icon icon-lock sh-form-icon-right__display"></i>
+        <i class="icon icon-lock sh-form-icon-secondary__display"></i>
       </div>
     </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div class="col-xs-12 col-md-6">
       <h6>Icon hide password</h6>
       <div class="sh-form-group sh-form-contain-icon">
         <input class="sh-input" type="text">
-        <i class="icon icon-lock-open sh-form-icon-right__display"></i>
+        <i class="icon icon-lock-open sh-form-icon-secondary__display"></i>
       </div>
     </div>
   </div> <!-- End row -->
@@ -85,36 +104,36 @@
 
   <h5>Estados</h5>
   <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div class="col-xs-12 col-md-6">
       <h6>Succes</h6>
       <div class="sh-form-group sh-form-contain-icon">
         <input class="sh-input sh-input__sucess" type="text">
-        <i class="icon icon-check sh-form-icon-right__sucess"></i>
+        <i class="icon icon-check sh-form-icon-secondary__sucess"></i>
         <span>Este es un mensaje cualquiera</span>
       </div>
     </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div class="col-xs-12 col-md-6">
       <h6>Warning</h6>
       <div class="sh-form-group sh-form-contain-icon">
         <input class="sh-input sh-input__warning" type="text">
-        <i class="icon icon-attention sh-form-icon-right__warning"></i>
+        <i class="icon icon-attention sh-form-icon-secondary__warning"></i>
         <span>Este es un mensaje cualquiera</span>
       </div>
     </div>
   </div> <!-- End row -->
 
   <div class="row sh-m-bottom__lg">
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div class="col-xs-12 col-md-6">
       <h6>Error</h6>
       <div class="sh-form-group sh-form-contain-icon">
         <input class="sh-input sh-input__error" type="text">
-        <i class="icon icon-cancel sh-form-icon-right__error"></i>
+        <i class="icon icon-cancel sh-form-icon-secondary__error"></i>
         <span>Este es un mensaje cualquiera</span>
       </div>
     </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div class="col-xs-12 col-md-6">
       <h6>Disabled</h6>
       <input class="sh-input sh-input__disabled" type="text" placeholder="Deshabilitado" disabled>
     </div>
@@ -122,6 +141,18 @@
 
   <div class="sh-m-bottom__xl">
     <partial src="code-examples/forms/input-states.html"></partial>
+  </div>
+
+  <h5>Barra de buscador</h5>
+  <div class="sh-m-top__lg">
+    <form class="sh-form-group sh-form-contain-icon" action="action_page.php">
+      <input class="sh-input sh-input__search" type="text" placeholder="Buscar.." name="search">
+      <button class="sh-form-icon-left" type="submit"><i class="icon icon-search"></i></button>
+    </form>
+  </div>
+
+  <div class="sh-m-bottom__xl">
+    <partial src="code-examples/forms/search-bar.html"></partial>
   </div>
 
   <div class="row">
@@ -138,30 +169,30 @@
   <h5>Ejemplo de formulario</h5>
   <form action="/contact" method="get">
     <div class="row sh-m-bottom__lg">
-      <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-md-6">
         <label class="sh-label" for="fname">Nombre *</label>
         <input class="sh-input" id="fname" type="text" name="firstname" placeholder="Tu nombre..." required>
       </div>
 
-      <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-md-6">
         <label class="sh-label" for="lname">Apellidos *</label>
         <input class="sh-input" id="lname" type="text" name="lastname" placeholder="Tus apellidos..." required>
       </div>
 
-      <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-md-6">
         <label class="sh-label" for="pnumber">Teléfono</label>
         <input class="sh-input" id="pnumber" type="text" name="phonenumber" placeholder="Tu teléfono...">
       </div>
 
-      <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-md-6">
         <label class="sh-label" for="email">E-mail *</label>
         <input class="sh-input" id="email" type="email" name="email" placeholder="Tu e-mail..." required>
       </div>
 
-    <div class="col-xs-12">
-      <textarea class="sh-text-area" name="comments" rows="8" cols="50" style="width:100%;" placeholder="Escriba aquí su consulta"></textarea>
+      <div class="col-xs-12">
+        <textarea class="sh-text-area" name="comments" rows="8" cols="50" style="width:100%;" placeholder="Escriba aquí su consulta"></textarea>
+      </div>
     </div>
-  </div>
 
     <input class="sh-btn" type="submit" value="submit">
   </form> <!-- End block -->
@@ -169,4 +200,20 @@
   <div class="sh-m-bottom__xl">
     <partial src="code-examples/forms/form-example.html"></partial>
   </div>
+
+  <h5 class="sh-m-top__lg sh-m-bottom__lg">Selector</h5>
+  <div class="sh-select-container">
+    <select>
+      <option selected>Elige una opción</option>
+      <option>Opción 1</option>
+      <option>Opción 2</option>
+      <option>Opción 3</option>
+    </select>
+  </div>
+  <br>
+  <br>
+  <div class="sh-m-bottom__xl">
+    <partial src="code-examples/buttons/select.html"></partial>
+  </div> <!-- End row -->
+
 </section>

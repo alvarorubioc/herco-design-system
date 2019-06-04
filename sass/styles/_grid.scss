@@ -1,12 +1,16 @@
-.container-fluid,
 .container {
+  max-width: 80rem;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 .container-fluid {
   padding-right: 2rem;
   padding-left: 2rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .row {
@@ -266,9 +270,9 @@
   order: 1;
 }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 768px) {
   .container {
-    width: 49rem;
+    width: 48rem;
   }
 
   .col-sm,
@@ -499,7 +503,7 @@
 
 @media only screen and (min-width: 64em) {
   .container {
-    width: 65rem;
+    width: 64rem;
   }
 
   .col-md,
@@ -730,7 +734,7 @@
 
 @media only screen and (min-width: 75em) {
   .container {
-    width: 76rem;
+    width: 80rem;
   }
 
   .col-lg,

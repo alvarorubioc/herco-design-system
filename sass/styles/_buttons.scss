@@ -5,7 +5,6 @@
   color: white;
   border: 1px solid $color-blue;
   font-size: $text__md;
-  padding: .75em 1em;
 
     &:hover {
         background-color: $color-navy-blue;
@@ -17,6 +16,63 @@
         opacity: .8;
     }
 }
+
+/* button size */
+.sh-btn_ {
+  &_sm {
+    font-size: $text__sm;
+    height: 1.5rem;
+  }
+
+  &_lg {
+    font-size: $text__h5;
+    height: 3.5rem;
+    padding: 0 1.5em;
+  }
+
+  &_full {
+    width: 100%;
+  }
+}
+
+/* button with icon size*/
+.sh-btn-icon_ {
+  &_sm {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 0;
+    & i {
+      font-size: 1rem;
+    }
+  }
+
+  &_md {
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0;
+    & i {
+      font-size: 2rem;
+    }
+  }
+
+  &_lg {
+    height: 3.5rem;
+    width: 3.5rem;
+    padding: 0;
+    & i {
+      font-size: 3rem;
+    }
+  }
+}
+
+.sh-btn-icon-padd__right i {
+  padding-right: 1.5em;
+}
+
+.sh-btn-icon-padd__left i {
+  padding-left: 1.5em;
+}
+
 
 /* for disabled button */
 .sh-btn[disabled] {
@@ -89,7 +145,6 @@
   border: 1px solid $color-blue;
   border-radius: none;
   font-size: $text__md;
-  padding: .75em 1em;
 
     &:hover {
         background-color: $color-blue;
@@ -160,7 +215,7 @@
     }
 }
 
-.sh-btn-outline_white{
+.sh-btn-outline_white {
   background-color: transparent;
   color: white;
   border-color: white;
@@ -176,21 +231,55 @@
     }
 }
 
+.sh-btn-outline__white-bg {
+  background-color: white;
+  color: $color-blue;
+  border-color: white;
+
+  &:hover {
+    border-color: $color-blue;
+  }
+}
+
+.sh-btn-icon__tag {
+  position: relative;
+  width: 2.5em;
+  height: 2.5em;
+  background-color: white;
+  color: $color-grey;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 1px solid $color-grey-50;
+  border-bottom: 0px;
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  & i {
+    font-size: 1.5em;
+  }
+
+  & span {
+    font-size: .5em;
+    font-style: uppercase;
+    font-family: $font-heading;
+    color: $color-grey;
+  }
+}
+
 /* set button group */
 .sh-btn-group {
   display: flex;
   align-items: center;
 
-  .sh-btn {
-    border-top-color: $color-navy-blue;
-    border-bottom-color: $color-navy-blue;
+  .sh-btn, .sh-btn-outline {
     border-right-color: $color-navy-blue;
     border-radius: 0;
 
     &:hover {
       background-color: $color-navy-blue;
       border-color: $color-navy-blue;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     &:focus {
@@ -200,12 +289,12 @@
     &:first-child {
       border-top-left-radius: $border-radius;
       border-bottom-left-radius: $border-radius;
-      border-left-color: $color-navy-blue;
     }
 
     &:last-child {
       border-top-right-radius: $border-radius;
       border-bottom-right-radius: $border-radius;
+      border-right-color: $color-blue;
     }
 
     &:not(:first-child) {
@@ -220,47 +309,71 @@
   }
 }
 
-/* button size */
-.sh-btn_ {
-  &_sm {
-    font-size: $text__sm;
-    padding: .5em 0.75em;
+.sh-btn-group .sh-btn-outline {
+  border-right-color: $color-blue;
+
+  &:hover {
+    background-color: $color-blue;
+    border-color: $color-blue;
   }
 
-  &_lg {
-    font-size: $text__h6;
-    padding: 1em 1.25em;
-  }
-
-  &_xl {
-    font-size: $text__h5;
-    padding: 1em 1.5em;
-  }
-
-  &_full {
-    width: 100%;
+  &:focus {
+    color: white;
+    background-color: $color-blue;
   }
 }
 
-/* button-icon size*/
-.sh-btn-icon_ {
-  &_sm {
-    font-size: $text__sm;
-    padding: .5em .5em;
+
+/*set slect button*/
+.sh-select-container {
+  position: relative;
+  float: left;
+  min-width: 12em;
+}
+
+/* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+  display: none;
+}
+
+.sh-select-container:after {
+  content: '\e856';
+  font-family: 'herco';
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+  top: 12px;
+  right: 12px;
+  padding: 0 0 2px;
+  position: absolute;
+  pointer-events: none;
+}
+
+.sh-select-container select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  max-width: 40em;
+  height: 2.5em;
+  float: right;
+  margin: 0 0;
+  padding: 0 2em 0 1em;
+  font-size: 1em;
+  line-height: 1.75;
+  color: white;
+  background-color: $color-blue;
+  background-image: none;
+  border: 1px solid $color-blue;
+  border-radius: 2px;
+  word-break: normal;
+
+  &:hover {
+    background-color: $color-navy-blue;
+    border: 1px solid $color-blue;
+    transition: .2s;
   }
 
-  &_md {
-    font-size: $text__md;
-    padding: .75em .75em;
-  }
-
-  &_lg {
-    font-size: $text__h6;
-    padding: 1em 1em;
-  }
-
-  &_xl {
-    font-size: $text__h5;
-    padding: 1em 1em;
+  &:active {
+    opacity: 0.8;
   }
 }

@@ -2,12 +2,25 @@ input {
   -webkit-appearance: none;
   -moz-appearance:    none;
   appearance:         none;
+  height: 2.5rem;
+  font-size: $text__md;
 }
 /* form control */
 fieldset {
   border: none;
   padding: 0;
   margin: 0;
+}
+
+form {
+  display: flex;
+
+  button.sh-btn {
+
+    border-radius: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
 }
 
 /* group form control */
@@ -19,7 +32,7 @@ fieldset {
 .sh-input, textarea {
   @include input;
   border: 1px solid $color-grey-70;
-  background: transparent;
+  background: white;
 
   &:hover:not(.sh-input__sucess):not(.sh-input__warning):not(.sh-input__error):not(.sh-input__disabled):not(:focus) {
     border-color: $color-grey;
@@ -68,11 +81,25 @@ fieldset {
 /* set icon for input */
 .sh-form-contain-icon {
   display: flex;
+
+  & .sh-form-icon-secondary__right,
+  .sh-form-icon-secondary__left,
+  .sh-form-icon-secondary__display,
+  .sh-form-icon-secondary__sucess,
+  .sh-form-icon-secondary__warning,
+  .sh-form-icon-secondary__error {
+    position: absolute;
+    top: 12px;
+    z-index: 9;
+  }
 }
 
-.sh-form-icon-left {
+.sh-form-icon-primary_ {
+  &_left {
     display: block;
-    padding: .75em 1em;
+    height: 2.5em;
+    width: 2.5em;
+    padding-top: 10px;
     border: 1px solid $color-blue;
     border-right: none;
     border-radius: $border-radius;
@@ -81,34 +108,67 @@ fieldset {
     background-color: $color-blue;
     color: white;
 
-  + input {
+    + input {
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+  }
+
+  &_right {
+    display: block;
+    height: 2.5em;
+    width: 2.5em;
+    padding-top: 10px;
+    border: 1px solid $color-blue;
+    border-right: none;
+    border-radius: $border-radius;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
+    background-color: $color-blue;
+    color: white;
+    order: 2;
+
+    + input {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      order:1;
+    }
   }
 }
 
-.sh-form-icon-right {
-  position: absolute;
-  top: .9em;
-  right: 1em;
-  color: $color-blue;
-  text-align: center;
-  z-index: 99;
+.sh-form-icon-secondary_ {
+  &_right {
+    right: 1em;
+    color: $color-blue;
 
-  &__display {
-    position: absolute;
-    top: .9em;
+    + input {
+      padding-right: 3em;
+    }
+  }
+
+  &_left {
+    left: 1em;
+    color: $color-blue;
+
+    + input {
+      padding-left: 3em;
+    }
+  }
+
+  &_display {
     right: 1em;
     color: $color-grey;
 
     &:hover {
       cursor: pointer;
     }
+
+    + input {
+      padding-right: 3em;
+    }
   }
 
-  &__sucess {
-    position: absolute;
-    top: .9em;
+  &_sucess {
     right: 1em;
     color: $color-grass;
 
@@ -121,9 +181,7 @@ fieldset {
     }
   }
 
-  &__warning {
-    position: absolute;
-    top: .9em;
+  &_warning {
     right: 1em;
     color: $color-yellow;
 
@@ -140,9 +198,7 @@ fieldset {
    }
   }
 
-  &__error {
-    position: absolute;
-    top: .9em;
+  &_error {
     right: 1em;
     color: $color-red-cherry;
 

@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
     color: $color-dark-navy-blue;
 }
 
-h2, h3, h4, h5 {
+h2, h3, h4, h5, h6 {
     margin: 1rem 0;
 }
 
@@ -73,7 +73,7 @@ h5, .sh-text__h5 {
     }
 }
 
-h6 .sh-text__h6 {
+h6, .sh-text__h6 {
 	font-size: $text__h6;
 }
 

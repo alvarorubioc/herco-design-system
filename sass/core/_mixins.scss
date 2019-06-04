@@ -12,8 +12,26 @@
      @media (max-width: 768px)  { @content ; }
   }
   @else if $point == xsmobile {
-     @media (max-width: 320px)  { @content ; }
+     @media (max-width: 375px)  { @content ; }
   }
+}
+
+@mixin devicesize($device) {
+  @if $device == only_desktop {
+    @media (min-width: 1440px) { @content ; }
+ }
+  @else if $device == only_laptop {
+    @media (min-width: 1280px) and (max-width: 1439px) { @content ; }
+ }
+   @else if $device == only_tablet {
+    @media (min-width: 1024px) and (max-width: 1279px) { @content ; }
+ }
+  @else if $device == only_mobile {
+    @media (min-width: 768px) and (max-width: 1023px)  { @content ; }
+ }
+ @else if $device == only_xsmobile {
+    @media (max-width: 375px)  { @content ; }
+ }
 }
 
 @mixin text-white {
@@ -26,6 +44,8 @@
 /* set general styles btn */
 @mixin btn {
   position: relative;
+  height: 2.5rem;
+  padding: 0 1em;
   border-radius: $border-radius;
   transition: .2s;
   text-decoration: none;

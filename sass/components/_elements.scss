@@ -3,7 +3,7 @@
     display: block;
     position: relative;
     padding-left: 2em;
-    margin-bottom: 1em;
+    padding-bottom: 1em;
     cursor: pointer;
     user-select: none;
 
@@ -224,21 +224,27 @@
 .sh-badge{
   display: inline-block;
   vertical-align: middle;
+  font-family: $font-heading;
   font-size: .7rem;
   font-weight: 500;
-  padding: .25rem;
-  line-height: .4rem;
-  max-height: .9rem;
+  padding: .25rem .5rem;
+  line-height: .5rem;
+  max-height: 1rem;
   color: white;
   border-radius: 999px;
-  background-color: $color-blue;
+  background-color: $color-navy-blue;
+
 }
 
 .sh-badge-green {
   background-color: $color-grass;
 }
-.sh-badge-grey {
-  background-color: $color-grey;
+.sh-badge-blue {
+  background-color: $color-blue;
+}
+
+.sh-badge-red {
+  background-color: $color-red-cherry;
 }
 
 /* set chips */

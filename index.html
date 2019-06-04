@@ -1330,29 +1330,37 @@
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                              <h5>Toggle Switches</h5>
-                            <label class="sh-switch sh-m-bottom__lg">
-                                <input type="checkbox"> <span></span>
-                                <p class="parrafo">Off</p>
-                            </label>
-                            <br>
-                            <label class="sh-switch sh-m-bottom__lg">
-                                <input type="checkbox" checked="checked"> <span></span>
-                                <p class="parrafo">On</p>
-                            </label>
-                            <br>
-                            <label class="sh-switch">
-                                <input type="checkbox" disabled> <span></span>
-                                <p class="parrafo">Disabled</p>
-                            </label>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label class="sh-switch sh-m-bottom__lg">
+                                        <input type="checkbox"> <span></span>
+                                        <p class="parrafo">Off</p>
+                                    </label>
+                                </div>
+                                <br>
+                                <div class="col-xs-4">
+                                    <label class="sh-switch sh-m-bottom__lg">
+                                        <input type="checkbox" checked="checked"> <span></span>
+                                        <p class="parrafo">On</p>
+                                    </label>
+                                </div>
+                                <br>
+                                <div class="col-xs-4">
+                                    <label class="sh-switch">
+                                        <input type="checkbox" disabled> <span></span>
+                                        <p class="parrafo">Disabled</p>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="sh-m-bottom__xl">
                         <p class="caption">Ejemplo de checkbox</p>
 <pre><code class="language-html">&ltlabel class="sh-check-group"&gtItem1
 
-  &ltinput type="radio" name="radio"&gt
+  &ltinput type="checkbox"&gt
 
-  &ltspan class="sh-radiomark"&gt&lt/span&gt
+  &ltspan class="sh-checkmark"&gt&lt/span&gt
 
 &lt/label&gt
 
@@ -1362,9 +1370,9 @@ Disabled
 
 &ltlabel class="sh-check-group"&gtItem1
 
-  &ltinput type="radio" name="radio" disabled&gt
+  &ltinput type="checkbox" disabled&gt
 
-  &ltspan class="sh-radiomark"&gt&lt/span&gt
+  &ltspan class="sh-checkmark"&gt&lt/span&gt
 
 &lt/label&gt</code></pre>
                         <p class="caption">Ejemplo de radio button</p>
@@ -1505,9 +1513,9 @@ Error
                     </header>
                      <h5>Badges</h5>
                     <p>Badges o bubbles en 3 colores diferentes.</p>
-                    <div class="sh-m-bottom__lg"> <span class="sh-badge">10</span> <span class="sh-badge sh-badge-green">3</span>
+                    <div class="sh-m-bottom__lg"> <span class="sh-badge">Estándar</span> <span class="sh-badge sh-badge-green">Verde</span>
                         <span
-                        class="sh-badge sh-badge-grey">5 Nuevo!</span>
+                        class="sh-badge sh-badge-blue">Azul</span> <span class="sh-badge sh-badge-red">Rojo</span>
                     </div>
                     <div class="sh-m-bottom__xl">
                         <p class="caption">Ejemplo de badges</p>
@@ -1517,15 +1525,21 @@ Error
 
 <br>
 
-Green
+Verde
 
 &ltspan class="sh-badge sh-badge-green"&gt3&lt/span&gt
 
 <br>
 
-Grey
+Azul
 
-&ltspan class="sh-badge sh-badge-grey"&gt5 Nuevo!&lt/span&gt</code></pre>
+&ltspan class="sh-badge sh-badge-blue"&gt5 Nuevo!&lt/span&gt
+
+<br>
+
+Rojo
+
+&ltspan class="sh-badge sh-badge-red"&gt5 Nuevo!&lt/span&gt</code></pre>
                     </div>
                      <h5>Chips</h5>
                     <p>Chips para mostrar usuarios, opciones de búsqueda, etc.</p>
@@ -1703,22 +1717,22 @@ Con botón para cerrar
                      <h5>Estándar</h5>
                     <p>Estilos de botón estándar.</p>
                     <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 sh-m-bottom">
+                        <div class="col-xs-12 col-md-4 sh-m-bottom">
                             <button class="sh-btn sh-btn__full" type="button">Standard</button>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 sh-m-bottom">
+                        <div class="col-xs-12 col-md-4 sh-m-bottom">
                             <button class="sh-btn sh-btn_dark sh-btn__full" type="button">Dark</button>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 sh-m-bottom">
+                        <div class="col-xs-12 col-md-4 sh-m-bottom">
                             <button class="sh-btn sh-btn__full" disabled type="button">Disabled</button>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 sh-m-bottom">
+                        <div class="col-xs-12 col-md-4 sh-m-bottom">
                             <button class="sh-btn sh-btn_sucess sh-btn__full" type="button">Sucess</button>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 sh-m-bottom">
+                        <div class="col-xs-12 col-md-4 sh-m-bottom">
                             <button class="sh-btn sh-btn_warning sh-btn__full" type="button">Warning</button>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="col-xs-12 col-md-4">
                             <button class="sh-btn sh-btn_danger sh-btn__full" type="button">Danger</button>
                         </div>
                     </div>
@@ -1746,22 +1760,22 @@ Botón con etiqueta "&lta&gt"
                      <h5>Outline</h5>
                     <p>Estilos de botón outline.</p>
                     <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 sh-m-bottom">
+                        <div class="col-xs-12 col-md-4 sh-m-bottom">
                             <button class="sh-btn-outline sh-btn__full" type="button">Standard</button>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 sh-m-bottom">
+                        <div class="col-xs-12 col-md-4 sh-m-bottom">
                             <button class="sh-btn-outline sh-btn__full sh-btn-outline_dark" type="button">Dark</button>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 sh-m-bottom">
+                        <div class="col-xs-12 col-md-4 sh-m-bottom">
                             <button class="sh-btn-outline sh-btn__full" type="button" disabled>Disabled</button>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 sh-m-bottom">
+                        <div class="col-xs-12 col-md-4 sh-m-bottom">
                             <button class="sh-btn-outline sh-btn__full sh-btn-outline_sucess" type="button">Sucess</button>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 sh-m-bottom">
+                        <div class="col-xs-12 col-md-4 sh-m-bottom">
                             <button class="sh-btn-outline sh-btn__full sh-btn-outline_warning" type="button">Warning</button>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="col-xs-12 col-md-4">
                             <button class="sh-btn-outline sh-btn__full sh-btn-outline_danger" type="button">Danger</button>
                         </div>
                     </div>
@@ -1790,9 +1804,9 @@ Botón con etiqueta "&lta&gt"
                     <p>Estilos que utilizaremos sobre un fondo oscuro.</p>
                     <div class="btn-box-example">
                         <button class="sh-btn sh-btn_white" type="button">Button</button>
-                        <button class="sh-btn sh-btn-outline_white" type="button">Button</button>
+                        <button class="sh-btn-outline sh-btn-outline_white" type="button">Button</button>
                         <button class="sh-btn sh-btn_white" type="button"><i class="icon icon-user"></i> Button</button>
-                        <button class="sh-btn sh-btn-outline_white"
+                        <button class="sh-btn-outline sh-btn-outline__white-bg"
                         type="button">Button <i class="icon icon-right-open"></i>
 
                         </button>
@@ -1801,11 +1815,11 @@ Botón con etiqueta "&lta&gt"
                         <p class="caption">Ejemplo de grupo de botones</p>
 <pre><code class="language-html">&ltbutton class="sh-btn sh-btn_white" type="button"&gtButton&lt/button&gt
 
-&ltbutton class="sh-btn sh-btn-outline_white" type="button"&gtButton&lt/button&gt
+&ltbutton class="sh-btn-outline sh-btn-outline_white" type="button"&gtButton&lt/button&gt
 
 &ltbutton class="sh-btn sh-btn_white" type="button"&gt&lti class="icon icon-user"&gt&lt/i&gt Button&lt/button&gt
 
-&ltbutton class="sh-btn sh-btn-outline_white" type="button"&gtButton &lti class="icon icon-right-open"&gt&lt/i&gt&lt/button&gt
+&ltbutton class="sh-btn-outline sh-btn-outline__white-bg" type="button"&gtButton &lti class="icon icon-right-open"&gt&lt/i&gt&lt/button&gt
 
 <br>
 
@@ -1820,7 +1834,6 @@ Botón con etiqueta "&lta&gt"
                         <button class="sh-btn sh-btn__sm" type="button">Button sm</button>
                         <button class="sh-btn" type="button">Button md</button>
                         <button class="sh-btn sh-btn__lg" type="button">Button lg</button>
-                        <button class="sh-btn sh-btn__xl" type="button">Button xl</button>
                     </div>
                     <div class="sh-m-bottom__lg">
                         <button class="sh-btn sh-btn__full">Full width</button>
@@ -1832,8 +1845,6 @@ Botón con etiqueta "&lta&gt"
 &ltbutton class="sh-btn" type="button"&gtButton md&lt/button&gt
 
 &ltbutton class="sh-btn sh-btn__lg" type="button"&gtButton lg&lt/button&gt
-
-&ltbutton class="sh-btn sh-btn__xl" type="button"&gtButton xl&lt/button&gt
 
 &ltbutton  class="sh-btn sh-btn__full"&gt Full width&lt/button&gt
 
@@ -1856,9 +1867,6 @@ Botón por tamaño con etiqueta "&lta&gt"
                         <button class="sh-btn sh-btn-icon__lg" type="button"><i class="icon icon-menu"></i>
 
                         </button>
-                        <button class="sh-btn sh-btn-icon__xl" type="button"><i class="icon icon-menu"></i>
-
-                        </button>
                     </div>
                     <div class="sh-m-bottom__xl">
                         <p class="caption">Ejemplo de botón con icono por tamaño</p>
@@ -1879,26 +1887,20 @@ Botón con etiqueta "&lta&gt"
                     <!-- End row -->
                      <h5>Botones con texto e icono</h5>
                     <div class="dflex sh-m-bottom__lg">
-                        <button class="sh-btn sh-btn__sm" type="button"><i class="icon icon-user"></i> Button sm</button>
-                        <button class="sh-btn"
+                        <button class="sh-btn sh-btn-icon-padd__right sh-btn__sm" type="button"><i class="icon icon-user"></i> Button sm</button>
+                        <button class="sh-btn sh-btn-icon-padd__left"
                         type="button">Button md <i class="icon icon-right-open"></i>
 
                         </button>
-                        <button class="sh-btn sh-btn__lg" type="button"><i class="icon icon-user"></i> Button lg</button>
-                        <button class="sh-btn sh-btn__xl"
-                        type="button">Button xl <i class="icon icon-right-open"></i>
-
-                        </button>
+                        <button class="sh-btn sh-btn-icon-padd__right sh-btn__lg" type="button"><i class="icon icon-user"></i> Button lg</button>
                     </div>
                     <div class="sh-m-bottom__xl">
                         <p class="caption">Ejemplo de botón con texto e icono</p>
-<pre><code class="language-html">&ltbutton class="sh-btn sh-btn__sm" type="button"&gt&lti class="icon icon-user"&gt&lt/i&gt Button sm&lt/button&gt
+<pre><code class="language-html">&ltbutton class="sh-btn sh-btn-icon-padd__right sh-btn__sm" type="button"&gt&lti class="icon icon-user"&gt&lt/i&gt Button sm&lt/button&gt
 
-&ltbutton class="sh-btn" type="button"&gtButton md &lti class="icon icon-right-open"&gt&lt/i&gt&lt/button&gt
+&ltbutton class="sh-btn sh-btn-icon-padd__left" type="button"&gtButton md &lti class="icon icon-right-open"&gt&lt/i&gt&lt/button&gt
 
-&ltbutton class="sh-btn sh-btn__lg" type="button"&gt&lti class="icon icon-user"&gt&lt/i&gt Button lg&lt/button&gt
-
-&ltbutton class="sh-btn sh-btn__xl" type="button"&gtButton xl &lti class="icon icon-right-open"&gt&lt/i&gt&lt/button&gt
+&ltbutton class="sh-btn sh-btn-icon-padd__right sh-btn__lg" type="button"&gt&lti class="icon icon-user"&gt&lt/i&gt Button lg&lt/button&gt
 
 <br>
 
@@ -1914,6 +1916,11 @@ Botón con etiqueta "&lta&gt"
                         <button class="sh-btn" type="button">Button2</button>
                         <button class="sh-btn" type="button">Button3</button>
                     </div>
+                    <div class="sh-btn-group sh-m-bottom__lg">
+                        <button class="sh-btn-outline" type="button">Button1</button>
+                        <button class="sh-btn-outline" type="button">Button2</button>
+                        <button class="sh-btn-outline" type="button">Button3</button>
+                    </div>
                     <div class="sh-m-bottom__xl">
                         <p class="caption">Ejemplo de grupo de botones</p>
 <pre><code class="language-html">&ltdiv class="sh-btn-group"&gt
@@ -1924,9 +1931,39 @@ Botón con etiqueta "&lta&gt"
 
   &ltbutton class="sh-btn" type="button"&gtButton3&lt/button&gt
 
-  &ltbutton class="sh-btn" type="button"&gtButton4&lt/button&gt
+&lt/div&gt
 
-&lt/div&gt</code></pre>
+<br>
+
+Grupo de botones outline
+
+&ltdiv class="sh-btn-group sh-m-bottom__lg"&gt
+
+  &ltbutton class="sh-btn-outline" type="button"&gtButton1&lt/button&gt
+
+  &ltbutton class="sh-btn-outline" type="button"&gtButton2&lt/button&gt
+
+  &ltbutton class="sh-btn-outline" type="button"&gtButton3&lt/button&gt
+
+&lt/div&gt
+
+</code></pre>
+                    </div>
+                    <!-- End row -->
+                     <h5>Botón con icono y texto debajo</h5>
+                    <div>
+                        <button class="sh-btn-icon__md sh-btn-icon__tag"> <i class="icon icon-cancel"></i> <span>CERRAR</span>
+                        </button>
+                    </div>
+                    <div class="sh-m-bottom__xl">
+                        <p class="caption">Ejemplo de botón con icono y texto debajo</p>
+<pre><code class="language-html">&ltbutton class="sh-btn-icon__md sh-btn-icon__tag"&gt
+
+  &lti class="icon icon-cancel"&gt&lt/i&gt
+
+  &ltspan&gtCERRAR&lt/span&gt
+
+&lt/button&gt</code></pre>
                     </div>
                     <!-- End row -->
                     <div>
@@ -1945,88 +1982,64 @@ Botón con etiqueta "&lta&gt"
                         <div class="sh-divider__header"></div>
                         <p>Cartas de producto</p>
                     </header>
-                    <div class="row top-xs">
-                        <div class="sh-card col-xs-4">
+                    <div class="columns_3">
+                        <div class="sh-card">
                             <div class="sh-card__head"> <a href="#">
 
-          <img src="img/low/user.png" alt="x">
+        <img src="img/low/user.png" alt="x">
 
-        </a>
+      </a>
                                 <label class="sh-switch">
                                     <input type="checkbox"> <span></span>
-                                </label> <span class="sh-card__switch__text">
-
-          <small><strong>Comparar</strong></small>
-
-        </span> <span class="sh-badge">Top ventas</span>
+                                </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span> <span class="sh-badge">Top ventas</span>
                             </div>
-                            <div class="sh-card__body">
-                                <div>
-                                     <h6>APOLO/CELO</h6>
-                                </div>
-                                <div> <span class="sh-card__body__text"><strong>Apolo Taco Nylon Avellanado NPC</strong></span>
-                                </div>
-                                <div> <span class="sh-card__body__price">
-
-            <strong>0,35 €</strong>
-
-          </span>
-                                </div>
+                            <div class="sh-card__body"> <strong class="sh-card__body__brand">Herco</strong>
+                                 <h5 class="sh-card__body__text">Descripcion del producto...</h5> <strong class="sh-card__body__price">30€</strong>
                             </div>
                             <div class="sh-card__footer">
                                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
                             </div>
                         </div>
-                        <div class="sh-card col-xs-4">
+                        <!-- end sh-card -->
+                        <div class="sh-card">
                             <div class="sh-card__head"> <a href="#">
 
-          <img src="img/low/user.png" alt="x">
+        <img src="img/low/user.png" alt="x">
 
-        </a>
+      </a>
+                                <label class="sh-switch">
+                                    <input type="checkbox"> <span></span>
+                                </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span> <span class="sh-badge sh-badge-red">Promoción</span>
                             </div>
-                            <div class="sh-card__body">
-                                <div>
-                                     <h6>APOLO/CELO</h6>
-                                </div>
-                                <div> <span class="sh-card__body__text"><b>Apolo Taco Nylon Avellanado NPC</b></span>
-                                </div>
-                                <div> <span class="sh-card__body__price">
-
-            <b>0,35 €</b>
-
-          </span>
-                                </div>
+                            <div class="sh-card__body"> <strong class="sh-card__body__brand">Herco</strong>
+                                 <h5 class="sh-card__body__text">Descripcion del producto...</h5> <strong class="sh-card__body__price">30€</strong>
                             </div>
                             <div class="sh-card__footer">
                                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
                             </div>
                         </div>
-                        <div class="sh-card_searcher col-xs-3">
+                        <!-- end sh-card -->
+                        <div class="sh-card">
                             <div class="sh-card__head"> <a href="#">
 
-          <img src="img/low/user.png" alt="x">
+        <img src="img/low/user.png" alt="x">
 
-        </a>
+      </a>
+                                <label class="sh-switch">
+                                    <input type="checkbox"> <span></span>
+                                </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span> <span class="sh-badge sh-badge-green">Novedad</span>
                             </div>
-                            <div class="sh-card__body">
-                                <div>
-                                     <h6>APOLO/CELO</h6>
-                                </div>
-                                <div> <span class="sh-card__body__text"><b>Apolo Taco Nylon Avellanado NPC</b></span>
-                                </div>
-                                <div> <span class="sh-card__body__price">
-
-            <b>0,35 €</b>
-
-          </span>
-                                </div>
+                            <div class="sh-card__body"> <strong class="sh-card__body__brand">Herco</strong>
+                                 <h5 class="sh-card__body__text">Descripcion del producto...</h5> <strong class="sh-card__body__price">30€</strong>
                             </div>
                             <div class="sh-card__footer">
                                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
                             </div>
                         </div>
+                        <!-- end sh-card -->
                     </div>
-                    <div class="sh-m-bottom__xl">
+                    <!-- end row -->
+                    <div class="sh-m-bottom__xxl">
                         <p class="caption">Ejemplo de cartas de producto</p>
 <pre><code class="language-html">&ltdiv class="sh-card"&gt
 
@@ -2038,39 +2051,41 @@ Botón con etiqueta "&lta&gt"
 
     &lt/a&gt
 
+    &ltlabel class="sh-switch"&gt
+
+      &ltinput type="checkbox"&gt
+
+      &ltspan&gt&lt/span&gt
+
+    &lt/label&gt
+
+    &ltspan class="sh-card__switch__text sh-text__sm"&gtComparar&lt/span&gt
+
+    &ltspan class="sh-badge"&gtTop ventas&lt/span&gt
+
   &lt/div&gt
+
+
 
   &ltdiv class="sh-card__body"&gt
 
-    &ltdiv&gt
+    &ltstrong class="sh-card__body__brand"&gtHerco&lt/strong&gt
 
-      &lth6&gtAPOLO/CELO&lt/h6&gt
+    &lth5 class="sh-card__body__text"&gtDescripcion del producto...&lt/h5&gt
 
-    &lt/div&gt
-
-    &ltdiv&gt
-
-      &ltspan class="sh-card__body__text"&gt&ltb&gtApolo Taco Nylon Avellanado NPC&lt/b&gt&lt/span&gt
-
-    &lt/div&gt
-
-    &ltdiv&gt
-
-      &ltspan class="sh-card__body__price"&gt
-
-        &ltb&gt0,35 €&lt/b&gt
-
-      &lt/span&gt
-
-    &lt/div&gt
+    &ltstrong class="sh-card__body__price"&gt30€&lt/strong&gt
 
   &lt/div&gt
+
+
 
   &ltdiv class="sh-card__footer"&gt
 
     &ltbutton class="sh-btn sh-btn__full" type="button"&gtAñadir al carro&lt/button&gt
 
-  &lt/div&gt</code></pre>
+  &lt/div&gt
+
+&lt/div&gt <!-- end sh-card --></code></pre>
                     </div>
                 </section>
                 <section id="forms">
@@ -2081,11 +2096,11 @@ Botón con etiqueta "&lta&gt"
                     </header>
                      <h5>Inputs</h5>
                     <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="col-xs-12 col-md-6">
                              <h6>Input</h6>
                             <input class="sh-input margin-help" type="text" placeholder="Tu nombre...">
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="col-xs-12 col-md-6">
                              <h6>Input + label</h6>
                             <div class="sh-form-group">
                                 <label class="sh-label" for="finame">Nombre</label>
@@ -2104,44 +2119,77 @@ Botón con etiqueta "&lta&gt"
 &ltinput class="sh-input" id="finame" type="text" &gt</code></pre>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                             <h6>Input + icon left</h6>
-                            <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-left"></i>
+                        <div class="col-xs-12 col-md-6">
+                             <h6>Input + primary icon left</h6>
+                            <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-primary__left"></i>
                                 <input class="sh-input"
                                 type="text">
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                             <h6>Input + icon right</h6>
-                            <div class="sh-form-group sh-form-contain-icon">
-                                <input class="sh-input" type="text"> <i class="icon icon-user sh-form-icon-right"></i>
+                        <div class="col-xs-12 col-md-6">
+                             <h6>Input + primary icon right</h6>
+                            <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-primary__right"></i>
+                                <input class="sh-input"
+                                type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                             <h6>Input + secondary icon left</h6>
+                            <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-secondary__left"></i>
+                                <input class="sh-input"
+                                type="text">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                             <h6>Input + secondary icon right</h6>
+                            <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-secondary__right"></i>
+                                <input class="sh-input"
+                                type="text">
                             </div>
                         </div>
                     </div>
                     <!-- End row -->
                     <div class="row">
                         <div class="col-xs-12">
-                             <h6>Double Icon</h6>
-                            <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-left"></i>
+                             <h6>Double icon</h6>
+                            <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-primary__left"></i>
                                 <input class="sh-input"
-                                type="text"> <i class="icon icon-user sh-form-icon-right"></i>
+                                type="text"> <i class="icon icon-user sh-form-icon-secondary__right"></i>
                             </div>
                         </div>
                     </div>
                     <!-- End row -->
                     <div class="sh-m-bottom__xl">
-                        <p class="caption">Ejemplo de input + icono izquierda</p>
+                        <p class="caption">Ejemplo de input + icono primario izquierda</p>
 <pre><code class="language-html">&ltdiv class="sh-form-group sh-form-contain-icon"&gt
 
-  &lti class="icon icon-user sh-form-icon-left"&gt&lt/i&gt
+  &lti class="icon icon-user sh-form-icon-primary__left"&gt&lt/i&gt
 
   &ltinput class="sh-input" type="text"&gt
 
 &lt/div&gt</code></pre>
-                        <p class="caption">Ejemplo de input + icono derecha</p>
+                        <p class="caption">Ejemplo de input + icono primario derecha</p>
 <pre><code class="language-html">&ltdiv class="sh-form-group sh-form-contain-icon"&gt
 
-  &lti class="icon icon-user sh-form-icon-right"&gt&lt/i&gt
+  &lti class="icon icon-user sh-form-icon-primary__right"&gt&lt/i&gt
+
+  &ltinput class="sh-input" type="text"&gt
+
+&lt/div&gt</code></pre>
+                        <p class="caption">Ejemplo de input + icono primario izquierda</p>
+<pre><code class="language-html">&ltdiv class="sh-form-group sh-form-contain-icon"&gt
+
+  &lti class="icon icon-user sh-form-icon-secondary__left"&gt&lt/i&gt
+
+  &ltinput class="sh-input" type="text"&gt
+
+&lt/div&gt</code></pre>
+                        <p class="caption">Ejemplo de input + icono primario derecha</p>
+<pre><code class="language-html">&ltdiv class="sh-form-group sh-form-contain-icon"&gt
+
+  &lti class="icon icon-user sh-form-icon-secondary__right"&gt&lt/i&gt
 
   &ltinput class="sh-input" type="text"&gt
 
@@ -2149,26 +2197,26 @@ Botón con etiqueta "&lta&gt"
                         <p class="caption">Ejemplo de input con doble icono</p>
 <pre><code class="language-html">&ltdiv class="sh-form-group sh-form-contain-icon"&gt
 
-  &lti class="icon icon-user sh-form-icon-left"&gt&lt/i&gt
+  &lti class="icon icon-user sh-form-icon-primary__left"&gt&lt/i&gt
 
   &ltinput class="sh-input" type="text"&gt
 
-  &lti class="icon icon-user sh-form-icon-right"&gt&lt/i&gt
+  &lti class="icon icon-user sh-form-icon-secondary__right"&gt&lt/i&gt
 
 &lt/div&gt</code></pre>
                     </div>
                      <h5>Icono para mostrar/ocultar</h5>
                     <div class="row sh-m-bottom__lg">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="col-xs-12 col-md-6">
                              <h6>Icon show password</h6>
                             <div class="sh-form-group sh-form-contain-icon">
-                                <input class="sh-input" type="password"> <i class="icon icon-lock sh-form-icon-right__display"></i>
+                                <input class="sh-input" type="password"> <i class="icon icon-lock sh-form-icon-secondary__display"></i>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="col-xs-12 col-md-6">
                              <h6>Icon hide password</h6>
                             <div class="sh-form-group sh-form-contain-icon">
-                                <input class="sh-input" type="text"> <i class="icon icon-lock-open sh-form-icon-right__display"></i>
+                                <input class="sh-input" type="text"> <i class="icon icon-lock-open sh-form-icon-secondary__display"></i>
                             </div>
                         </div>
                     </div>
@@ -2193,28 +2241,28 @@ Botón con etiqueta "&lta&gt"
                     </div>
                      <h5>Estados</h5>
                     <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="col-xs-12 col-md-6">
                              <h6>Succes</h6>
                             <div class="sh-form-group sh-form-contain-icon">
-                                <input class="sh-input sh-input__sucess" type="text"> <i class="icon icon-check sh-form-icon-right__sucess"></i> <span>Este es un mensaje cualquiera</span>
+                                <input class="sh-input sh-input__sucess" type="text"> <i class="icon icon-check sh-form-icon-secondary__sucess"></i> <span>Este es un mensaje cualquiera</span>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="col-xs-12 col-md-6">
                              <h6>Warning</h6>
                             <div class="sh-form-group sh-form-contain-icon">
-                                <input class="sh-input sh-input__warning" type="text"> <i class="icon icon-attention sh-form-icon-right__warning"></i> <span>Este es un mensaje cualquiera</span>
+                                <input class="sh-input sh-input__warning" type="text"> <i class="icon icon-attention sh-form-icon-secondary__warning"></i> <span>Este es un mensaje cualquiera</span>
                             </div>
                         </div>
                     </div>
                     <!-- End row -->
                     <div class="row sh-m-bottom__lg">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="col-xs-12 col-md-6">
                              <h6>Error</h6>
                             <div class="sh-form-group sh-form-contain-icon">
-                                <input class="sh-input sh-input__error" type="text"> <i class="icon icon-cancel sh-form-icon-right__error"></i> <span>Este es un mensaje cualquiera</span>
+                                <input class="sh-input sh-input__error" type="text"> <i class="icon icon-cancel sh-form-icon-secondary__error"></i> <span>Este es un mensaje cualquiera</span>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="col-xs-12 col-md-6">
                              <h6>Disabled</h6>
                             <input class="sh-input sh-input__disabled" type="text" placeholder="Deshabilitado"
                             disabled>
@@ -2271,6 +2319,26 @@ Deshabilitado
 
 </code></pre>
                     </div>
+                     <h5>Barra de buscador</h5>
+                    <div class="sh-m-top__lg">
+                        <form class="sh-form-group sh-form-contain-icon" action="action_page.php">
+                            <input class="sh-input sh-input__search" type="text" placeholder="Buscar.."
+                            name="search">
+                            <button class="sh-form-icon-left" type="submit"><i class="icon icon-search"></i>
+
+                            </button>
+                        </form>
+                    </div>
+                    <div class="sh-m-bottom__xl">
+                        <p class="caption">Ejemplo barra de buscador</p>
+<pre><code class="language-html">&ltform class="sh-form-group sh-form-contain-icon" action="action_page.php"&gt
+
+  &ltinput class="sh-input sh-input__search" type="text" placeholder="Buscar.." name="search"&gt
+
+  &ltbutton class="sh-form-icon-left" type="submit"&gt&lti class="icon icon-search"&gt&lt/i&gt&lt/button&gt
+
+&lt/form&gt</code></pre>
+                    </div>
                     <div class="row">
                         <div class="col-xs-12">
                              <h5>Área de texto</h5>
@@ -2285,22 +2353,22 @@ Deshabilitado
                      <h5>Ejemplo de formulario</h5>
                     <form action="/contact" method="get">
                         <div class="row sh-m-bottom__lg">
-                            <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-md-6">
                                 <label class="sh-label" for="fname">Nombre *</label>
                                 <input class="sh-input" id="fname" type="text" name="firstname"
                                 placeholder="Tu nombre..." required>
                             </div>
-                            <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-md-6">
                                 <label class="sh-label" for="lname">Apellidos *</label>
                                 <input class="sh-input" id="lname" type="text" name="lastname"
                                 placeholder="Tus apellidos..." required>
                             </div>
-                            <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-md-6">
                                 <label class="sh-label" for="pnumber">Teléfono</label>
                                 <input class="sh-input" id="pnumber" type="text" name="phonenumber"
                                 placeholder="Tu teléfono...">
                             </div>
-                            <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-md-6">
                                 <label class="sh-label" for="email">E-mail *</label>
                                 <input class="sh-input" id="email" type="email" name="email"
                                 placeholder="Tu e-mail..." required>
@@ -2369,6 +2437,36 @@ Deshabilitado
 
 &lt/form&gt</code></pre>
                     </div>
+                     <h5 class="sh-m-top__lg sh-m-bottom__lg">Selector</h5>
+                    <div class="sh-select-container">
+                        <select>
+                            <option selected>Elige una opción</option>
+                            <option>Opción 1</option>
+                            <option>Opción 2</option>
+                            <option>Opción 3</option>
+                        </select>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="sh-m-bottom__xl">
+                        <p class="caption">Ejemplo de botón estándar</p>
+<pre><code class="language-html">&ltdiv class="sh-select-container"&gt
+
+  &ltselect&gt
+
+    &ltoption selected&gtElige una opción&lt/option&gt
+
+    &ltoption&gtOpción 1&lt/option&gt
+
+    &ltoption&gtOpción 2&lt/option&gt
+
+    &ltoption&gtOpción 3&lt/option&gt
+
+  &lt/select&gt
+
+&lt/div&gt</code></pre>
+                    </div>
+                    <!-- End row -->
                 </section>
                 <section id="assets">
                     <header>
