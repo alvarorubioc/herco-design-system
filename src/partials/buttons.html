@@ -13,19 +13,19 @@
       <button class="sh-btn sh-btn__full" type="button">Standard</button>
     </div>
     <div class="col-xs-12 col-md-4 sh-m-bottom">
-      <button class="sh-btn sh-btn_dark sh-btn__full" type="button">Dark</button>
+      <button class="sh-btn__dark sh-btn__full" type="button">Dark</button>
     </div>
     <div class="col-xs-12 col-md-4 sh-m-bottom">
       <button class="sh-btn sh-btn__full" disabled type="button">Disabled</button>
     </div>
     <div class="col-xs-12 col-md-4 sh-m-bottom">
-      <button class="sh-btn sh-btn_sucess sh-btn__full" type="button">Sucess</button>
+      <button class="sh-btn__sucess sh-btn__full" type="button">Sucess</button>
     </div>
     <div class="col-xs-12 col-md-4 sh-m-bottom">
-      <button class="sh-btn sh-btn_warning sh-btn__full" type="button">Warning</button>
+      <button class="sh-btn__warning sh-btn__full" type="button">Warning</button>
     </div>
     <div class="col-xs-12 col-md-4">
-      <button class="sh-btn sh-btn_danger sh-btn__full" type="button">Danger</button>
+      <button class="sh-btn__danger sh-btn__full" type="button">Danger</button>
     </div>
   </div>
 
@@ -40,19 +40,19 @@
       <button class="sh-btn-outline sh-btn__full" type="button">Standard</button>
     </div>
     <div class="col-xs-12 col-md-4 sh-m-bottom">
-      <button class="sh-btn-outline sh-btn__full sh-btn-outline_dark" type="button">Dark</button>
+      <button class="sh-btn-outline__dark sh-btn__full" type="button">Dark</button>
     </div>
     <div class="col-xs-12 col-md-4 sh-m-bottom">
       <button class="sh-btn-outline sh-btn__full" type="button" disabled>Disabled</button>
     </div>
     <div class="col-xs-12 col-md-4 sh-m-bottom">
-      <button class="sh-btn-outline sh-btn__full sh-btn-outline_sucess" type="button">Sucess</button>
+      <button class="sh-btn-outline__sucess sh-btn__full" type="button">Sucess</button>
     </div>
     <div class="col-xs-12 col-md-4 sh-m-bottom">
-      <button class="sh-btn-outline sh-btn__full sh-btn-outline_warning" type="button">Warning</button>
+      <button class="sh-btn-outline__warning sh-btn__full" type="button">Warning</button>
     </div>
     <div class="col-xs-12 col-md-4">
-      <button class="sh-btn-outline sh-btn__full sh-btn-outline_danger" type="button">Danger</button>
+      <button class="sh-btn-outline__danger sh-btn__full" type="button">Danger</button>
     </div>
   </div>
 
@@ -63,11 +63,10 @@
 
   <h5>Botones sobre fondo</h5>
   <p>Estilos que utilizaremos sobre un fondo oscuro.</p>
-  <div class="btn-box-example">
-    <button class="sh-btn sh-btn_white" type="button">Button</button>
-    <button class="sh-btn-outline sh-btn-outline_white" type="button">Button</button>
-    <button class="sh-btn sh-btn_white" type="button"><i class="icon icon-user"></i> Button</button>
-    <button class="sh-btn-outline sh-btn-outline__white-bg" type="button">Button <i class="icon icon-right-open"></i></button>
+  <div class="columns_3 btn-box-example">
+    <button class="sh-btn__white" type="button">Button</button>
+    <button class="sh-btn-outline__white" type="button">Button</button>
+    <button class="sh-btn-outline__allwhite" type="button">Button</button>
   </div>
 
   <div class="sh-m-bottom__xl">
@@ -93,10 +92,53 @@
   <h5>Botones con icono</h5>
   <p>Ejemplo de cómo utilizar iconos en nuestros botones.</p>
   <div class="dflex sh-m-bottom__lg">
-    <button class="sh-btn sh-btn-icon__sm" type="button"><i class="icon icon-menu"></i></button>
-    <button class="sh-btn sh-btn-icon__md" type="button"><i class="icon icon-menu"></i></button>
-    <button class="sh-btn sh-btn-icon__lg" type="button"><i class="icon icon-menu"></i></button>
+    <button class="sh-btn sh-btn-icon__sm" type="button">
+      <i class="icon icon-user"></i>
+    </button>
+
+    <button class="sh-btn sh-btn-icon__md" type="button">
+      <i class="icon icon-list"></i>
+    </button>
+
+    <button class="sh-btn sh-btn-icon__lg" type="button">
+      <i class="icon icon-camera"></i>
+    </button>
+
+    <button class="sh-btn sh-btn-icon__lg">
+      <i class="icon icon-menu"></i>
+      <span>Menu</span>
+    </button>
+
+    <button class="sh-btn sh-btn-icon__md">
+      <i class="icon icon-cancel"></i>
+      <span>Cerrar</span>
+    </button>
   </div>
+
+  <div class="dflex sh-m-bottom__lg">
+    <button class="sh-btn__white sh-btn-icon__sm" type="button">
+      <i class="icon icon-user"></i>
+    </button>
+
+    <button class="sh-btn__white sh-btn-icon__md" type="button">
+      <i class="icon icon-list"></i>
+    </button>
+
+    <button class="sh-btn__white sh-btn-icon__lg" type="button">
+      <i class="icon icon-camera"></i>
+    </button>
+
+    <button class="sh-btn__white sh-btn-icon__lg">
+      <i class="icon icon-menu"></i>
+      <span>Menu</span>
+    </button>
+
+    <button class="sh-btn__white sh-btn-icon__md">
+      <i class="icon icon-cancel"></i>
+      <span>Cerrar</span>
+    </button>
+  </div>
+
 
   <div class="sh-m-bottom__xl">
     <partial src="code-examples/buttons/btn-icons.html"></partial>
@@ -104,9 +146,20 @@
 
   <h5>Botones con texto e icono</h5>
   <div class="dflex sh-m-bottom__lg">
-    <button class="sh-btn sh-btn-icon-padd__right sh-btn__sm" type="button"><i class="icon icon-user"></i> Button sm</button>
-    <button class="sh-btn sh-btn-icon-padd__left" type="button">Button md <i class="icon icon-right-open"></i></button>
-    <button class="sh-btn sh-btn-icon-padd__right sh-btn__lg" type="button"><i class="icon icon-user"></i> Button lg</button>
+    <button class="sh-btn sh-btn-withicon sh-btn__sm" type="button">
+      <i class="icon icon-user"></i>
+      <span>Button sm</span>
+    </button>
+
+    <button class="sh-btn sh-btn-withicon" type="button">
+      <span>Button md</span>
+      <i class="icon icon-right-open"></i>
+    </button>
+
+    <button class="sh-btn sh-btn-withicon sh-btn__lg" type="button">
+      <i class="icon icon-user"></i>
+      <span>Button lg</span
+    </button>
   </div>
 
   <div class="sh-m-bottom__xl">
@@ -129,18 +182,6 @@
 
   <div class="sh-m-bottom__xl">
     <partial src="code-examples/buttons/btn-group.html"></partial>
-  </div> <!-- End row -->
-
-  <h5>Botón con icono y texto debajo</h5>
-  <div>
-    <button class="sh-btn-icon__md sh-btn-icon__tag">
-      <i class="icon icon-cancel"></i>
-      <span>CERRAR</span>
-    </button>
-  </div>
-
-  <div class="sh-m-bottom__xl">
-    <partial src="code-examples/buttons/btn-icon-tag.html"></partial>
   </div> <!-- End row -->
 
   <div>

@@ -4,13 +4,38 @@
   margin-left: auto;
   padding-right: 2rem;
   padding-left: 2rem;
+  @include breakpoint (xsmobile) {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
 }
 
 .container-fluid {
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  @include breakpoint (tablet) {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  @include breakpoint (xsmobile) {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
   margin-right: auto;
   margin-left: auto;
+}
+
+.dflex {
+  display: flex;
+  @include breakpoint (xsmobile) {
+    display: block;
+  }
+}
+
+.clearfix {
+  content: "";
+	display: table;
+	table-layout: fixed;
 }
 
 .row {
@@ -270,7 +295,7 @@
   order: 1;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48em) {
   .container {
     width: 48rem;
   }
@@ -734,7 +759,7 @@
 
 @media only screen and (min-width: 75em) {
   .container {
-    width: 80rem;
+    width: 75rem;
   }
 
   .col-lg,

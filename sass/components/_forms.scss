@@ -13,13 +13,12 @@ fieldset {
 }
 
 form {
-  display: flex;
 
-  button.sh-btn {
+  & button.sh-btn {
 
     border-radius: 0;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
   }
 }
 
@@ -84,12 +83,11 @@ form {
 
   & .sh-form-icon-secondary__right,
   .sh-form-icon-secondary__left,
-  .sh-form-icon-secondary__display,
   .sh-form-icon-secondary__sucess,
   .sh-form-icon-secondary__warning,
   .sh-form-icon-secondary__error {
     position: absolute;
-    top: 12px;
+    top: .75em;
     z-index: 9;
   }
 }
@@ -155,19 +153,6 @@ form {
     }
   }
 
-  &_display {
-    right: 1em;
-    color: $color-grey;
-
-    &:hover {
-      cursor: pointer;
-    }
-
-    + input {
-      padding-right: 3em;
-    }
-  }
-
   &_sucess {
     right: 1em;
     color: $color-grass;
@@ -209,5 +194,81 @@ form {
       bottom: -20px;
       color: $color-red-cherry;
     }
+  }
+}
+
+.sh-form_ {
+  &_sm {
+    font-size: $text__sm;
+    height: 1.5rem;
+  }
+
+  &_lg {
+    font-size: $text__h4;
+    height: 4rem;
+  }
+
+  &_full {
+    width: 100%;
+  }
+}
+
+
+
+/*set select button*/
+.sh-select-container {
+  position: relative;
+  float: left;
+  min-width: 12em;
+}
+
+/* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+  display: none;
+}
+
+.sh-select-container:after {
+  content: '\e856';
+  font-family: 'herco';
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+  top: 12px;
+  right: 12px;
+  padding: 0 0 2px;
+  position: absolute;
+  pointer-events: none;
+
+  &:active {
+    transform: rotate(180deg);
+  }
+}
+
+.sh-select-container select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  max-width: 40em;
+  height: 2.5em;
+  float: right;
+  margin: 0 0;
+  padding: 0 2em 0 1em;
+  font-size: 1em;
+  line-height: 1.75;
+  color: white;
+  background-color: $color-blue;
+  background-image: none;
+  border: 1px solid $color-blue;
+  border-radius: 2px;
+  word-break: normal;
+
+  &:hover {
+    background-color: $color-navy-blue;
+    border: 1px solid $color-blue;
+    transition: .2s;
+  }
+
+  &:active {
+    opacity: 0.8;
   }
 }

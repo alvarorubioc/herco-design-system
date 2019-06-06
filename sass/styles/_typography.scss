@@ -39,8 +39,11 @@ h1, h2 {
 h1, .sh-text__h1 {
     font-size: $text__h1;
     margin: .5rem 0;
-     @include breakpoint(tablet) {
+    @include breakpoint(tablet) {
         font-size: $text__h2;
+    }
+    @include breakpoint(xsmobile) {
+        font-size: 2.2rem;
     }
 }
 
@@ -95,6 +98,13 @@ a {
 
 b, strong {
     font-weight: bold;
+}
+
+ul {
+
+  li {
+    padding-bottom: 1em;
+  }
 }
 
 .sh-caption {

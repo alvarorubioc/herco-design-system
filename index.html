@@ -63,20 +63,22 @@
                         <li><a href="#buttons">Botones & links</a>
 
                         </li>
-                        <li><a href="#cards">Cartas de producto</a>
+                        <li><a href="#forms">Formularios</a>
 
                         </li>
-                        <li><a href="#forms">Formularios</a>
+                        <li><a href="#cards">Cards</a>
 
                         </li>
                         <li class="disable">Navegación</li>
                         <li class="disable">Menús</li>
-                        <li class="disable">Card</li>
                         <li class="nav_header sh-text__h5">Assets</li>
                         <li><a href="#assets">Marca</a>
 
                         </li>
                         <li><a href="#assets">Sistema diseño</a>
+
+                        </li>
+                        <li><a href="#assets">Actualizaciones</a>
 
                         </li>
                         <br>
@@ -350,15 +352,15 @@
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-                                <div>
+                                <div class="sh-m-bottom__xxl">
                                     <p class="sh-caption sh-no__margin">Hero Heading</p>
                                      <h1 class="sh-text__hero">Far far away, behind the word mountains.</h1>
                                 </div>
-                                <div>
+                                <div class="sh-m-bottom__xxl">
                                     <p class="sh-caption sh-no__margin">h1 Heading</p>
                                      <h1>Far far away, behind the word mountains.</h1>
                                 </div>
-                                <div>
+                                <div class="sh-m-bottom__xxl">
                                     <p class="sh-caption sh-no__margin">h2 Heading</p>
                                      <h2>Far far away, behind the word mountains.</h2>
                                 </div>
@@ -1332,24 +1334,24 @@
                              <h5>Toggle Switches</h5>
                             <div class="row">
                                 <div class="col-xs-4">
-                                    <label class="sh-switch sh-m-bottom__lg">
+                                    <label class="sh-switch">
                                         <input type="checkbox"> <span></span>
-                                        <p class="parrafo">Off</p>
                                     </label>
+                                    <p class="parrafo">Off</p>
                                 </div>
                                 <br>
                                 <div class="col-xs-4">
-                                    <label class="sh-switch sh-m-bottom__lg">
+                                    <label class="sh-switch">
                                         <input type="checkbox" checked="checked"> <span></span>
-                                        <p class="parrafo">On</p>
                                     </label>
+                                    <p class="parrafo">On</p>
                                 </div>
                                 <br>
                                 <div class="col-xs-4">
                                     <label class="sh-switch">
                                         <input type="checkbox" disabled> <span></span>
-                                        <p class="parrafo">Disabled</p>
                                     </label>
+                                    <p class="parrafo">Disabled</p>
                                 </div>
                             </div>
                         </div>
@@ -1416,6 +1418,49 @@ Disabled
 
 &lt/label&gt</code></pre>
                     </div>
+                    <!-- <h5 class="sh-m-top__lg sh-m-bottom__lg">Selector</h5>
+
+  <div class="sh-select-container">
+
+    <select>
+
+      <option selected>Elige una opción</option>
+
+      <option>Opción 1</option>
+
+      <option>Opción 2</option>
+
+      <option>Opción 3</option>
+
+    </select>
+
+  </div>
+
+  <br>
+
+  <br>
+
+  <div class="sh-m-top__xl sh-m-bottom__xl">
+
+    <p class="caption">Ejemplo de botón estándar</p>
+<pre><code class="language-html">&ltdiv class="sh-select-container"&gt
+
+  &ltselect&gt
+
+    &ltoption selected&gtElige una opción&lt/option&gt
+
+    &ltoption&gtOpción 1&lt/option&gt
+
+    &ltoption&gtOpción 2&lt/option&gt
+
+    &ltoption&gtOpción 3&lt/option&gt
+
+  &lt/select&gt
+
+&lt/div&gt</code></pre>
+
+
+  </div> <!-- End row -->
                 </section>
                 <section id="alerts">
                     <header>
@@ -1721,34 +1766,34 @@ Con botón para cerrar
                             <button class="sh-btn sh-btn__full" type="button">Standard</button>
                         </div>
                         <div class="col-xs-12 col-md-4 sh-m-bottom">
-                            <button class="sh-btn sh-btn_dark sh-btn__full" type="button">Dark</button>
+                            <button class="sh-btn__dark sh-btn__full" type="button">Dark</button>
                         </div>
                         <div class="col-xs-12 col-md-4 sh-m-bottom">
                             <button class="sh-btn sh-btn__full" disabled type="button">Disabled</button>
                         </div>
                         <div class="col-xs-12 col-md-4 sh-m-bottom">
-                            <button class="sh-btn sh-btn_sucess sh-btn__full" type="button">Sucess</button>
+                            <button class="sh-btn__sucess sh-btn__full" type="button">Sucess</button>
                         </div>
                         <div class="col-xs-12 col-md-4 sh-m-bottom">
-                            <button class="sh-btn sh-btn_warning sh-btn__full" type="button">Warning</button>
+                            <button class="sh-btn__warning sh-btn__full" type="button">Warning</button>
                         </div>
                         <div class="col-xs-12 col-md-4">
-                            <button class="sh-btn sh-btn_danger sh-btn__full" type="button">Danger</button>
+                            <button class="sh-btn__danger sh-btn__full" type="button">Danger</button>
                         </div>
                     </div>
                     <div class="sh-m-bottom__xl">
                         <p class="caption">Ejemplo de botón estándar</p>
 <pre><code class="language-html">&ltbutton class="sh-btn" type="button"&gtStandard&lt/button&gt
 
-&ltbutton class="sh-btn sh-btn_dark" type="button"&gtDark&lt/button&gt
+&ltbutton class="sh-btn__dark" type="button"&gtDark&lt/button&gt
 
 &ltbutton class="sh-btn" type="button" disabled&gtDisabled&lt/button&gt
 
-&ltbutton class="sh-btn sh-btn_sucess" type="button"&gtSucces&lt/button&gt
+&ltbutton class="sh-btn__sucess" type="button"&gtSucces&lt/button&gt
 
-&ltbutton class="sh-btn sh-btn_warning" type="button"&gtWarning&lt/button&gt
+&ltbutton class="sh-btn__warning" type="button"&gtWarning&lt/button&gt
 
-&ltbutton class="sh-btn sh-btn_danger" type="button"&gtDanger&lt/button&gt
+&ltbutton class="sh-btn__danger" type="button"&gtDanger&lt/button&gt
 
 <br>
 
@@ -1764,34 +1809,34 @@ Botón con etiqueta "&lta&gt"
                             <button class="sh-btn-outline sh-btn__full" type="button">Standard</button>
                         </div>
                         <div class="col-xs-12 col-md-4 sh-m-bottom">
-                            <button class="sh-btn-outline sh-btn__full sh-btn-outline_dark" type="button">Dark</button>
+                            <button class="sh-btn-outline__dark sh-btn__full" type="button">Dark</button>
                         </div>
                         <div class="col-xs-12 col-md-4 sh-m-bottom">
                             <button class="sh-btn-outline sh-btn__full" type="button" disabled>Disabled</button>
                         </div>
                         <div class="col-xs-12 col-md-4 sh-m-bottom">
-                            <button class="sh-btn-outline sh-btn__full sh-btn-outline_sucess" type="button">Sucess</button>
+                            <button class="sh-btn-outline__sucess sh-btn__full" type="button">Sucess</button>
                         </div>
                         <div class="col-xs-12 col-md-4 sh-m-bottom">
-                            <button class="sh-btn-outline sh-btn__full sh-btn-outline_warning" type="button">Warning</button>
+                            <button class="sh-btn-outline__warning sh-btn__full" type="button">Warning</button>
                         </div>
                         <div class="col-xs-12 col-md-4">
-                            <button class="sh-btn-outline sh-btn__full sh-btn-outline_danger" type="button">Danger</button>
+                            <button class="sh-btn-outline__danger sh-btn__full" type="button">Danger</button>
                         </div>
                     </div>
                     <div class="sh-m-bottom__xl">
                         <p class="caption">Ejemplo de botón outline</p>
 <pre><code class="language-html">&ltbutton class="sh-btn-outline" type="button"&gtStandard&lt/button&gt
 
-&ltbutton class="sh-btn-outline sh-btn-outline_dark" type="button"&gtDark&lt/button&gt
+&ltbutton class="sh-btn-outline__dark" type="button"&gtDark&lt/button&gt
 
 &ltbutton class="sh-btn-outline" type="button" disabled&gtDisabled&lt/button&gt
 
-&ltbutton class="sh-btn-outline sh-btn-outline_sucess" type="button"&gtSucces&lt/button&gt
+&ltbutton class="sh-btn-outline__sucess" type="button"&gtSucces&lt/button&gt
 
-&ltbutton class="sh-btn-outline sh-btn-outline_warning" type="button"&gtWarning&lt/button&gt
+&ltbutton class="sh-btn-outline__warning" type="button"&gtWarning&lt/button&gt
 
-&ltbutton class="sh-btn-outline sh-btn-outline_danger" type="button"&gtDanger&lt/button&gt
+&ltbutton class="sh-btn-outline__danger" type="button"&gtDanger&lt/button&gt
 
 <br>
 
@@ -1802,30 +1847,24 @@ Botón con etiqueta "&lta&gt"
                     <!-- End row -->
                      <h5>Botones sobre fondo</h5>
                     <p>Estilos que utilizaremos sobre un fondo oscuro.</p>
-                    <div class="btn-box-example">
-                        <button class="sh-btn sh-btn_white" type="button">Button</button>
-                        <button class="sh-btn-outline sh-btn-outline_white" type="button">Button</button>
-                        <button class="sh-btn sh-btn_white" type="button"><i class="icon icon-user"></i> Button</button>
-                        <button class="sh-btn-outline sh-btn-outline__white-bg"
-                        type="button">Button <i class="icon icon-right-open"></i>
-
-                        </button>
+                    <div class="columns_3 btn-box-example">
+                        <button class="sh-btn__white" type="button">Button</button>
+                        <button class="sh-btn-outline__white" type="button">Button</button>
+                        <button class="sh-btn-outline__allwhite" type="button">Button</button>
                     </div>
                     <div class="sh-m-bottom__xl">
                         <p class="caption">Ejemplo de grupo de botones</p>
-<pre><code class="language-html">&ltbutton class="sh-btn sh-btn_white" type="button"&gtButton&lt/button&gt
+<pre><code class="language-html">&ltbutton class="sh-btn__white" type="button"&gtButton&lt/button&gt
 
-&ltbutton class="sh-btn-outline sh-btn-outline_white" type="button"&gtButton&lt/button&gt
+&ltbutton class="sh-btn-outline__white" type="button"&gtButton&lt/button&gt
 
-&ltbutton class="sh-btn sh-btn_white" type="button"&gt&lti class="icon icon-user"&gt&lt/i&gt Button&lt/button&gt
-
-&ltbutton class="sh-btn-outline sh-btn-outline__white-bg" type="button"&gtButton &lti class="icon icon-right-open"&gt&lt/i&gt&lt/button&gt
+&ltbutton class="sh-btn-outline__allwhite" type="button"&gtButton&lt/button&gt
 
 <br>
 
 Botón con etiqueta "&lta&gt"
 
-&lta class="sh-btn sh-btn_white" href="#" role="button"&gtButton&lt/a&gt</code></pre>
+&lta class="sh-btn__white" href="#" role="button"&gtButton&lt/a&gt</code></pre>
                     </div>
                     <!-- End row -->
                      <h5>Tamaños</h5>
@@ -1858,25 +1897,64 @@ Botón por tamaño con etiqueta "&lta&gt"
                      <h5>Botones con icono</h5>
                     <p>Ejemplo de cómo utilizar iconos en nuestros botones.</p>
                     <div class="dflex sh-m-bottom__lg">
-                        <button class="sh-btn sh-btn-icon__sm" type="button"><i class="icon icon-menu"></i>
-
+                        <button class="sh-btn sh-btn-icon__sm" type="button"> <i class="icon icon-user"></i>
                         </button>
-                        <button class="sh-btn sh-btn-icon__md" type="button"><i class="icon icon-menu"></i>
-
+                        <button class="sh-btn sh-btn-icon__md" type="button"> <i class="icon icon-list"></i>
                         </button>
-                        <button class="sh-btn sh-btn-icon__lg" type="button"><i class="icon icon-menu"></i>
-
+                        <button class="sh-btn sh-btn-icon__lg" type="button"> <i class="icon icon-camera"></i>
+                        </button>
+                        <button class="sh-btn sh-btn-icon__lg"> <i class="icon icon-menu"></i> <span>Menu</span>
+                        </button>
+                        <button class="sh-btn sh-btn-icon__md"> <i class="icon icon-cancel"></i> <span>Cerrar</span>
+                        </button>
+                    </div>
+                    <div class="dflex sh-m-bottom__lg">
+                        <button class="sh-btn__white sh-btn-icon__sm" type="button"> <i class="icon icon-user"></i>
+                        </button>
+                        <button class="sh-btn__white sh-btn-icon__md" type="button"> <i class="icon icon-list"></i>
+                        </button>
+                        <button class="sh-btn__white sh-btn-icon__lg" type="button"> <i class="icon icon-camera"></i>
+                        </button>
+                        <button class="sh-btn__white sh-btn-icon__lg"> <i class="icon icon-menu"></i> <span>Menu</span>
+                        </button>
+                        <button class="sh-btn__white sh-btn-icon__md"> <i class="icon icon-cancel"></i> <span>Cerrar</span>
                         </button>
                     </div>
                     <div class="sh-m-bottom__xl">
                         <p class="caption">Ejemplo de botón con icono por tamaño</p>
-<pre><code class="language-html">&ltbutton class="sh-btn sh-btn-icon__sm" type="button"&gt&lti class="icon icon-menu"&gt&lt/i&gt&lt/button&gt
+<pre><code class="language-html">&ltbutton class="sh-btn sh-btn-icon__sm" type="button"&gt
 
-&ltbutton class="sh-btn sh-btn-icon__md" type="button"&gt&lti class="icon icon-menu"&gt&lt/i&gt&lt/button&gt
+  &lti class="icon icon-user"&gt&lt/i&gt
 
-&ltbutton class="sh-btn sh-btn-icon__lg" type="button"&gt&lti class="icon icon-menu"&gt&lt/i&gt&lt/button&gt
+&lt/button&gt
 
-&ltbutton class="sh-btn sh-btn-icon__xl" type="button"&gt&lti class="icon icon-menu"&gt&lt/i&gt&lt/button&gt
+&ltbutton class="sh-btn sh-btn-icon__md" type="button"&gt
+
+  &lti class="icon icon-list"&gt&lt/i&gt
+
+&lt/button&gt
+
+&ltbutton class="sh-btn sh-btn-icon__lg" type="button"&gt
+
+  &lti class="icon icon-camera"&gt&lt/i&gt
+
+&lt/button&gt
+
+&ltbutton class="sh-btn__white sh-btn-icon__lg"&gt
+
+  &lti class="icon icon-menu"&gt&lt/i&gt
+
+  &ltspan&gtMenu&lt/span&gt
+
+&lt/button&gt
+
+&ltbutton class="sh-btn__white sh-btn-icon__md"&gt
+
+  &lti class="icon icon-cancel"&gt&lt/i&gt
+
+  &ltspan&gtCerrar&lt/span&gt
+
+&lt/button&gt
 
 <br>
 
@@ -1887,42 +1965,69 @@ Botón con etiqueta "&lta&gt"
                     <!-- End row -->
                      <h5>Botones con texto e icono</h5>
                     <div class="dflex sh-m-bottom__lg">
-                        <button class="sh-btn sh-btn-icon-padd__right sh-btn__sm" type="button"><i class="icon icon-user"></i> Button sm</button>
-                        <button class="sh-btn sh-btn-icon-padd__left"
-                        type="button">Button md <i class="icon icon-right-open"></i>
-
+                        <button class="sh-btn sh-btn-withicon sh-btn__sm" type="button"> <i class="icon icon-user"></i> <span>Button sm</span>
                         </button>
-                        <button class="sh-btn sh-btn-icon-padd__right sh-btn__lg" type="button"><i class="icon icon-user"></i> Button lg</button>
-                    </div>
-                    <div class="sh-m-bottom__xl">
-                        <p class="caption">Ejemplo de botón con texto e icono</p>
-<pre><code class="language-html">&ltbutton class="sh-btn sh-btn-icon-padd__right sh-btn__sm" type="button"&gt&lti class="icon icon-user"&gt&lt/i&gt Button sm&lt/button&gt
+                        <button class="sh-btn sh-btn-withicon" type="button"> <span>Button md</span> <i class="icon icon-right-open"></i>
+                        </button>
+                        <button class="sh-btn sh-btn-withicon sh-btn__lg" type="button"> <i class="icon icon-user"></i> <span>Button lg</span
 
-&ltbutton class="sh-btn sh-btn-icon-padd__left" type="button"&gtButton md &lti class="icon icon-right-open"&gt&lt/i&gt&lt/button&gt
+    </button>
 
-&ltbutton class="sh-btn sh-btn-icon-padd__right sh-btn__lg" type="button"&gt&lti class="icon icon-user"&gt&lt/i&gt Button lg&lt/button&gt
+  </div>
+
+
+
+  <div class="sh-m-bottom__xl">
+
+    <p class="caption">Ejemplo de botón con texto e icono</p>
+<pre><code class="language-html">&ltbutton class="sh-btn sh-btn-withicon sh-btn__sm" type="button"&gt&lti class="icon icon-user"&gt&lt/i&gt Button sm&lt/button&gt
+
+&ltbutton class="sh-btn sh-btn-withicon" type="button"&gtButton md &lti class="icon icon-right-open"&gt&lt/i&gt&lt/button&gt
+
+&ltbutton class="sh-btn sh-btn-withicon sh-btn__lg" type="button"&gt&lti class="icon icon-user"&gt&lt/i&gt Button lg&lt/button&gt
 
 <br>
 
 Botón con etiqueta "&lta&gt"
 
-&lta class="sh-btn sh-btn__sm" href="#" role="button"&gt&lti class="icon icon-user"&gt&lt/i&gt Button sm&lt/a&gt</code></pre>
-                    </div>
-                    <!-- End row -->
-                     <h5>Grupo de botones</h5>
-                    <p>Ejemplo de un grupo de botones.</p>
-                    <div class="sh-btn-group sh-m-bottom__lg">
-                        <button class="sh-btn" type="button">Button1</button>
-                        <button class="sh-btn" type="button">Button2</button>
-                        <button class="sh-btn" type="button">Button3</button>
-                    </div>
-                    <div class="sh-btn-group sh-m-bottom__lg">
-                        <button class="sh-btn-outline" type="button">Button1</button>
-                        <button class="sh-btn-outline" type="button">Button2</button>
-                        <button class="sh-btn-outline" type="button">Button3</button>
-                    </div>
-                    <div class="sh-m-bottom__xl">
-                        <p class="caption">Ejemplo de grupo de botones</p>
+&lta class="sh-btn sh-btn__sm sh-btn-withicon" href="#" role="button"&gt&lti class="icon icon-user"&gt&lt/i&gt Button sm&lt/a&gt</code></pre>
+
+
+  </div> <!-- End row -->
+
+
+
+  <h5>Grupo de botones</h5>
+
+  <p>Ejemplo de un grupo de botones.</p>
+
+  <div class="sh-btn-group sh-m-bottom__lg">
+
+    <button class="sh-btn" type="button">Button1</button>
+
+    <button class="sh-btn" type="button">Button2</button>
+
+    <button class="sh-btn" type="button">Button3</button>
+
+  </div>
+
+
+
+  <div class="sh-btn-group sh-m-bottom__lg">
+
+    <button class="sh-btn-outline" type="button">Button1</button>
+
+    <button class="sh-btn-outline" type="button">Button2</button>
+
+    <button class="sh-btn-outline" type="button">Button3</button>
+
+  </div>
+
+
+
+  <div class="sh-m-bottom__xl">
+
+    <p class="caption">Ejemplo de grupo de botones</p>
 <pre><code class="language-html">&ltdiv class="sh-btn-group"&gt
 
   &ltbutton class="sh-btn" type="button"&gtButton1&lt/button&gt
@@ -1948,99 +2053,120 @@ Grupo de botones outline
 &lt/div&gt
 
 </code></pre>
+
+
+  </div> <!-- End row -->
+
+
+
+  <div>
+
+    <h5>Links</h5>
+
+    <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      Ut enim ad minim veniam, quis nostrud <a href="#">hover state</a> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+  </div>
+
+</section>
+
+
+
+        <section id="cards">
+    <header>
+         <h1>Cards</h1>
+
+        <div class="sh-divider__header"></div>
+        <p>Fichas de producto con imagen, botón principal, badget destacado, toggle
+            de comparación.</p>
+    </header>
+    <div class="columns_3">
+        <div class="sh-card">
+            <div class="sh-card__head"> <a href="#">
+
+          <img src="img/low/tool.png" alt="x">
+
+        </a>
+
+                <label class="sh-switch">
+                    <input type="checkbox"> <span></span>
+                            </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span> <span class="sh-badge">Top ventas</span>
                     </div>
-                    <!-- End row -->
-                     <h5>Botón con icono y texto debajo</h5>
-                    <div>
-                        <button class="sh-btn-icon__md sh-btn-icon__tag"> <i class="icon icon-cancel"></i> <span>CERRAR</span>
-                        </button>
+                    <div class="sh-card__body"> <strong class="sh-card__body__brand">Herco</strong>
+                         <h5 class="sh-card__body__text">Título del producto</h5> <strong class="sh-card__body__price">30€</strong>
                     </div>
-                    <div class="sh-m-bottom__xl">
-                        <p class="caption">Ejemplo de botón con icono y texto debajo</p>
-<pre><code class="language-html">&ltbutton class="sh-btn-icon__md sh-btn-icon__tag"&gt
-
-  &lti class="icon icon-cancel"&gt&lt/i&gt
-
-  &ltspan&gtCERRAR&lt/span&gt
-
-&lt/button&gt</code></pre>
+                    <div class="sh-card__footer">
+                        <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
                     </div>
-                    <!-- End row -->
-                    <div>
-                         <h5>Links</h5>
-                        <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                            ad minim veniam, quis nostrud <a href="#">hover state</a> exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.</p>
+        </div>
+        <!-- end sh-card -->
+        <div class="sh-card">
+            <div class="sh-card__head"> <a href="#">
+
+          <img src="img/low/tool.png" alt="x">
+
+        </a>
+                <label class="sh-switch">
+                    <input type="checkbox"> <span></span>
+                </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span> <span class="sh-badge sh-badge-red">Promoción</span>
+            </div>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand">Herco</strong>
+                 <h5 class="sh-card__body__text">Título del producto</h5> <strong class="sh-card__body__price">30€</strong>
+            </div>
+            <div class="sh-card__footer">
+                <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
+            </div>
+        </div>
+        <!-- end sh-card -->
+        <div class="sh-card">
+            <div class="sh-card__head"> <a href="#">
+
+          <img src="img/low/tool.png" alt="x">
+
+        </a>
+                <label class="sh-switch">
+                    <input type="checkbox"> <span></span>
+                </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span> <span class="sh-badge sh-badge-green">Novedad</span>
+            </div>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand">Herco</strong>
+                 <h5 class="sh-card__body__text">Título del producto</h5> <strong class="sh-card__body__price">30€</strong>
+            </div>
+            <div class="sh-card__footer">
+                <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
+            </div>
+        </div>
+        <!-- end sh-card -->
+        </div>
+        <!-- end row -->
+        <div class="row sh-m-top__lg">
+            <div class="col-xs-12">
+                <div class="sh-card sh-card-horizontal">
+                    <div class="sh-card__head"> <a href="#">
+
+            <img src="img/low/tool.png" alt="x">
+
+          </a>
+                        <label class="sh-switch">
+                            <input type="checkbox"> <span></span>
+                        </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span> <span class="sh-badge">Top ventas</span>
                     </div>
-                </section>
-                <section id="cards">
-                    <header>
-                         <h1>Cards</h1>
-                        <div class="sh-divider__header"></div>
-                        <p>Cartas de producto</p>
-                    </header>
-                    <div class="columns_3">
-                        <div class="sh-card">
-                            <div class="sh-card__head"> <a href="#">
-
-        <img src="img/low/user.png" alt="x">
-
-      </a>
-                                <label class="sh-switch">
-                                    <input type="checkbox"> <span></span>
-                                </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span> <span class="sh-badge">Top ventas</span>
-                            </div>
-                            <div class="sh-card__body"> <strong class="sh-card__body__brand">Herco</strong>
-                                 <h5 class="sh-card__body__text">Descripcion del producto...</h5> <strong class="sh-card__body__price">30€</strong>
-                            </div>
-                            <div class="sh-card__footer">
-                                <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
-                            </div>
-                        </div>
-                        <!-- end sh-card -->
-                        <div class="sh-card">
-                            <div class="sh-card__head"> <a href="#">
-
-        <img src="img/low/user.png" alt="x">
-
-      </a>
-                                <label class="sh-switch">
-                                    <input type="checkbox"> <span></span>
-                                </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span> <span class="sh-badge sh-badge-red">Promoción</span>
-                            </div>
-                            <div class="sh-card__body"> <strong class="sh-card__body__brand">Herco</strong>
-                                 <h5 class="sh-card__body__text">Descripcion del producto...</h5> <strong class="sh-card__body__price">30€</strong>
-                            </div>
-                            <div class="sh-card__footer">
-                                <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
-                            </div>
-                        </div>
-                        <!-- end sh-card -->
-                        <div class="sh-card">
-                            <div class="sh-card__head"> <a href="#">
-
-        <img src="img/low/user.png" alt="x">
-
-      </a>
-                                <label class="sh-switch">
-                                    <input type="checkbox"> <span></span>
-                                </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span> <span class="sh-badge sh-badge-green">Novedad</span>
-                            </div>
-                            <div class="sh-card__body"> <strong class="sh-card__body__brand">Herco</strong>
-                                 <h5 class="sh-card__body__text">Descripcion del producto...</h5> <strong class="sh-card__body__price">30€</strong>
-                            </div>
-                            <div class="sh-card__footer">
-                                <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
-                            </div>
-                        </div>
-                        <!-- end sh-card -->
+                    <div class="sh-card__body"> <strong class="sh-card__body__brand">Herco</strong>
+                         <h5 class="sh-card__body__text">Título del producto</h5> <strong class="sh-card__body__price">30€</strong>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    <!-- end row -->
-                    <div class="sh-m-bottom__xxl">
-                        <p class="caption">Ejemplo de cartas de producto</p>
+                    <div class="sh-card__footer">
+                        <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
+                    </div>
+                </div>
+                <!-- end sh-card -->
+            </div>
+        </div>
+        <div class="sh-m-bottom__xxl">
+            <p class="caption">Ejemplo de cartas de producto</p>
 <pre><code class="language-html">&ltdiv class="sh-card"&gt
 
   &ltdiv class="sh-card__head"&gt
@@ -2086,83 +2212,85 @@ Grupo de botones outline
   &lt/div&gt
 
 &lt/div&gt <!-- end sh-card --></code></pre>
+        </div>
+        </section>
+        <section id="forms">
+            <header>
+                 <h1>Formularios</h1>
+                <div class="sh-divider__header"></div>
+                <p class="sh-m-bottom__xl">Elementos y/o estructura que usaremos para dar estilos a nuestros formularios</p>
+            </header>
+             <h5>Inputs</h5>
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                     <h6>Input</h6>
+                    <div class="sh-form-group">
+                        <input class="sh-input" type="text" placeholder="Tu nombre...">
                     </div>
-                </section>
-                <section id="forms">
-                    <header>
-                         <h1>Formularios</h1>
-                        <div class="sh-divider__header"></div>
-                        <p class="sh-m-bottom__xl">Elementos y/o estructura que usaremos para dar estilos a nuestros formularios</p>
-                    </header>
-                     <h5>Inputs</h5>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                             <h6>Input</h6>
-                            <input class="sh-input margin-help" type="text" placeholder="Tu nombre...">
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                             <h6>Input + label</h6>
-                            <div class="sh-form-group">
-                                <label class="sh-label" for="finame">Nombre</label>
-                                <input class="sh-input" id="finame" type="text">
-                            </div>
-                        </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                     <h6>Input + label</h6>
+                    <div class="sh-form-group">
+                        <label class="sh-label" for="finame">Nombre</label>
+                        <input class="sh-input" id="finame" type="text">
                     </div>
-                    <!-- End row -->
-                    <div class="sh-m-bottom__xl">
-                        <p class="caption">Ejemplo de input estándar</p>
+                </div>
+            </div>
+            <!-- End row -->
+            <div class="sh-m-top__xl sh-m-bottom__xl">
+                <p class="caption">Ejemplo de input estándar</p>
 <pre><code class="language-html">&ltinput class="sh-input" type="text" placeholder="Nombre"&gt</code></pre>
-                        <p
-                        class="caption">Ejemplo de input + label</p>
+                <p
+                class="caption">Ejemplo de input + label</p>
 <pre><code class="language-html">&ltlabel class="sh-label" for="finame"&gtNombre&lt/label&gt
 
 &ltinput class="sh-input" id="finame" type="text" &gt</code></pre>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                     <h6>Input + primary icon left</h6>
+                    <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-primary__left"></i>
+                        <input class="sh-input"
+                        type="text">
                     </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                             <h6>Input + primary icon left</h6>
-                            <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-primary__left"></i>
-                                <input class="sh-input"
-                                type="text">
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                             <h6>Input + primary icon right</h6>
-                            <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-primary__right"></i>
-                                <input class="sh-input"
-                                type="text">
-                            </div>
-                        </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                     <h6>Input + primary icon right</h6>
+                    <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-primary__right"></i>
+                        <input class="sh-input"
+                        type="text">
                     </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                             <h6>Input + secondary icon left</h6>
-                            <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-secondary__left"></i>
-                                <input class="sh-input"
-                                type="text">
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                             <h6>Input + secondary icon right</h6>
-                            <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-secondary__right"></i>
-                                <input class="sh-input"
-                                type="text">
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                     <h6>Input + secondary icon left</h6>
+                    <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-secondary__left"></i>
+                        <input class="sh-input"
+                        type="text">
                     </div>
-                    <!-- End row -->
-                    <div class="row">
-                        <div class="col-xs-12">
-                             <h6>Double icon</h6>
-                            <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-primary__left"></i>
-                                <input class="sh-input"
-                                type="text"> <i class="icon icon-user sh-form-icon-secondary__right"></i>
-                            </div>
-                        </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                     <h6>Input + secondary icon right</h6>
+                    <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-secondary__right"></i>
+                        <input class="sh-input"
+                        type="text">
                     </div>
-                    <!-- End row -->
-                    <div class="sh-m-bottom__xl">
-                        <p class="caption">Ejemplo de input + icono primario izquierda</p>
+                </div>
+            </div>
+            <!-- End row -->
+            <div class="row">
+                <div class="col-xs-12">
+                     <h6>Double icon</h6>
+                    <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-primary__left"></i>
+                        <input class="sh-input"
+                        type="text"> <i class="icon icon-user sh-form-icon-secondary__right"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- End row -->
+            <div class="sh-m-top__xl sh-m-bottom__xl">
+                <p class="caption">Ejemplo de input + icono primario izquierda</p>
 <pre><code class="language-html">&ltdiv class="sh-form-group sh-form-contain-icon"&gt
 
   &lti class="icon icon-user sh-form-icon-primary__left"&gt&lt/i&gt
@@ -2170,7 +2298,7 @@ Grupo de botones outline
   &ltinput class="sh-input" type="text"&gt
 
 &lt/div&gt</code></pre>
-                        <p class="caption">Ejemplo de input + icono primario derecha</p>
+                <p class="caption">Ejemplo de input + icono primario derecha</p>
 <pre><code class="language-html">&ltdiv class="sh-form-group sh-form-contain-icon"&gt
 
   &lti class="icon icon-user sh-form-icon-primary__right"&gt&lt/i&gt
@@ -2178,7 +2306,7 @@ Grupo de botones outline
   &ltinput class="sh-input" type="text"&gt
 
 &lt/div&gt</code></pre>
-                        <p class="caption">Ejemplo de input + icono primario izquierda</p>
+                <p class="caption">Ejemplo de input + icono primario izquierda</p>
 <pre><code class="language-html">&ltdiv class="sh-form-group sh-form-contain-icon"&gt
 
   &lti class="icon icon-user sh-form-icon-secondary__left"&gt&lt/i&gt
@@ -2186,7 +2314,7 @@ Grupo de botones outline
   &ltinput class="sh-input" type="text"&gt
 
 &lt/div&gt</code></pre>
-                        <p class="caption">Ejemplo de input + icono primario derecha</p>
+                <p class="caption">Ejemplo de input + icono primario derecha</p>
 <pre><code class="language-html">&ltdiv class="sh-form-group sh-form-contain-icon"&gt
 
   &lti class="icon icon-user sh-form-icon-secondary__right"&gt&lt/i&gt
@@ -2194,7 +2322,7 @@ Grupo de botones outline
   &ltinput class="sh-input" type="text"&gt
 
 &lt/div&gt</code></pre>
-                        <p class="caption">Ejemplo de input con doble icono</p>
+                <p class="caption">Ejemplo de input con doble icono</p>
 <pre><code class="language-html">&ltdiv class="sh-form-group sh-form-contain-icon"&gt
 
   &lti class="icon icon-user sh-form-icon-primary__left"&gt&lt/i&gt
@@ -2204,73 +2332,75 @@ Grupo de botones outline
   &lti class="icon icon-user sh-form-icon-secondary__right"&gt&lt/i&gt
 
 &lt/div&gt</code></pre>
+            </div>
+             <h5>Icono para mostrar/ocultar</h5>
+            <div class="row sh-m-bottom__lg">
+                <div class="col-xs-12 col-md-6">
+                     <h6>Icon show password</h6>
+                    <div class="sh-form-group sh-form-contain-icon">
+                        <input class="sh-input" type="password"> <i class="icon icon-lock sh-form-icon-secondary__right"></i>
                     </div>
-                     <h5>Icono para mostrar/ocultar</h5>
-                    <div class="row sh-m-bottom__lg">
-                        <div class="col-xs-12 col-md-6">
-                             <h6>Icon show password</h6>
-                            <div class="sh-form-group sh-form-contain-icon">
-                                <input class="sh-input" type="password"> <i class="icon icon-lock sh-form-icon-secondary__display"></i>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                             <h6>Icon hide password</h6>
-                            <div class="sh-form-group sh-form-contain-icon">
-                                <input class="sh-input" type="text"> <i class="icon icon-lock-open sh-form-icon-secondary__display"></i>
-                            </div>
-                        </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                     <h6>Icon hide password</h6>
+                    <div class="sh-form-group sh-form-contain-icon">
+                        <input class="sh-input" type="text"> <i class="icon icon-lock-open sh-form-icon-secondary__right"></i>
                     </div>
-                    <!-- End row -->
-                    <div class="sh-m-bottom__xl">
-                        <p class="caption">Ejemplo de input para mostrar contraseña</p>
+                </div>
+            </div>
+            <!-- End row -->
+            <div class="sh-m-top__xl sh-m-bottom__xl">
+                <p class="caption">Ejemplo de input para mostrar contraseña</p>
 <pre><code class="language-html">&ltdiv class="sh-form-group sh-input-contain-icon"&gt
 
   &ltinput class="sh-input" type="password"&gt
 
-  &lti class="icon icon-lock sh-form-icon-right__display"&gt&lt/i&gt
+  &lti class="icon icon-lock sh-form-icon-right__right"&gt&lt/i&gt
 
 &lt/div&gt</code></pre>
-                        <p class="caption">Ejemplo de input para ocultar contraseña</p>
+                <p class="caption">Ejemplo de input para ocultar contraseña</p>
 <pre><code class="language-html">&ltdiv class="sh-form-group sh-input-contain-icon"&gt
 
   &ltinput class="sh-input" type="text"&gt
 
-  &lti class="icon icon-lock-open sh-form-icon-right__display"&gt&lt/i&gt
+  &lti class="icon icon-lock-open sh-form-icon-right__right"&gt&lt/i&gt
 
 &lt/div&gt</code></pre>
+            </div>
+             <h5>Estados</h5>
+            <div class="row">
+                <div class="col-xs-12 col-md-6 sh-m-bottom__lg">
+                     <h6>Succes</h6>
+                    <div class="sh-form-group sh-form-contain-icon">
+                        <input class="sh-input sh-input__sucess" type="text"> <i class="icon icon-check sh-form-icon-secondary__sucess"></i> <span>Este es un mensaje cualquiera</span>
                     </div>
-                     <h5>Estados</h5>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                             <h6>Succes</h6>
-                            <div class="sh-form-group sh-form-contain-icon">
-                                <input class="sh-input sh-input__sucess" type="text"> <i class="icon icon-check sh-form-icon-secondary__sucess"></i> <span>Este es un mensaje cualquiera</span>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                             <h6>Warning</h6>
-                            <div class="sh-form-group sh-form-contain-icon">
-                                <input class="sh-input sh-input__warning" type="text"> <i class="icon icon-attention sh-form-icon-secondary__warning"></i> <span>Este es un mensaje cualquiera</span>
-                            </div>
-                        </div>
+                </div>
+                <div class="col-xs-12 col-md-6 sh-m-bottom__lg">
+                     <h6>Warning</h6>
+                    <div class="sh-form-group sh-form-contain-icon">
+                        <input class="sh-input sh-input__warning" type="text"> <i class="icon icon-attention sh-form-icon-secondary__warning"></i> <span>Este es un mensaje cualquiera</span>
                     </div>
-                    <!-- End row -->
-                    <div class="row sh-m-bottom__lg">
-                        <div class="col-xs-12 col-md-6">
-                             <h6>Error</h6>
-                            <div class="sh-form-group sh-form-contain-icon">
-                                <input class="sh-input sh-input__error" type="text"> <i class="icon icon-cancel sh-form-icon-secondary__error"></i> <span>Este es un mensaje cualquiera</span>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                             <h6>Disabled</h6>
-                            <input class="sh-input sh-input__disabled" type="text" placeholder="Deshabilitado"
-                            disabled>
-                        </div>
+                </div>
+            </div>
+            <!-- End row -->
+            <div class="row sh-m-bottom__lg">
+                <div class="col-xs-12 col-md-6">
+                     <h6>Error</h6>
+                    <div class="sh-form-group sh-form-contain-icon">
+                        <input class="sh-input sh-input__error" type="text"> <i class="icon icon-cancel sh-form-icon-secondary__error"></i> <span>Este es un mensaje cualquiera</span>
                     </div>
-                    <!-- End row -->
-                    <div class="sh-m-bottom__xl">
-                        <p class="caption">Ejemplo de input con estados</p>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                     <h6>Disabled</h6>
+                    <div class="sh-form-group">
+                        <input class="sh-input sh-input__disabled" type="text" placeholder="Deshabilitado"
+                        disabled>
+                    </div>
+                </div>
+            </div>
+            <!-- End row -->
+            <div class="sh-m-top__xl sh-m-bottom__xl">
+                <p class="caption">Ejemplo de input con estados</p>
 <pre><code class="language-html">Completado
 
 &ltdiv class="sh-form-group sh-form-contain-icon"&gt
@@ -2318,204 +2448,204 @@ Deshabilitado
 &ltinput class="sh-input sh-input__disabled" type="text" disabled&gt
 
 </code></pre>
-                    </div>
-                     <h5>Barra de buscador</h5>
-                    <div class="sh-m-top__lg">
-                        <form class="sh-form-group sh-form-contain-icon" action="action_page.php">
-                            <input class="sh-input sh-input__search" type="text" placeholder="Buscar.."
-                            name="search">
-                            <button class="sh-form-icon-left" type="submit"><i class="icon icon-search"></i>
-
-                            </button>
-                        </form>
-                    </div>
-                    <div class="sh-m-bottom__xl">
-                        <p class="caption">Ejemplo barra de buscador</p>
-<pre><code class="language-html">&ltform class="sh-form-group sh-form-contain-icon" action="action_page.php"&gt
-
-  &ltinput class="sh-input sh-input__search" type="text" placeholder="Buscar.." name="search"&gt
-
-  &ltbutton class="sh-form-icon-left" type="submit"&gt&lti class="icon icon-search"&gt&lt/i&gt&lt/button&gt
-
-&lt/form&gt</code></pre>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12">
-                             <h5>Área de texto</h5>
-                            <textarea class="sh-text-area" rows="8" cols="50" style="width:100%;"
-                            placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></textarea>
-                        </div>
-                    </div>
-                    <div class="sh-m-bottom__xl">
-                        <p class="caption">Ejemplo de caja de texto</p>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 sh-m-bottom__xl">
+                     <h5>Área de texto</h5>
+                    <textarea class="sh-text-area" rows="8" cols="50" style="width:100%;"
+                    placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></textarea>
+                </div>
+            </div>
+            <div class="sh-m-top__xl sh-m-bottom__xl">
+                <p class="caption">Ejemplo de caja de texto</p>
 <pre><code class="language-html">&lttextarea class="sh-text-area" name="comments" rows="8" cols="50" style="width:100%;"&gt&lt/textarea&gt</code></pre>
-                    </div>
-                     <h5>Ejemplo de formulario</h5>
-                    <form action="/contact" method="get">
-                        <div class="row sh-m-bottom__lg">
-                            <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-md-6">
-                                <label class="sh-label" for="fname">Nombre *</label>
-                                <input class="sh-input" id="fname" type="text" name="firstname"
-                                placeholder="Tu nombre..." required>
-                            </div>
-                            <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-md-6">
-                                <label class="sh-label" for="lname">Apellidos *</label>
-                                <input class="sh-input" id="lname" type="text" name="lastname"
-                                placeholder="Tus apellidos..." required>
-                            </div>
-                            <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-md-6">
-                                <label class="sh-label" for="pnumber">Teléfono</label>
-                                <input class="sh-input" id="pnumber" type="text" name="phonenumber"
-                                placeholder="Tu teléfono...">
-                            </div>
-                            <div class="sh-form-group sh-m-bottom__lg col-xs-12 col-md-6">
-                                <label class="sh-label" for="email">E-mail *</label>
-                                <input class="sh-input" id="email" type="email" name="email"
-                                placeholder="Tu e-mail..." required>
-                            </div>
-                            <div class="col-xs-12">
-                                <textarea class="sh-text-area" name="comments" rows="8" cols="50" style="width:100%;"
-                                placeholder="Escriba aquí su consulta"></textarea>
-                            </div>
+            </div>
+             <h5>Ejemplo de formulario</h5>
+            <div class="row">
+                <div class="col-xs-12 col-md-6 sh-bg__navy-blue sh-space__lg">
+                    <form action="" method="">
+                        <div class="sh-form-group sh-form-contain-icon sh-form__lg sh-m-bottom__lg"> <i class="icon icon-user sh-form-icon-secondary__right"></i>
+                            <input class="sh-input"
+                            id="fname" type="text" name="firstname" placeholder="Usuario o email" required>
                         </div>
-                        <input class="sh-btn" type="submit" value="submit">
+                        <div class="sh-form-group sh-form-contain-icon sh-form__lg sh-m-bottom__lg"> <i class="icon icon-lock sh-form-icon-secondary__right"></i>
+                            <input class="sh-input"
+                            id="password" type="password" name="password" placeholder="Contraseña"
+                            required>
+                        </div>
+                        <div class="sh-m-bottom__lg">
+                            <input class="sh-btn__blue sh-btn__lg sh-btn__full" type="submit" value="enviar">
+                        </div>
                     </form>
-                    <!-- End block -->
-                    <div class="sh-m-bottom__xl">
-                        <p class="caption">Ejemplo de formulario de contacto</p>
-<pre><code class="language-html">&ltform action="/signup" method="get"&gt
+                    <div class="sh-text__white">
+                        <p>¿No tienes cuenta? <a href="#">Regístrate</a>
 
-  &ltfieldset class="row columns_2 sh-m-bottom__lg"&gt
+                        </p>
+                        <p>¿Olvidaste tu contraseña? <a href="#">Recuperar</a>
 
-    &ltdiv class="sh-form-group"&gt
-
-      &ltlabel class="sh-label" for="fname"&gtNombre *&lt/label&gt
-
-      &ltinput class="sh-input" id="fname" type="text" name="firstname" required&gt
-
-    &lt/div&gt
-
-
-
-    &ltdiv class="sh-form-group"&gt
-
-      &ltlabel class="sh-label" for="lname"&gtApellidos *&lt/label&gt
-
-      &ltinput class="sh-input" id="lname" type="text" name="lastname" required&gt
-
-    &lt/div&gt
-
-
-
-    &ltdiv class="sh-form-group"&gt
-
-      &ltlabel class="sh-label" for="pnumber"&gtTeléfono&lt/label&gt
-
-      &ltinput class="sh-input" id="pnumber" type="text" name="phonenumber"&gt
-
-    &lt/div&gt
-
-
-
-    &ltdiv class="sh-form-group"&gt
-
-      &ltlabel class="sh-label" for="email"&gtE-mail *&lt/label&gt
-
-      &ltinput class="sh-input" id="email" type="email" name="email" required&gt
-
-    &lt/div&gt
-
-  &lt/fieldset&gt
-
-
-
-  &lttextarea class="sh-text-area" name="comments" rows="8" cols="50" style="width:100%;" placeholder="Escriba aquí su consulta"&gt&lt/textarea&gt
-
-
-
-  &ltinput class="sh-btn sh-m-top__lg" type="submit" value="submit"&gt
-
-&lt/form&gt</code></pre>
+                        </p>
                     </div>
-                     <h5 class="sh-m-top__lg sh-m-bottom__lg">Selector</h5>
-                    <div class="sh-select-container">
-                        <select>
-                            <option selected>Elige una opción</option>
-                            <option>Opción 1</option>
-                            <option>Opción 2</option>
-                            <option>Opción 3</option>
-                        </select>
+                </div>
+                <div class="col-xs-12 col-md-6 sh-bg__blue sh-space__lg">
+                    <form action="" method="">
+                        <div class="sh-form-group sh-form-contain-icon sh-form__lg sh-m-bottom__lg"> <i class="icon icon-rocket sh-form-icon-secondary__right"></i>
+                            <input class="sh-input"
+                            id="pedido" type="text" name="pedido" placeholder="Referencia" required>
+                        </div>
+                        <div class="sh-m-bottom__lg">
+                            <input class="sh-btn__navy-blue sh-btn__lg sh-btn__full" type="submit"
+                            value="Localizar">
+                        </div>
+                    </form>
+                    <div class="sh-text__white">
+                        <p>¿Tienes un problema? <a class="sh-text__white" href="#">Contactar</a>
+
+                        </p>
                     </div>
-                    <br>
-                    <br>
-                    <div class="sh-m-bottom__xl">
-                        <p class="caption">Ejemplo de botón estándar</p>
-<pre><code class="language-html">&ltdiv class="sh-select-container"&gt
+                </div>
+            </div>
+            <div class="sh-m-top__xl sh-m-bottom__xl">
+                <p class="caption">Ejemplo de formulario de acceso</p>
+<pre><code class="language-html">&ltform action="" method=""&gt
 
-  &ltselect&gt
+  &ltdiv class="sh-form-group sh-form-contain-icon sh-form__lg sh-m-bottom__lg"&gt
 
-    &ltoption selected&gtElige una opción&lt/option&gt
+    &lti class="icon icon-user sh-form-icon-secondary__right"&gt&lt/i&gt
 
-    &ltoption&gtOpción 1&lt/option&gt
+    &ltinput class="sh-input" id="fname" type="text" name="firstname" placeholder="Usuario o email" required&gt
 
-    &ltoption&gtOpción 2&lt/option&gt
+  &lt/div&gt
 
-    &ltoption&gtOpción 3&lt/option&gt
 
-  &lt/select&gt
+
+  &ltdiv class="sh-form-group sh-form-contain-icon sh-form__lg sh-m-bottom__lg"&gt
+
+    &lti class="icon icon-lock sh-form-icon-secondary__right"&gt&lt/i&gt
+
+    &ltinput class="sh-input" id="password" type="password" name="password" placeholder="Contraseña" required&gt
+
+  &lt/div&gt
+
+
+
+  &ltdiv class="sh-m-bottom__lg"&gt
+
+    &ltinput class="sh-btn__blue sh-btn__lg sh-btn__full" type="submit" value="enviar"&gt
+
+  &lt/div&gt
+
+&lt/form&gt
+
+
+
+&ltdiv class="sh-text__white"&gt
+
+  &ltp&gt¿No tienes cuenta? &lta href="#"&gtRegístrate&lt/a&gt&lt/p&gt
+
+  &ltp&gt¿Olvidaste tu contraseña? &lta href="#"&gtRecuperar&lt/a&gt&lt/p&gt
 
 &lt/div&gt</code></pre>
-                    </div>
-                    <!-- End row -->
-                </section>
-                <section id="assets">
-                    <header>
-                         <h1>Marca</h1>
-                        <div class="sh-divider__header"></div>
-                        <p>Puede descargar la identidad corporativa en el formato que mejor encaje
-                            en sus necesidades.</p>
-                    </header>
-                    <div class="row sh-m-bottom__xxl">
-                        <div class="col-xs-12 col-md-4">
-                             <h5>Alta JPG</h5>
-                            <p>Logotipos a 300dpi con fondo blanco. Uso recomendado en impresión y formatos
-                                offline.</p> <a href="./assets/brand/sh-logos-hi.zip" download="sh-logos-hi.zip"><strong><i class="icon icon-download"></i><span style="margin-left: .5em;">Descargar</span></strong></a>
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                             <h5>Baja PNG</h5>
-                            <p>Logotipos a 72 dpi y sin fondo. Para su uso en medios online, web, social
-                                media, banners, etc</p> <a href="./assets/brand/sh-logos-low.zip" download="sh-logos-low.zip"><strong><i class="icon icon-download"></i><span style="margin-left: .5em;">Descargar</span></strong></a>
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                             <h5>Vectorial</h5>
-                            <p>Logotipos en formato .AI para su usar en Illustrator, y en formato .SVG
-                                para su uso en web, apps, etc.</p> <a href="./assets/brand/sh-logos.zip"
-                            download="sh-logos.zip"><strong><i class="icon icon-download"></i><span style="margin-left: .5em;">Descargar</span></strong></a>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                    <header class="sh-m-top__xxl">
-                         <h1>Sistema diseño</h1>
-                        <div class="sh-divider__header"></div>
-                        <p>Puede descargar los elementos y componentes del sistema de diseño en un
-                            CSS comprimido o bien los ficheros fuente en Sass.</p>
-                    </header>
-                    <div class="row sh-m-bottom__xxl">
-                        <div class="col-xs-12 col-md-6">
-                             <h5>CSS</h5>
-                            <p>Fichero comprimido con todos los estilos del sistema de diseño.</p>
-                            <a
-                            href="./assets/sh-styles.min.css" download="sh-styles.min.css"><strong><i class="icon icon-download"></i><span style="margin-left: .5em;">Descargar</span></strong>
+            </div>
+        </section>
+        <section id="assets">
+            <header>
+                 <h1>Marca</h1>
+                <div class="sh-divider__header"></div>
+                <p>Puede descargar la identidad corporativa en el formato que mejor encaje
+                    en sus necesidades.</p>
+            </header>
+            <div class="row sh-m-bottom__xxl">
+                <div class="col-xs-12 col-md-4">
+                     <h5>Alta JPG</h5>
+                    <p>Logotipos a 300dpi con fondo blanco. Uso recomendado en impresión y formatos
+                        offline.</p> <a href="./assets/brand/sh-logos-hi.zip" download="sh-logos-hi.zip"><strong><i class="icon icon-download"></i><span style="margin-left: .5em;">Descargar</span></strong></a>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                     <h5>Baja PNG</h5>
+                    <p>Logotipos a 72 dpi y sin fondo. Para su uso en medios online, web, social
+                        media, banners, etc</p> <a href="./assets/brand/sh-logos-low.zip" download="sh-logos-low.zip"><strong><i class="icon icon-download"></i><span style="margin-left: .5em;">Descargar</span></strong></a>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                     <h5>Vectorial</h5>
+                    <p>Logotipos en formato .AI para su usar en Illustrator, y en formato .SVG
+                        para su uso en web, apps, etc.</p> <a href="./assets/brand/sh-logos.zip"
+                    download="sh-logos.zip"><strong><i class="icon icon-download"></i><span style="margin-left: .5em;">Descargar</span></strong></a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <header class="sh-m-top__xxl">
+                 <h1>Sistema diseño</h1>
+                <div class="sh-divider__header"></div>
+                <p>Puede descargar los elementos y componentes del sistema de diseño en un
+                    CSS comprimido o bien los ficheros fuente en Sass.</p>
+            </header>
+            <div class="row sh-m-bottom__xxl">
+                <div class="col-xs-12 col-md-6">
+                     <h5>CSS</h5>
+                    <p>Fichero comprimido con todos los estilos del sistema de diseño.</p>
+                    <a
+                    href="./assets/sh-styles.min.css" download="sh-styles.min.css"><strong><i class="icon icon-download"></i><span style="margin-left: .5em;">Descargar</span></strong>
 
-                                </a>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                             <h5>Sass</h5>
-                            <p>Ficheros de todos los estilos organizados en 3 carpetas core, components
-                                y styles.</p> <a href="./assets/sass.zip" download="sh-sass.zip"><strong><i class="icon icon-download"></i><span style="margin-left: .5em;">Descargar</span></strong></a>
-                        </div>
-                    </div>
-                </section>
+                        </a>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                     <h5>Sass</h5>
+                    <p>Ficheros de todos los estilos organizados en 3 carpetas core, components
+                        y styles.</p> <a href="./assets/sass.zip" download="sh-sass.zip"><strong><i class="icon icon-download"></i><span style="margin-left: .5em;">Descargar</span></strong></a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <header class="sh-m-top__xxl">
+                 <h1>Actualizaciones</h1>
+                <div class="sh-divider__header"></div>
+                <p>Historial de actualizaciones del sistema de diseño.</p>
+            </header>
+            <div class="row sh-m-bottom__xxl">
+                <div class="col-xs-12 col-md-8">
+                     <h5>V.1.3 | <small>Junio 2019</small></h5>
+                    <p>Implementación de fichas de producto, mejoras en formularios y botones.</p>
+                    <ul>
+                        <li>Fichas de producto horizontales y verticales.</li>
+                        <li>Modificación de los tamaños de botones. Implementación de colores en blanco
+                            y azul.</li>
+                        <li>Mejora de los formularios, ampliación de items y dos ejemplos de formulario.</li>
+                        <li>Reparación de bugs.</li>
+                        <li>Correción de erratas en los ejemplos HTML.</li>
+                    </ul>
+                    <hr>
+                     <h5>V.1.2 | <small>Mayo 2019</small></h5>
+                    <p>Incorporación de sección "Marca" y descarga de assets.</p>
+                    <ul>
+                        <li>Construcción, logotipos, aplicaciones de usos incorrectos.</li>
+                        <li>Recolocación de los elementos del menú.</li>
+                        <li>Recopilación de logotipos para su descarga.</li>
+                        <li>Descarga de CSS y Sass.</li>
+                        <li>Reparación de bugs.</li>
+                    </ul>
+                    <hr>
+                     <h5>V.1.1 | <small>Diciembre 2018</small></h5>
+                    <p>Incorporación de elementos y componentes.</p>
+                    <ul>
+                        <li>Sistema de retícula con "Flexbox Grid".</li>
+                        <li>Selects (checkbox, radio buttons, toggles, etc.)</li>
+                        <li>Formularios e inputs.</li>
+                        <li>Reparación de bugs.</li>
+                    </ul>
+                    <hr>
+                     <h5>V.1.0 | <small>Noviembre 2018</small></h5>
+                    <p>Creación del sistema de diseño.</p>
+                    <ul>
+                        <li>Colores.</li>
+                        <li>Tipografía.</li>
+                        <li>Iconos.</li>
+                        <li>Fondos.</li>
+                        <li>Alertas.</li>
+                        <li>Botones.</li>
+                        <li>Badgets.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         </div>
         <!-- end #container -->
         </main>

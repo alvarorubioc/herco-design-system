@@ -1,10 +1,7 @@
 /* set Standard buttons */
-.sh-btn {
+a.sh-btn, .sh-btn {
   @include btn;
   background-color: $color-blue;
-  color: white;
-  border: 1px solid $color-blue;
-  font-size: $text__md;
 
     &:hover {
         background-color: $color-navy-blue;
@@ -17,16 +14,261 @@
     }
 }
 
+/* for disabled button */
+a.sh-btn[disabled], .sh-btn[disabled] {
+  background-color: $color-grey-50;
+  border: none;
+  cursor: not-allowed;
+
+    &:hover {
+      box-shadow: none;
+    }
+}
+
+a.sh-btn__dark, .sh-btn__dark {
+  @include btn;
+  background-color: $color-dark-navy-blue;
+  border-color: $color-dark-navy-blue;
+
+  &:hover {
+    background-color: $color-navy-blue;
+    border-color: $color-navy-blue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  &:active {
+      opacity: .8;
+  }
+}
+
+a.sh-btn__navy-blue, .sh-btn__navy-blue {
+  @include btn;
+  background-color: $color-navy-blue;
+  border-color: $color-navy-blue;
+
+  &:hover {
+    background-color: $color-dark-navy-blue;
+    border-color: $color-dark-navy-blue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  &:active {
+      opacity: .8;
+  }
+}
+
+a.sh-btn__sucess, .sh-btn__sucess {
+  @include btn;
+  background-color: $color-grass;
+  border-color: $color-grass;
+
+    &:hover {
+      background-color: #447e20;
+      border-color: #447e20;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+        opacity: .8;
+    }
+}
+
+a.sh-btn__warning, .sh-btn__warning {
+  @include btn;
+  background-color: $color-yellow;
+  border-color: $color-yellow;
+
+    &:hover {
+      background-color: #b0a809;
+      border-color: #b0a809;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+        opacity: .8;
+    }
+}
+
+a.sh-btn__danger, .sh-btn__danger {
+  @include btn;
+  background-color: $color-red-cherry;
+  border: 1px solid $color-red-cherry;
+
+    &:hover {
+      background-color: #b40020;
+      border-color: #b40020;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+        opacity: .8;
+    }
+}
+
+a.sh-btn__white, .sh-btn__white {
+  @include btn;
+  background-color: white;
+  color: $color-blue;
+
+    &:hover {
+      background-color: $color-blue;
+      color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+        opacity: .5;
+    }
+}
+
+a.sh-btn__blue, .sh-btn__blue {
+  @include btn;
+  background-color: $color-blue;
+
+    &:hover {
+      background-color: white;
+      color: $color-blue;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+        opacity: .5;
+    }
+}
+
+/* set outline buttons */
+a.sh-btn-outline, .sh-btn-outline {
+  @include btn;
+  background-color: transparent;
+  color: $color-blue;
+  border-color: $color-blue;
+
+    &:hover {
+        background-color: $color-blue;
+        color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+        opacity: .8;
+    }
+}
+
+a.sh-btn-outline[disabled], .sh-btn-outline[disabled] {
+  background-color: transparent;
+  border-color: $color-grey-50;
+  color: $color-grey-50;
+  cursor: not-allowed;
+
+    &:hover {
+      box-shadow: none;
+    }
+}
+
+a.sh-btn-outline__dark, .sh-btn-outline__dark {
+  @include btn;
+  background-color: transparent;
+  border-color: $color-dark-navy-blue;
+  color: $color-dark-navy-blue;
+
+  &:hover {
+    background-color: $color-dark-navy-blue;
+    color: white;
+    border-color: $color-dark-navy-blue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+a.sh-btn-outline__sucess, .sh-btn-outline__sucess {
+  @include btn;
+  background-color: transparent;
+  color: $color-grass;
+  border-color: $color-grass;
+
+    &:hover {
+      background-color: $color-grass;
+      color: white;
+      border-color: $color-grass;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+a.sh-btn-outline__warning, .sh-btn-outline__warning {
+  @include btn;
+  background-color: transparent;
+  color: $color-yellow;
+  border-color: $color-yellow;
+
+    &:hover {
+      background-color: $color-yellow;
+      color: white;
+      border-color: $color-yellow;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+a.sh-btn-outline__danger, .sh-btn-outline__danger {
+  @include btn;
+  background-color: transparent;
+  color: $color-red-cherry;
+  border-color: $color-red-cherry;
+
+    &:hover {
+      background-color: $color-red-cherry;
+      color: white;
+      border-color: $color-red-cherry;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+a.sh-btn-outline__white, .sh-btn-outline__white {
+  @include btn;
+  background-color: transparent;
+  color: white;
+  border-color: white;
+
+    &:hover {
+      background-color: white;
+      color: $color-blue;
+      border-color: transparent;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+        opacity: .5;
+    }
+}
+
+a.sh-btn-outline__allwhite, .sh-btn-outline__allwhite {
+  @include btn;
+  background-color: white;
+  color: $color-blue;
+  border-color: white;
+
+  &:hover {
+    background-color: $color-blue;
+    color: white;
+    border-color: $color-blue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  &:active {
+      opacity: .5;
+  }
+}
+
 /* button size */
 .sh-btn_ {
   &_sm {
     font-size: $text__sm;
     height: 1.5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
   }
 
   &_lg {
-    font-size: $text__h5;
-    height: 3.5rem;
+    font-size: $text__h4;
+    height: 4rem;
     padding: 0 1.5em;
   }
 
@@ -41,231 +283,47 @@
     height: 1.5rem;
     width: 1.5rem;
     padding: 0;
-    & i {
-      font-size: 1rem;
-    }
   }
 
   &_md {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     height: 2.5rem;
     width: 2.5rem;
     padding: 0;
     & i {
       font-size: 2rem;
     }
+
+    & span {
+      font-size: 8px;
+      margin-top: -4px;
+    }
   }
 
   &_lg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     height: 3.5rem;
     width: 3.5rem;
     padding: 0;
     & i {
-      font-size: 3rem;
+      font-size: 2rem;
+    }
+
+    & span {
+      font-size: 10px;
     }
   }
 }
 
-.sh-btn-icon-padd__right i {
-  padding-right: 1.5em;
-}
-
-.sh-btn-icon-padd__left i {
-  padding-left: 1.5em;
-}
-
-
-/* for disabled button */
-.sh-btn[disabled] {
-  background-color: $color-grey-50;
-  border: none;
-  cursor: not-allowed;
-
-    &:hover {
-      box-shadow: none;
-    }
-}
-
-.sh-btn_dark {
-  background-color: $color-dark-navy-blue;
-  border-color: $color-dark-navy-blue;
-}
-
-.sh-btn_sucess {
-  background-color: $color-grass;
-  border-color: $color-grass;
-
-    &:hover {
-      background-color: #447e20;
-      border-color: #447e20;
-    }
-}
-
-.sh-btn_warning {
-  background-color: $color-yellow;
-  border-color: $color-yellow;
-
-    &:hover {
-      background-color: #b0a809;
-      border-color: #b0a809;
-    }
-}
-
-.sh-btn_danger {
-  background-color: $color-red-cherry;
-  border: 1px solid $color-red-cherry;
-
-    &:hover {
-      background-color: #b40020;
-      border-color: #b40020;
-    }
-}
-
-.sh-btn_white{
-  background-color: white;
-  color: $color-blue;
-  border-color: white;
-
-    &:hover {
-      background-color: transparent;
-      color: white;
-      border-color: white;
-    }
-
-    &:active {
-        opacity: .5;
-    }
-
-}
-
-/* set outline buttons */
-.sh-btn-outline {
-  @include btn;
-  background-color: transparent;
-  color: $color-blue;
-  border: 1px solid $color-blue;
-  border-radius: none;
-  font-size: $text__md;
-
-    &:hover {
-        background-color: $color-blue;
-        color: white;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    &:active {
-        opacity: .8;
-    }
-}
-
-.sh-btn-outline[disabled] {
-  background-color: transparent;
-  border-color: $color-grey-50;
-  color: $color-grey-50;
-  cursor: not-allowed;
-
-    &:hover {
-      box-shadow: none;
-    }
-}
-
-.sh-btn-outline_dark {
-  border-color: $color-dark-navy-blue;
-  color: $color-dark-navy-blue;
-
-  &:hover {
-    background-color: $color-dark-navy-blue;
-    color: white;
-    border-color: $color-dark-navy-blue;
-  }
-}
-
-.sh-btn-outline_sucess {
-  background-color: transparent;
-  color: $color-grass;
-  border-color: $color-grass;
-
-    &:hover {
-      background-color: $color-grass;
-      color: white;
-      border-color: $color-grass;
-    }
-}
-
-.sh-btn-outline_warning {
-  background-color: transparent;
-  color: $color-yellow;
-  border-color: $color-yellow;
-
-    &:hover {
-      background-color: $color-yellow;
-      color: white;
-      border-color: $color-yellow;
-    }
-}
-
-.sh-btn-outline_danger {
-  background-color: transparent;
-  color: $color-red-cherry;
-  border-color: $color-red-cherry;
-
-    &:hover {
-      background-color: $color-red-cherry;
-      color: white;
-      border-color: $color-red-cherry;
-    }
-}
-
-.sh-btn-outline_white {
-  background-color: transparent;
-  color: white;
-  border-color: white;
-
-    &:hover {
-      background-color: white;
-      color: $color-blue;
-      border-color: transparent;
-    }
-
-    &:active {
-        opacity: .5;
-    }
-}
-
-.sh-btn-outline__white-bg {
-  background-color: white;
-  color: $color-blue;
-  border-color: white;
-
-  &:hover {
-    border-color: $color-blue;
-  }
-}
-
-.sh-btn-icon__tag {
-  position: relative;
-  width: 2.5em;
-  height: 2.5em;
-  background-color: white;
-  color: $color-grey;
-  border-radius: 2px;
-  cursor: pointer;
-  border: 1px solid $color-grey-50;
-  border-bottom: 0px;
-
-  &:active {
-    opacity: 0.6;
-  }
-
-  & i {
-    font-size: 1.5em;
-  }
-
-  & span {
-    font-size: .5em;
-    font-style: uppercase;
-    font-family: $font-heading;
-    color: $color-grey;
-  }
+.sh-btn-withicon {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1em;
+  align-items: center;
 }
 
 /* set button group */
@@ -273,9 +331,20 @@
   display: flex;
   align-items: center;
 
+  @include breakpoint(xsmobile) {
+    flex-direction: column;
+  }
+
   .sh-btn, .sh-btn-outline {
     border-right-color: $color-navy-blue;
     border-radius: 0;
+    width: 100%;
+
+    @include breakpoint(xsmobile) {
+      border-bottom-color: $color-navy-blue;
+      border-right-color: $color-blue;
+      border-bottom-left-radius: 0;
+    }
 
     &:hover {
       background-color: $color-navy-blue;
@@ -289,16 +358,30 @@
     &:first-child {
       border-top-left-radius: $border-radius;
       border-bottom-left-radius: $border-radius;
+
+      @include breakpoint(xsmobile) {
+        border-top-right-radius: $border-radius;
+        border-bottom-left-radius: 0;
+      }
     }
 
     &:last-child {
-      border-top-right-radius: $border-radius;
       border-bottom-right-radius: $border-radius;
       border-right-color: $color-blue;
+
+      @include breakpoint(xsmobile) {
+        border-bottom-left-radius: $border-radius;
+        border-bottom-color: $color-blue;
+      }
     }
 
     &:not(:first-child) {
       border-left: none;
+
+      @include breakpoint(xsmobile) {
+        border-left: 1px solid $color-blue;
+        border-top: none;
+      }
     }
   }
 
@@ -312,6 +395,10 @@
 .sh-btn-group .sh-btn-outline {
   border-right-color: $color-blue;
 
+  @include breakpoint(xsmobile) {
+    border-bottom-color: $color-blue;
+  }
+
   &:hover {
     background-color: $color-blue;
     border-color: $color-blue;
@@ -320,60 +407,5 @@
   &:focus {
     color: white;
     background-color: $color-blue;
-  }
-}
-
-
-/*set slect button*/
-.sh-select-container {
-  position: relative;
-  float: left;
-  min-width: 12em;
-}
-
-/* IE11 hide native button (thanks Matt!) */
-select::-ms-expand {
-  display: none;
-}
-
-.sh-select-container:after {
-  content: '\e856';
-  font-family: 'herco';
-  color: white;
-  display: table-cell;
-  vertical-align: middle;
-  top: 12px;
-  right: 12px;
-  padding: 0 0 2px;
-  position: absolute;
-  pointer-events: none;
-}
-
-.sh-select-container select {
-  appearance: none;
-  display: block;
-  width: 100%;
-  max-width: 40em;
-  height: 2.5em;
-  float: right;
-  margin: 0 0;
-  padding: 0 2em 0 1em;
-  font-size: 1em;
-  line-height: 1.75;
-  color: white;
-  background-color: $color-blue;
-  background-image: none;
-  border: 1px solid $color-blue;
-  border-radius: 2px;
-  word-break: normal;
-
-  &:hover {
-    background-color: $color-navy-blue;
-    border: 1px solid $color-blue;
-    transition: .2s;
-  }
-
-  &:active {
-    opacity: 0.8;
   }
 }
