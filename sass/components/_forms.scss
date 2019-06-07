@@ -201,11 +201,19 @@ form {
   &_sm {
     font-size: $text__sm;
     height: 1.5rem;
+
+    input {
+      height: 100%;
+    }
   }
 
   &_lg {
     font-size: $text__h4;
     height: 4rem;
+
+    input {
+      height: 100%;
+    }
   }
 
   &_full {

@@ -1418,31 +1418,31 @@ Disabled
 
 &lt/label&gt</code></pre>
                     </div>
-                    <!-- <h5 class="sh-m-top__lg sh-m-bottom__lg">Selector</h5>
-
-  <div class="sh-select-container">
-
-    <select>
-
-      <option selected>Elige una opción</option>
-
-      <option>Opción 1</option>
-
-      <option>Opción 2</option>
-
-      <option>Opción 3</option>
-
-    </select>
-
-  </div>
-
-  <br>
-
-  <br>
-
-  <div class="sh-m-top__xl sh-m-bottom__xl">
-
-    <p class="caption">Ejemplo de botón estándar</p>
+                     <h5 class="sh-m-top__lg sh-m-bottom__lg">Selector</h5>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4">
+                            <div class="sh-select-container">
+                                <select>
+                                    <option selected>Elige una opción</option>
+                                    <option>Opción 1</option>
+                                    <option>Opción 2</option>
+                                    <option>Opción 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="sh-select-container">
+                                <select>
+                                    <option selected>Elige una opción</option>
+                                    <option>Opción 1</option>
+                                    <option>Opción 2</option>
+                                    <option>Opción 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sh-m-top__xl sh-m-bottom__xl">
+                        <p class="caption">Ejemplo de botón estándar</p>
 <pre><code class="language-html">&ltdiv class="sh-select-container"&gt
 
   &ltselect&gt
@@ -1458,9 +1458,8 @@ Disabled
   &lt/select&gt
 
 &lt/div&gt</code></pre>
-
-
-  </div> <!-- End row -->
+                    </div>
+                    <!-- End row -->
                 </section>
                 <section id="alerts">
                     <header>
@@ -1969,17 +1968,9 @@ Botón con etiqueta "&lta&gt"
                         </button>
                         <button class="sh-btn sh-btn-withicon" type="button"> <span>Button md</span> <i class="icon icon-right-open"></i>
                         </button>
-                        <button class="sh-btn sh-btn-withicon sh-btn__lg" type="button"> <i class="icon icon-user"></i> <span>Button lg</span
+                        <button class="sh-btn sh-btn-withicon sh-btn__lg" type="button"> <i class="icon icon-user"></i> <span>Button lg</span </button> </div> <div class="sh-m-bottom__xl">
 
-    </button>
-
-  </div>
-
-
-
-  <div class="sh-m-bottom__xl">
-
-    <p class="caption">Ejemplo de botón con texto e icono</p>
+      <p class="caption">Ejemplo de botón con texto e icono</p>
 <pre><code class="language-html">&ltbutton class="sh-btn sh-btn-withicon sh-btn__sm" type="button"&gt&lti class="icon icon-user"&gt&lt/i&gt Button sm&lt/button&gt
 
 &ltbutton class="sh-btn sh-btn-withicon" type="button"&gtButton md &lti class="icon icon-right-open"&gt&lt/i&gt&lt/button&gt
@@ -2025,6 +2016,30 @@ Botón con etiqueta "&lta&gt"
 
 
 
+  <div class="sh-btn-group-icon sh-m-bottom__lg">
+
+    <button class="sh-btn sh-btn-icon__md" type="button">
+
+      <i class="icon icon-list"></i>
+
+    </button>
+
+    <button class="sh-btn sh-btn-icon__md" type="button">
+
+      <i class="icon icon-list"></i>
+
+    </button>
+
+    <button class="sh-btn sh-btn-icon__md" type="button">
+
+      <i class="icon icon-list"></i>
+
+    </button>
+
+  </div>
+
+
+
   <div class="sh-m-bottom__xl">
 
     <p class="caption">Ejemplo de grupo de botones</p>
@@ -2040,15 +2055,27 @@ Botón con etiqueta "&lta&gt"
 
 <br>
 
-Grupo de botones outline
+Grupo de botones con icono
 
-&ltdiv class="sh-btn-group sh-m-bottom__lg"&gt
+&ltdiv class="sh-btn-group-icon"&gt
 
-  &ltbutton class="sh-btn-outline" type="button"&gtButton1&lt/button&gt
+  &ltbutton class="sh-btn sh-btn-icon__md" type="button"&gt
 
-  &ltbutton class="sh-btn-outline" type="button"&gtButton2&lt/button&gt
+    &lti class="icon icon-list"&gt&lt/i&gt
 
-  &ltbutton class="sh-btn-outline" type="button"&gtButton3&lt/button&gt
+  &lt/button&gt
+
+  &ltbutton class="sh-btn sh-btn-icon__md" type="button"&gt
+
+    &lti class="icon icon-list"&gt&lt/i&gt
+
+  &lt/button&gt
+
+  &ltbutton class="sh-btn sh-btn-icon__md" type="button"&gt
+
+    &lti class="icon icon-list"&gt&lt/i&gt
+
+  &lt/button&gt
 
 &lt/div&gt
 
@@ -2229,7 +2256,7 @@ Grupo de botones outline
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6">
-                     <h6>Input + label</h6>
+                     <h6>Input con label</h6>
                     <div class="sh-form-group">
                         <label class="sh-label" for="finame">Nombre</label>
                         <input class="sh-input" id="finame" type="text">
@@ -2248,14 +2275,14 @@ Grupo de botones outline
             </div>
             <div class="row">
                 <div class="col-xs-12 col-md-6">
-                     <h6>Input + primary icon left</h6>
+                     <h6>Input con icono principal a la izquierda</h6>
                     <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-primary__left"></i>
                         <input class="sh-input"
                         type="text">
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6">
-                     <h6>Input + primary icon right</h6>
+                     <h6>Input con icono principal a la derecha</h6>
                     <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-primary__right"></i>
                         <input class="sh-input"
                         type="text">
@@ -2264,14 +2291,14 @@ Grupo de botones outline
             </div>
             <div class="row">
                 <div class="col-xs-12 col-md-6">
-                     <h6>Input + secondary icon left</h6>
+                     <h6>Input con icono secundario a la izquierda</h6>
                     <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-secondary__left"></i>
                         <input class="sh-input"
                         type="text">
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6">
-                     <h6>Input + secondary icon right</h6>
+                     <h6>Input con icono secundario a la derecha</h6>
                     <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-secondary__right"></i>
                         <input class="sh-input"
                         type="text">
@@ -2280,13 +2307,13 @@ Grupo de botones outline
             </div>
             <!-- End row -->
             <div class="row">
-                <div class="col-xs-12">
-                     <h6>Double icon</h6>
+                <div class="col-xs-12 sh-m-bottom__lg">
+                     <h6>Input con doble icono</h6>
                     <div class="sh-form-group sh-form-contain-icon"> <i class="icon icon-user sh-form-icon-primary__left"></i>
                         <input class="sh-input"
                         type="text"> <i class="icon icon-user sh-form-icon-secondary__right"></i>
                     </div>
-                </div>
+                </div> <strong class="col-xs-12">Cabe destacar que el icono principal siempre debe anteceder al input</strong>
             </div>
             <!-- End row -->
             <div class="sh-m-top__xl sh-m-bottom__xl">
@@ -2367,6 +2394,50 @@ Grupo de botones outline
 
 &lt/div&gt</code></pre>
             </div>
+            <!-- End row -->
+             <h5>Inputs por tamaño</h5>
+            <div class="row bottom-xs">
+                <div class="col-xs-12 col-md-4">
+                     <h6>Input pequeño</h6>
+                    <div class="sh-form-group sh-form-contain-icon">
+                        <input class="sh-input sh-btn__sm" type="text">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 bottom-xs">
+                     <h6>Input estándar</h6>
+                    <div class="sh-form-group sh-form-contain-icon">
+                        <input class="sh-input" type="text">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 bottom-xs">
+                     <h6>Input grande</h6>
+                    <div class="sh-form-group sh-form-contain-icon">
+                        <input class="sh-input sh-btn__lg" type="text">
+                    </div>
+                </div>
+            </div>
+            <!-- End row -->
+            <div class="sh-m-top__xl sh-m-bottom__xl">
+                <p class="caption">Ejemplo de input para mostrar contraseña</p>
+<pre><code class="language-html">Input pequeño
+
+&ltdiv class="sh-form-group sh-form-contain-icon"&gt
+
+  &ltinput class="sh-input sh-btn__sm" type="text"&gt
+
+&lt/div&gt
+
+<br>
+
+Input grande
+
+&ltdiv class="sh-form-group sh-form-contain-icon"&gt
+
+  &ltinput class="sh-input sh-btn__lg" type="text"&gt
+
+&lt/div&gt</code></pre>
+            </div>
+            <!-- End row -->
              <h5>Estados</h5>
             <div class="row">
                 <div class="col-xs-12 col-md-6 sh-m-bottom__lg">
@@ -2474,7 +2545,7 @@ Deshabilitado
                             required>
                         </div>
                         <div class="sh-m-bottom__lg">
-                            <input class="sh-btn__blue sh-btn__lg sh-btn__full" type="submit" value="enviar">
+                            <input class="sh-btn__blue sh-btn__lg sh-btn__full" type="submit" value="Enviar">
                         </div>
                     </form>
                     <div class="sh-text__white">

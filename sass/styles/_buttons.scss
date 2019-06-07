@@ -177,6 +177,10 @@ a.sh-btn-outline__dark, .sh-btn-outline__dark {
     border-color: $color-dark-navy-blue;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
+  &:active {
+      opacity: .8;
+  }
 }
 
 a.sh-btn-outline__sucess, .sh-btn-outline__sucess {
@@ -190,6 +194,10 @@ a.sh-btn-outline__sucess, .sh-btn-outline__sucess {
       color: white;
       border-color: $color-grass;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+        opacity: .8;
     }
 }
 
@@ -205,6 +213,10 @@ a.sh-btn-outline__warning, .sh-btn-outline__warning {
       border-color: $color-yellow;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
+
+    &:active {
+        opacity: .8;
+    }
 }
 
 a.sh-btn-outline__danger, .sh-btn-outline__danger {
@@ -218,6 +230,10 @@ a.sh-btn-outline__danger, .sh-btn-outline__danger {
       color: white;
       border-color: $color-red-cherry;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+        opacity: .8;
     }
 }
 
@@ -319,7 +335,7 @@ a.sh-btn-outline__allwhite, .sh-btn-outline__allwhite {
   }
 }
 
-.sh-btn-withicon {
+.sh-btn-text-icon {
   display: grid;
   grid-auto-flow: column;
   grid-gap: 1em;
@@ -344,11 +360,6 @@ a.sh-btn-outline__allwhite, .sh-btn-outline__allwhite {
       border-bottom-color: $color-navy-blue;
       border-right-color: $color-blue;
       border-bottom-left-radius: 0;
-    }
-
-    &:hover {
-      background-color: $color-navy-blue;
-      border-color: $color-navy-blue;
     }
 
     &:focus {
@@ -382,6 +393,40 @@ a.sh-btn-outline__allwhite, .sh-btn-outline__allwhite {
         border-left: 1px solid $color-blue;
         border-top: none;
       }
+    }
+  }
+
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+.sh-btn-group-icon {
+  display: flex;
+
+  .sh-btn, .sh-btn-outline {
+    border-right-color: $color-navy-blue;
+    border-radius: 0;
+
+    &:focus {
+      background-color: $color-navy-blue;
+    }
+
+    &:first-child {
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+
+    }
+
+    &:last-child {
+      border-bottom-right-radius: $border-radius;
+      border-right-color: $color-blue;
+    }
+
+    &:not(:first-child) {
+      border-left: none;
     }
   }
 

@@ -16,7 +16,7 @@
     </div>
 
     <div class="col-xs-12 col-md-6">
-      <h6>Input + label</h6>
+      <h6>Input con label</h6>
       <div class="sh-form-group">
         <label class="sh-label" for="finame">Nombre</label>
         <input class="sh-input" id="finame" type="text">
@@ -30,7 +30,7 @@
 
   <div class="row">
     <div class="col-xs-12 col-md-6">
-      <h6>Input + primary icon left</h6>
+      <h6>Input con icono principal a la izquierda</h6>
       <div class="sh-form-group sh-form-contain-icon">
         <i class="icon icon-user sh-form-icon-primary__left"></i>
         <input class="sh-input" type="text">
@@ -38,7 +38,7 @@
     </div>
 
     <div class="col-xs-12 col-md-6">
-      <h6>Input + primary icon right</h6>
+      <h6>Input con icono principal a la derecha</h6>
       <div class="sh-form-group sh-form-contain-icon">
         <i class="icon icon-user sh-form-icon-primary__right"></i>
         <input class="sh-input" type="text">
@@ -48,7 +48,7 @@
 
   <div class="row">
     <div class="col-xs-12 col-md-6">
-      <h6>Input + secondary icon left</h6>
+      <h6>Input con icono secundario a la izquierda</h6>
       <div class="sh-form-group sh-form-contain-icon">
         <i class="icon icon-user sh-form-icon-secondary__left"></i>
         <input class="sh-input" type="text">
@@ -56,7 +56,7 @@
     </div>
 
     <div class="col-xs-12 col-md-6">
-      <h6>Input + secondary icon right</h6>
+      <h6>Input con icono secundario a la derecha</h6>
       <div class="sh-form-group sh-form-contain-icon">
         <i class="icon icon-user sh-form-icon-secondary__right"></i>
         <input class="sh-input" type="text">
@@ -65,14 +65,15 @@
   </div> <!-- End row -->
 
   <div class="row">
-    <div class="col-xs-12">
-      <h6>Double icon</h6>
+    <div class="col-xs-12 sh-m-bottom__lg">
+      <h6>Input con doble icono</h6>
       <div class="sh-form-group sh-form-contain-icon">
         <i class="icon icon-user sh-form-icon-primary__left"></i>
         <input class="sh-input" type="text">
         <i class="icon icon-user sh-form-icon-secondary__right"></i>
       </div>
     </div>
+    <strong class="col-xs-12">Cabe destacar que el icono principal siempre debe anteceder al input</strong>
   </div> <!-- End row -->
 
 
@@ -102,7 +103,35 @@
 
   <div class="sh-m-top__xl sh-m-bottom__xl">
     <partial src="code-examples/forms/input-icon-display.html"></partial>
-  </div>
+  </div> <!-- End row -->
+
+  <h5>Inputs por tamaño</h5>
+  <div class="row bottom-xs">
+    <div class="col-xs-12 col-md-4">
+      <h6>Input pequeño</h6>
+      <div class="sh-form-group sh-form-contain-icon">
+        <input class="sh-input sh-btn__sm" type="text">
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-md-4 bottom-xs">
+      <h6>Input estándar</h6>
+      <div class="sh-form-group sh-form-contain-icon">
+        <input class="sh-input" type="text">
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-md-4 bottom-xs">
+      <h6>Input grande</h6>
+      <div class="sh-form-group sh-form-contain-icon">
+        <input class="sh-input sh-btn__lg" type="text">
+      </div>
+    </div>
+  </div> <!-- End row -->
+
+  <div class="sh-m-top__xl sh-m-bottom__xl">
+    <partial src="code-examples/forms/input-sizes.html"></partial>
+  </div> <!-- End row -->
 
   <h5>Estados</h5>
   <div class="row">
@@ -174,7 +203,7 @@
         </div>
 
         <div class="sh-m-bottom__lg">
-          <input class="sh-btn__blue sh-btn__lg sh-btn__full" type="submit" value="enviar">
+          <input class="sh-btn__blue sh-btn__lg sh-btn__full" type="submit" value="Enviar">
         </div>
       </form>
 
